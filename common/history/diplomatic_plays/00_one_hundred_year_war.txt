@@ -1,0 +1,41 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:AQN ?= {
+		create_diplomatic_play = {
+			target_state = s:STATE_POITOU.region_state:FRA
+
+			war = yes
+
+			type = dp_conquer_state
+
+			add_initiator_backers = { C:FLA C:ENG }
+
+			add_war_goal = {
+				holder = c:AQN
+
+				type = conquer_state
+				target_state = s:STATE_GUYENNE.region_state:FRA
+			}
+
+			add_war_goal = {
+				holder = c:AQN
+
+				type = annex_country
+				target_country = c:ANG
+			}
+
+			add_war_goal = {
+				holder = c:FRA
+
+				type = return_state
+				target_state = s:STATE_AQUITAINE.region_state:AQN
+			}
+
+			add_war_goal = {
+				holder = c:FLA
+				type = independence
+				target_country = c:FRA
+			}
+		}
+	}
+}
+

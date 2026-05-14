@@ -1,0 +1,10 @@
+﻿GRI = {
+	color = { 203 32 83 }
+
+	country_type = decentralized
+
+	tier = kingdom
+
+	cultures = { guarani }
+	capital = STATE_AMAZONAS
+}

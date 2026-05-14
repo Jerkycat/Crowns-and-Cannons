@@ -1,0 +1,138 @@
+﻿DIPLOMACY = {
+	c:WLS ?= {
+		create_diplomatic_pact = {
+			country = c:PMB
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:GMG
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:MAC
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:POS
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:CET
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:AUD
+			type = vassal
+		}
+	}
+
+	c:ENG ?= {
+		create_diplomatic_pact = {
+			country = c:WLS
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:LAC
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:DHM
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:PLE
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:AQN
+			type = vassal
+		}
+	}
+
+	c:SCO ?= {
+		create_diplomatic_pact = {
+			country = c:MOY
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:ROS
+			type = vassal
+		}
+	}
+
+	c:SBL ?= {
+		create_diplomatic_pact = {
+			country = c:LOI
+			type = vassal
+		}
+	}
+
+	# France
+
+	c:FRA ?= {
+		create_diplomatic_pact = {
+			country = c:BRI
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:NRM
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:MIE
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:ANJ
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:PRC
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:BLS
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:BUR
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:NEV
+			type = vassal
+		}
+
+		# South France
+		create_diplomatic_pact = {
+			country = c:ANG
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:MRC
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:BOU
+			type = vassal
+		}
+
+		# Low Countries & Germany
+		create_diplomatic_pact = {
+			country = c:ARS
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:BGN
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:FLA
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:HAI
+			type = vassal
+		}
+	}
+}

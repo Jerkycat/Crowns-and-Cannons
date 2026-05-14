@@ -1,0 +1,71 @@
+﻿
+catholicism = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+	can_research = no
+
+	modifier = {
+		state_clergymen_education_access_add = 0.25
+	}
+
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+baltic_crusaders = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	unlocking_technologies = {
+		catholicism
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+roman_orthodoxy = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	unlocking_technologies = {
+		catholicism
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+mary_devotion = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	unlocking_technologies = {
+		roman_orthodoxy
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+catholic_pilgrims = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	category = society
+
+	unlocking_technologies = {
+		roman_orthodoxy
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}

@@ -1,0 +1,604 @@
+# Great Britain
+
+ENG = {
+    color = hsv360 { 2 80 95 }
+
+    country_type = unrecognized
+
+    tier = kingdom
+
+    cultures = { british }
+    capital = STATE_HOME_COUNTIES
+}
+
+
+MNN = {
+    color = rgb { 133 43 27 }
+
+    country_type = unrecognized
+
+    tier = kingdom
+
+    cultures = { british }
+    capital = STATE_LANCASHIRE
+}
+
+DHM = {
+    color = hsv360 { 298 65 68 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_YORKSHIRE
+}
+
+LAC = {
+    color = hsv360 { 51 25 100 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_YORKSHIRE
+}
+
+WLS = {
+    color = hsv360 { 229 33 68 }
+
+    country_type = unrecognized
+
+    tier = grand_principality
+
+    cultures = { british }
+    capital = STATE_WALES
+}
+
+GMG = {
+    color = hsv360 { 125 80 95 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_WALES
+}
+
+CET = {
+    color = hsv360 { 335 53 74 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_WALES
+}
+
+MAC = {
+    color = hsv360 { 200 85 95 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_WALES
+}
+
+AUD = {
+    color = hsv360 { 355 85 95 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_MIDLANDS
+}
+
+POS = {
+    color = hsv360 { 150 80 95 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_WALES
+}
+
+PMB = { # Pembroke
+    color = hsv360 { 150 80 95 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_WALES
+}
+
+SCO = { # Scottland
+    color = hsv360 { 45 94 78 }
+
+    country_type = unrecognized
+
+    tier = kingdom
+
+    cultures = { scottish_gaelic }
+    capital = STATE_HIGHLANDS
+}
+
+SBL = { # Balliol
+    color = hsv360 { 324 66 55 }
+
+    country_type = unrecognized
+
+    tier = kingdom
+
+    cultures = { scottish }
+    capital = STATE_LOWLANDS
+}
+
+MOY = {
+    color = hsv360 { 222 70 60 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { scottish_gaelic }
+    capital = STATE_HIGHLANDS
+}
+
+ROS = {
+    color = hsv360 { 222 70 60 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { scottish_gaelic }
+    capital = STATE_HIGHLANDS
+}
+
+LOI = {
+    color = rgb { 0 105 104 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_HIGHLANDS
+}
+
+ORK = {
+    color = hsv360 { 213 48 60 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_HIGHLANDS
+}
+
+# Ireland
+
+PLE = {
+    color = hsv360 { 345 61 68 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_LEINSTER
+}
+
+MCM = {
+    color = hsv360 { 0 20 93  }
+
+    country_type = unrecognized
+
+    tier = grand_principality
+
+    cultures = { british }
+    capital = STATE_MUNSTER
+}
+
+DMS = {
+    color = rgb { 179 89 89 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_MUNSTER
+}
+
+ORD = {
+    color = rgb { 220 227 43 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_MUNSTER
+}
+
+THO = {
+    color = hsv360 { 270 37 81 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_MUNSTER
+}
+
+CWM = {
+    color = hsv { 0.58 0.71 0.38 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_MUNSTER
+}
+
+LEI = {
+    color = hsv { 0.4 1 0.38 }
+
+    country_type = unrecognized
+
+    tier = grand_principality
+
+    cultures = { irish }
+    capital = STATE_LEINSTER
+}
+
+
+CVN = {
+    color = hsv360 { 42 71 76 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_LEINSTER
+}
+
+KID = {
+    color = rgb { 104 130 172 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_LEINSTER
+}
+
+FLY = {
+    color = hsv360 { 123 0 90 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_LEINSTER
+}
+
+BFN = {
+    color = hsv360 { 31 70 70 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_ULSTER
+}
+
+TYR = {
+    color = hsv360 { 33 52 84 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_ULSTER
+}
+
+TRY = {
+    color = hsv360 { 57 59 80 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_ULSTER
+}
+
+CLA = {
+    color = hsv360 { 245 40 150 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_ULSTER
+}
+
+ULS = {
+    color = hsv360 { 25 84 90 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_ULSTER
+}
+
+KEE = {
+    color = hsv360 { 45 44 47 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_ULSTER
+}
+
+IVG = {
+    color = hsv360 { 165 79 82 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_ULSTER
+}
+
+CLR = {
+    color = hsv360 { 200 85 62 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_CONNAUGHT
+}
+
+CNN = {
+    color = hsv360 { 190 50 38 }
+
+    country_type = unrecognized
+
+    tier = grand_principality
+
+    cultures = { irish }
+    capital = STATE_CONNAUGHT
+}
+
+MYO = {
+    color = hsv360 { 181 76 62 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { british }
+    capital = STATE_CONNAUGHT
+}
+
+SLN = {
+    color = hsv360 { 90 30 42 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { irish }
+    capital = STATE_CONNAUGHT
+}
+
+CMA = {
+    color = hsv360 { 79 95 60 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { irish }
+    capital = STATE_CONNAUGHT
+}
+
+# North France
+
+FRA = { # France
+	color = { 20  50  210 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { french }
+	capital = STATE_ILE_DE_FRANCE
+}
+
+BRI = { # Britain
+    color = rgb { 118 99 151 }
+
+    country_type = unrecognized
+
+    tier = grand_principality
+
+    cultures = { breton }
+    capital = STATE_BRITTANY
+	is_named_from_capital = yes
+}
+
+NRM = { # Normandy
+    color = rgb { 131 138 116 }
+
+    country_type = unrecognized
+
+    tier = grand_principality
+
+    cultures = { french }
+    capital = STATE_NORMANDY
+}
+
+MIE = { # Maine
+    color = rgb { 87 189 57 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_MAINE_ANJOU
+}
+
+ANJ = { # Anjou
+    color = hsv360 { 240 80 68 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_MAINE_ANJOU
+}
+
+PRC = { # Perche
+    color = hsv360 { 240 80 68 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_MAINE_ANJOU
+}
+
+BLS = { # Blois
+    color = hsv360 { 240 80 68 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_ORLEANS
+}
+
+ANG = { # Angoulême
+    color = rgb { 56 215 2 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_POITOU
+}
+
+BUR = { # Burgundy
+    color = hsv360 { 340 80 58 }
+
+    country_type = unrecognized
+
+    tier = grand_principality
+
+    cultures = { french }
+    capital = STATE_BURGUNDY
+}
+
+FCB = { # Franche-Comté
+    color = rgb { 0 162 232 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_BURGUNDY
+}
+
+NEV = { # Nevers
+    color = hsv360 { 240 80 68 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_BURGUNDY
+}
+
+# Low Countries & Germany
+
+ARS = { # Artois
+    color = rgb { 227 136 216 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_FRENCH_LOW_COUNTRIES
+}
+
+BGN = { # Boulogne
+    color = rgb { 185 60 165 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_FRENCH_LOW_COUNTRIES
+}
+
+FLA = { # Flanders
+    color = rgb { 43 141 172 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { flemish }
+    capital = STATE_FLANDERS
+}
+
+HAI = { # Hainaut
+    color = rgb { 103 62 185 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_WALLONIA
+}

@@ -1,0 +1,18 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:SBL ?= {
+		create_diplomatic_play = {
+			target_state = c:SCO.capital
+
+			war = yes
+
+			type = dp_annex_war
+
+			add_war_goal = {
+				holder = c:SCO
+				type = annex_country
+				target_country = c:SBL
+			}
+		}
+	}
+}
+

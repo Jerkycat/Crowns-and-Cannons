@@ -1,0 +1,344 @@
+﻿### ERA 1
+
+written_alphabet = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+	}
+
+	modifier = {
+		state_education_access_add = 0.05
+		state_literacy_growth_add = 0.0001
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+cultural_traditions = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		written_alphabet
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+map_making = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		written_alphabet
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+codified_laws = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		written_alphabet
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+scriptorium = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		written_alphabet
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+cultural_acceptance = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		cultural_traditions
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+colonies = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		map_making
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+distribution_of_power = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		codified_laws
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+subject_nations = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		codified_laws
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+taxation = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		codified_laws
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+chancery = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		codified_laws
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+legalism = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		codified_laws
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+paper_guild = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		scriptorium
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+library = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		scriptorium
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+# Legalism Tree
+
+medieval_administration = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		legalism
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+pest_house = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		medieval_administration
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+hospitals = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		pest_house
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+# Organized Religion
+
+organized_religion = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+class_scholastic = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		organized_religion
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+guilds = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		organized_religion
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+peasant_connections = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		guilds
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+expanded_archives = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		guilds
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+master_masons = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		peasant_connections
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+clearing_terrain = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = society
+
+	unlocking_technologies = {
+		peasant_connections
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}

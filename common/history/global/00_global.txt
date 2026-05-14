@@ -1,0 +1,8 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	every_country = {
+		limit = { country_has_state_religion = rel:catholic }
+
+		add_technology_researched = catholicism
+	}
+}

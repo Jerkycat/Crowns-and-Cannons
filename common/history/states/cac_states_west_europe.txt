@@ -1,0 +1,470 @@
+STATES = {
+	# Great Britain
+
+    s:STATE_WEST_COUNTRY = {
+		create_state = {
+			country = c:ENG
+			owned_provinces = { xE020C0 x1E38F8 xC900EF xA2DD9E x63EF7E x65B395 x6060C0 x225544 xEB9862 xE0E040 xB78E54 }
+		}
+		add_homeland = cu:british	}
+
+	s:STATE_HOME_COUNTIES = {
+		create_state = {
+			country = c:ENG
+			owned_provinces = { xE0E0C0 x7543C8 x60E0C0 x58D3AE x625993 x39F45B x19CECD x800020 xE060C0 }
+		}
+		add_homeland = cu:british	}
+
+	s:STATE_EAST_ANGLIA = {
+		create_state = {
+			country = c:ENG
+			owned_provinces = { x8C667B x516676 x73EF57 x6D87D7 xE02040 x5024FD x60A040 x618949 xE0A040 }
+		}
+		add_homeland = cu:british	}
+
+	s:STATE_MIDLANDS = {
+		create_state = {
+			country = c:ENG
+			owned_provinces = { x20A0C0 x11C2BB x6020C0 x99305F xE0E080 xA0A0C0 x2482B4 x60E080 x528DEE }
+		}
+		create_state = {
+			country = c:MAC
+			owned_provinces = { xA021B0 }
+		}
+		create_state = {
+			country = c:AUD
+			owned_provinces = { xA220D6 }
+		}
+		add_homeland = cu:british	}
+
+	s:STATE_LANCASHIRE = {
+		create_state = {
+			country = c:ENG
+			owned_provinces = { xA242B2 xE74158 xE06000 }
+		}
+		create_state = {
+			country = c:MNN
+			owned_provinces = { x137263 }
+		}
+		create_state = {
+			country = c:LAC
+			owned_provinces = { x410CE6 x60E000 xE0E000 }
+		}
+		create_state = {
+			country = c:CET
+			owned_provinces = { x65617C }
+		}
+		add_homeland = cu:british	}
+
+	s:STATE_YORKSHIRE = {
+		create_state = {
+			country = c:ENG
+			owned_provinces = { x824DB7 xB5BF4E xE06080 x606080 x5544D0 x86B021 }
+		}
+		create_state = {
+			country = c:DHM
+			owned_provinces = { x527116 x606000 xEDC0BA }
+		}
+		add_homeland = cu:british	}
+
+	s:STATE_WALES = {
+		create_state = {
+			country = c:WLS
+			owned_provinces = { xA02040 xB7FC74 x775D55 }
+		}
+		create_state = {
+			country = c:LAC
+			owned_provinces = { x2020C0 }
+		}
+		create_state = {
+			country = c:GMG
+			owned_provinces = { xA2308A }
+		}
+		create_state = {
+			country = c:CET
+			owned_provinces = { x633EF5 }
+		}
+		create_state = {
+			country = c:MAC
+			owned_provinces = { x20A040 }
+		}
+		create_state = {
+			country = c:POS
+			owned_provinces = { x70D92B }
+		}
+		create_state = {
+			country = c:PMB
+			owned_provinces = { xA0A040 }
+		}
+		add_homeland = cu:british
+		add_homeland = cu:welsh
+
+		add_claim = c:WLS}
+
+	s:STATE_HIGHLANDS = {
+		create_state = {
+			country = c:SCO
+			owned_provinces = { xFBDD5D x84625B x8E7728 x0C1520 }
+		}
+		create_state = {
+			country = c:MOY
+			owned_provinces = { xCCBBD1 x314E1F x637BE8 }
+		}
+		create_state = {
+			country = c:ROS
+			owned_provinces = { x3CFF08 xFACCE3 xF78F29 x662BE7 x0E7C03 }
+		}
+		create_state = {
+			country = c:LOI
+			owned_provinces = { xB7B8EA xF00652 x47C5CD x80DB90 x5B0884 }
+		}
+		create_state = {
+			country = c:ORK
+			owned_provinces = { x37518E x20E000 }
+		}
+		add_homeland = cu:scottish
+		add_homeland = cu:scottish_gaelic
+
+		add_claim = c:SCO
+		add_claim = c:SBL}
+
+	s:STATE_LOWLANDS = {
+		create_state = {
+			country = c:SBL
+			owned_provinces = { xB2A15E x20E080 x676072 xA0E080 x363883 xD01BE2 xDCD566 x206080 x002C82 }
+		}
+		create_state = {
+			country = c:SCO
+			owned_provinces = { xA0E000 x0B53FA x9B6ACC x832656 xA06080 x80F634 }
+		}
+		create_state = {
+			country = c:MOY
+			owned_provinces = { x193EFC }
+		}
+		add_homeland = cu:scottish
+		add_homeland = cu:scottish_gaelic
+
+		add_claim = c:SCO
+		add_claim = c:SBL}
+
+	# Ireland
+
+	s:STATE_ULSTER = {
+		create_state = {
+			country = c:BFN
+			owned_provinces = { xA06040 }
+		}
+		create_state = {
+			country = c:TYR
+			owned_provinces = { xCFCD2B xAA6FA1 }
+		}
+		create_state = {
+			country = c:TRY
+			owned_provinces = { xA0C0E0 }
+		}
+		create_state = {
+			country = c:KEE
+			owned_provinces = { x2BE1C8 }
+		}
+		create_state = {
+			country = c:ULS
+			owned_provinces = { x0A38AF }
+		}
+		create_state = {
+			country = c:CLA
+			owned_provinces = { x688E79 }
+		}
+		create_state = {
+			country = c:IVG
+			owned_provinces = { x20E040 }
+		}
+		add_homeland = cu:irish
+		add_homeland = cu:british
+		add_homeland = cu:scottish
+
+		add_claim = c:PLE}
+
+	s:STATE_LEINSTER = {
+		create_state = {
+			country = c:PLE
+			owned_provinces = { xA0E040 xA2A933 x1E9CB2 x5086D4 x5B3F6F }
+		}
+		create_state = {
+			country = c:CVN
+			owned_provinces = { xAEAF93 }
+		}
+		create_state = {
+			country = c:LEI
+			owned_provinces = { x60E040 }
+		}
+		create_state = {
+			country = c:KID
+			owned_provinces = { x2060C0 }
+		}
+		create_state = {
+			country = c:FLY
+			owned_provinces = { xCC3E24 }
+		}
+		add_homeland = cu:irish
+
+		add_claim = c:PLE}
+
+	s:STATE_CONNAUGHT = {
+		create_state = {
+			country = c:CLR
+			owned_provinces = { x20E0C0 xC7847D }
+		}
+		create_state = {
+			country = c:CNN
+			owned_provinces = { x85F13B xA060C0 }
+		}
+		create_state = {
+			country = c:MYO
+			owned_provinces = { x656D90 x641238 }
+		}
+		create_state = {
+			country = c:SLN
+			owned_provinces = { x5DEF58 }
+		}
+		create_state = {
+			country = c:CMA
+			owned_provinces = { xE5C4FE }
+		}
+		add_homeland = cu:irish
+
+		add_claim = c:PLE}
+
+	s:STATE_MUNSTER = {
+		create_state = {
+			country = c:MCM
+			owned_provinces = { xE06040 xF53F9B xECB3A5 }
+		}
+		create_state = {
+			country = c:DMS
+			owned_provinces = { xEF3F71 xA0E0C0 x969279 }
+		}
+		create_state = {
+			country = c:ORD
+			owned_provinces = { xD9BB34 }
+		}
+		create_state = {
+			country = c:THO
+			owned_provinces = { x849939 x02061B }
+		}
+		create_state = {
+			country = c:CWM
+			owned_provinces = { xBDAB32 }
+		}
+		add_homeland = cu:irish
+
+		add_claim = c:PLE}
+
+	# North France
+
+	s:STATE_BRITTANY = {
+		create_state = {
+			country = c:BRI
+			owned_provinces = { x10A040 x2368E7 x2BD902 x32C2E2 x50F4A7 x55607E x706000 x85E5AC xA0B0D1 xABF468 xC4D7A2 xD0E080 xD584A0 xF91DD2 }
+		}
+		add_homeland = cu:french
+		add_homeland = cu:breton	}
+
+	s:STATE_NORMANDY = {
+		create_state = {
+			country = c:NRM
+			owned_provinces = { x65728E x065CAE x0B7098 x1020C0 x79C0E6 x9020C0 x90A040 xA786BB xB06080 xB8903B xD642B5 }
+		}
+		add_homeland = cu:french
+		add_homeland = cu:breton
+
+		add_claim = c:ENG
+		add_claim = c:FRA	}
+
+	s:STATE_MAINE_ANJOU = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x6B5474 xD02040 xF6A48C }
+		}
+		create_state = {
+			country = c:ANJ
+			owned_provinces = { x30E080 x093DF5 x7CAE05 }
+		}
+		create_state = {
+			country = c:MIE
+			owned_provinces = { x192CA5 x56E158 xB0E080 }
+		}
+		add_homeland = cu:french
+
+		add_claim = c:ENG
+		add_claim = c:FRA	}
+
+	s:STATE_POITOU = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x19234B x3F74AF x50A040 xDD4DD0 xE269A3 }
+		}
+		create_state = {
+			country = c:AQN
+			owned_provinces = { xD0A040 }
+		}
+		create_state = {
+			country = c:ANG
+			owned_provinces = { x9401C7 xD020C0 }
+		}
+		add_homeland = cu:french
+
+		add_claim = c:FRA	}
+
+	s:STATE_ORLEANS = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { xE13BC2 xF0E39E x14F855 x6E4717 x90E000 xD8BA95 xE3E249 xE7B296 }
+		}
+		create_state = {
+			country = c:PRC
+			owned_provinces = { xF522D9 }
+		}
+		create_state = {
+			country = c:BLS
+			owned_provinces = { x90A0C0 x47B641 x886277 x50CE72 }
+		}
+		add_homeland = cu:french	}
+
+	s:STATE_PICARDY = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x075199 x10A0C0 x7040A0 xC4C61A xCF1F6D }
+		}
+		create_state = {
+			country = c:ENG
+			owned_provinces = { xE0A624 }
+		}
+		add_homeland = cu:french	}
+
+	s:STATE_ILE_DE_FRANCE = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x12462D x7080DF x71DA2E x906000 }
+		}
+		add_homeland = cu:french	}
+
+	s:STATE_CHAMPAGNE = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x600883 x4B7684 x5FEA2F x669027 x8AE8D1 xD6A06D xE280FC xEF00DF xEF40A0 xEFBF20 }
+		}
+		add_homeland = cu:french	}
+
+	s:STATE_LORRAINE = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x7FC1E6 x282DCC x3080E0 x70BFA0 xB080E0 xC5F13A }
+		}
+		add_homeland = cu:french	}
+
+	s:STATE_BURGUNDY = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x10DF00 x708060 x999D4B x7000E0 }
+		}
+		create_state = {
+			country = c:BUR
+			owned_provinces = { x380D42 x6D7896 x79B85C x8329EC x8C3297 }
+		}
+		create_state = {
+			country = c:NEV
+			owned_provinces = { x09BB96 xF08060 xC69235 }
+		}
+		add_homeland = cu:french	}
+
+	s:STATE_FRANCHE_COMTE = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x3D8EF9 xB000E0 }
+		}
+		create_state = {
+			country = c:FCB
+			owned_provinces = { x700060 xF00060 xCF46D1 xA9D961 }
+		}
+		add_homeland = cu:french	}
+
+	s:STATE_FRENCH_LOW_COUNTRIES = {
+		create_state = {
+			country = c:ARS
+			owned_provinces = { x106000 x5362AC x70C020 xA0A080 xD0854D }
+		}
+		create_state = {
+			country = c:BGN
+			owned_provinces = { xE0A0C0 }
+		}
+		add_homeland = cu:french
+		add_homeland = cu:flemish	}
+
+	# Low Countries & Germany
+
+	s:STATE_FLANDERS = {
+		create_state = {
+			country = c:FLA
+			owned_provinces = { x93FB2E x018061 x0141A0 x8041A0 x800060 x808061 }
+		}
+		add_homeland = cu:flemish	}
+
+	s:STATE_HOLLAND = {
+		create_state = {
+			country = c:GRI
+			owned_provinces = { x777732 x80C0A0 xC04021 x01C0A0 }
+		}
+		add_homeland = cu:dutch	}
+
+	s:STATE_FRIESLAND = {
+		create_state = {
+			country = c:GRI
+			owned_provinces = { x41C021 xC0C021 xC041A0 x4141A0 x5A48A2 }
+		}
+		add_homeland = cu:dutch	}
+
+	s:STATE_GELRE = {
+		create_state = {
+			country = c:GRI
+			owned_provinces = { xC0C0A0 x4C4894 xAF3A54 x41C0A0 x0000DF }
+		}
+		add_homeland = cu:dutch	}
+
+	s:STATE_WALLONIA = {
+		create_state = {
+			country = c:GRI
+			owned_provinces = { xD001A0 x5180A0 }
+		}
+		create_state = {
+			country = c:HAI
+			owned_provinces = { xB0A0C0 x916574 x2D32D7 xEF2040 x3A5FB9 }
+		}
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x8080A0 }
+		}
+		add_homeland = cu:wallonian	}
+
+	s:STATE_NORTH_RHINE = {
+		create_state = {
+			country = c:GRI
+			owned_provinces = { x9F4072 x8001E0 x834B66 x518021 x29CCD6 x486F6A }
+		}
+		add_homeland = cu:north_german	}
+
+	s:STATE_RHINELAND = {
+		create_state = {
+			country = c:GRI
+			owned_provinces = { xD080A0 x904020 xC1B963 x5D7A68 x11C021 x707505 }
+		}
+		add_homeland = cu:north_german	}
+
+	s:STATE_ALSACE_LORRAINE = {
+		create_state = {
+			country = c:GRI
+			owned_provinces = { x4899A2 x6E4891 xCC3250 xF0C0A0 }
+		}
+		add_homeland = cu:french
+		add_homeland = cu:south_german
+		add_homeland = cu:alemannic	}
+}

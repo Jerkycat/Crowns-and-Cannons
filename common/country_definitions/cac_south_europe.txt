@@ -1,0 +1,35 @@
+
+# South France
+
+AQN = { # Aquitaine
+    color = rgb { 32 144 204 }
+
+    country_type = unrecognized
+
+    tier = grand_principality
+
+    cultures = { french }
+    capital = STATE_AQUITAINE
+}
+
+MRC = { # La Marche
+    color = rgb { 12 241 122 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_AUVERGNE_LIMOUSIN
+}
+
+BOU = { # Bourbon
+    color = rgb { 0 140 165 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_AUVERGNE_LIMOUSIN
+}

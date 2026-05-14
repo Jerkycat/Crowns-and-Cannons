@@ -1,0 +1,65 @@
+STATES = {
+	# South France
+
+	s:STATE_AQUITAINE = {
+		create_state = {
+			country = c:AQN
+			owned_provinces = { x073FC4 x606DEC x6E16BB x70A080 x76BA85 xA220D0 xBBF036 xCD8E77 xF0A080 }
+		}
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x5F7F2D xD957E6 xF02080 }
+		}
+		add_homeland = cu:french
+		add_homeland = cu:occitan
+
+		add_claim = C:FRA
+		add_claim = c:AQN	}
+
+	s:STATE_GUYENNE = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x061121 x086618 x106080 x306000 x30E000 x7BCDC4 xA2BBE9 xAF89BC xB06000 xC8CD2F xF3D359 }
+		}
+		create_state = {
+			country = c:ANG
+			owned_provinces = { x5020C0 }
+		}
+		add_homeland = cu:french
+		add_homeland = cu:occitan
+
+		add_claim = c:FRA	}
+
+	s:STATE_AUVERGNE_LIMOUSIN = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x01FD5F x07BCC1 x50A0C0 x368F00 xABE045 xBED0F4 xDF5770 x70C060 xF080E0 }
+		}
+		create_state = {
+			country = c:MRC
+			owned_provinces = { x61609A x07BCC1 xA27EFD }
+		}
+		create_state = {
+			country = c:BOU
+			owned_provinces = { xA8AE71 x3FE149 }
+		}
+		add_homeland = cu:french
+		add_homeland = cu:occitan	}
+
+	s:STATE_LANGUEDOC = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x106040 x1060C0 x1727F7 x306080 x3784B2 x5615DD x7C1D57 x906080 xB0E000 xBBB6AD xCF9FBF xECF077 xF0C060 }
+		}
+		add_homeland = cu:french
+		add_homeland = cu:occitan	}
+
+	s:STATE_RHONE = {
+		create_state = {
+			country = c:FRA
+			owned_provinces = { x1B4B66 x30C060 x3369C6 x704060 x71A804 x73F176 x7516B6 x8E88DA xB04060 xB8E48D xEF4060 }
+		}
+		add_homeland = cu:french
+		add_homeland = cu:occitan
+		add_homeland = cu:francoprovencal	}
+}

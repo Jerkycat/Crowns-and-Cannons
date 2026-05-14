@@ -1,0 +1,397 @@
+POPS = {
+    # Great Britain
+
+    s:STATE_WEST_COUNTRY = {
+		region_state:ENG = {
+			create_pop = {
+				culture = british
+				size = 502600
+			}
+		}
+	}
+
+	s:STATE_HOME_COUNTIES = {
+		region_state:ENG = {
+			create_pop = {
+				culture = british
+				size = 502600
+			}
+		}
+	}
+
+	s:STATE_EAST_ANGLIA = {
+		region_state:ENG = {
+			create_pop = {
+				culture = british
+				size = 665200
+			}
+		}
+	}
+
+	s:STATE_MIDLANDS = {
+		region_state:ENG = {
+			create_pop = {
+				culture = british
+				size = 502600
+			}
+		}
+
+		region_state:AUD = {
+			create_pop = {
+				culture = british
+				size = 21201
+			}
+		}
+
+		region_state:MAC = {
+			create_pop = {
+				culture = british
+				size = 26650
+			}
+		}
+	}
+
+	s:STATE_LANCASHIRE = {
+		region_state:ENG = {
+			create_pop = {
+				culture = british
+				size = 340000
+			}
+		}
+
+		region_state:MNN = {
+			create_pop = {
+				culture = british
+				size = 5091
+			}
+		}
+
+		region_state:LAC = {
+			create_pop = {
+				culture = british
+				size = 48177
+			}
+		}
+
+		region_state:CET = {
+			create_pop = {
+				culture = british
+				size = 37523
+			}
+		}
+	}
+
+	s:STATE_YORKSHIRE = {
+		region_state:ENG = {
+			create_pop = {
+				culture = british
+				size = 502600
+			}
+		}
+
+		region_state:DHM = {
+			create_pop = {
+				culture = british
+				size = 48983
+			}
+		}
+	}
+
+	s:STATE_WALES = {
+		region_state:WLS = {
+			create_pop = {
+				culture = british
+				size = 96478
+			}
+		}
+		region_state:LAC = {
+			create_pop = {
+				culture = british
+				size = 11771
+			}
+		}
+		region_state:GMG = {
+			create_pop = {
+				culture = british
+				size = 74681
+			}
+		}
+		region_state:CET = {
+			create_pop = {
+				culture = british
+				size = 27523
+			}
+		}
+		region_state:MAC = {
+			create_pop = {
+				culture = british
+				size = 7852
+			}
+		}
+		region_state:POS = {
+			create_pop = {
+				culture = british
+				size = 10823
+			}
+		}
+		region_state:PMB = {
+			create_pop = {
+				culture = british
+				size = 37369
+			}
+			create_pop = {
+				culture = welsh
+				size = 16533
+			}
+		}
+    }
+
+	s:STATE_HIGHLANDS = {
+		region_state:SCO = {
+			create_pop = {
+				culture = scottish_gaelic
+				size = 80000
+			}
+		}
+		region_state:MOY = {
+			create_pop = {
+				culture = scottish_gaelic
+				size = 20159
+			}
+		}
+		region_state:ROS = {
+			create_pop = {
+				culture = scottish_gaelic
+				size = 19761
+			}
+		}
+		region_state:LOI = {
+			create_pop = {
+				culture = scottish_gaelic
+				size = 21849
+			}
+		}
+	}
+
+	s:STATE_LOWLANDS = {
+		region_state:SBL = {
+			create_pop = {
+				culture = scottish
+				size = 205000
+			}
+		}
+		region_state:SCO = {
+			create_pop = {
+				culture = scottish_gaelic
+				size = 120000
+			}
+		}
+		region_state:MOY = {
+			create_pop = {
+				culture = scottish_gaelic
+				size = 10079
+			}
+		}
+	}
+
+	# Ireland
+
+	s:STATE_ULSTER = {
+	}
+
+	s:STATE_LEINSTER = {
+		region_state:PLE = {
+			create_pop = {
+				culture = british
+				size = 319000
+			}
+		}
+	}
+
+	s:STATE_CONNAUGHT = {
+	}
+
+	s:STATE_MUNSTER = {
+	}
+
+	# North France
+
+	s:STATE_BRITTANY = {
+		region_state:BRI = {
+			create_pop = {
+				culture = breton
+				size = 1079000
+			}
+		}
+	}
+
+	s:STATE_NORMANDY = {
+		region_state:NRM = {
+			create_pop = {
+				culture = french
+				size = 1049000
+			}
+		}
+	}
+
+	s:STATE_MAINE_ANJOU = {
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 229055
+			}
+		}
+		region_state:ANJ = {
+			create_pop = {
+				culture = french
+				size = 285000
+			}
+		}
+		region_state:MIE = {
+			create_pop = {
+				culture = french
+				size = 292000
+			}
+		}
+	}
+
+	s:STATE_POITOU = {
+		region_state:AQN = {
+			create_pop = {
+				culture = french
+				size = 119000
+			}
+		}
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 532322
+			}
+		}
+	}
+
+	s:STATE_ORLEANS = {
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 407095
+			}
+		}
+		region_state:PRC = {
+			create_pop = {
+				culture = french
+				size = 105000
+			}
+		}
+		region_state:BLS = {
+			create_pop = {
+				culture = french
+				size = 157000
+			}
+		}
+	}
+
+	s:STATE_PICARDY = {
+		region_state:ENG = {
+			create_pop = {
+				culture = french
+				size = 72390
+			}
+			create_pop = {
+				culture = british
+				size = 357
+			}
+		}
+	}
+
+	s:STATE_ILE_DE_FRANCE = {
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 575000
+			}
+		}
+	}
+
+	s:STATE_CHAMPAGNE = {
+	}
+
+	s:STATE_LORRAINE = {
+	}
+
+	s:STATE_BURGUNDY = {
+	}
+
+	s:STATE_FRANCHE_COMTE = {
+	}
+
+	# Low Countries & Germany
+
+	s:STATE_FRENCH_LOW_COUNTRIES = {
+		region_state:BGN = {
+			create_pop = {
+				culture = french
+				size = 47859
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 482
+			}
+		}
+
+		region_state:ARS = {
+			create_pop = {
+				culture = french
+				size = 198000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 2213
+			}
+		}
+	}
+
+	s:STATE_FLANDERS = {
+		region_state:FLA = {
+			create_pop = {
+				culture = flemish
+				size = 499000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 4406
+			}
+		}
+	}
+
+	s:STATE_HOLLAND = {
+	}
+
+	s:STATE_FRIESLAND = {
+	}
+
+	s:STATE_GELRE = {
+	}
+
+	s:STATE_WALLONIA = {
+		region_state:HAI = {
+			create_pop = {
+				culture = french
+				size = 103000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 1780
+			}
+		}
+	}
+
+	s:STATE_NORTH_RHINE = {
+	}
+
+	s:STATE_RHINELAND = {
+	}
+
+	s:STATE_ALSACE_LORRAINE = {
+	}
+}

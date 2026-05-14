@@ -1,0 +1,12 @@
+POPS = {
+    # South France
+
+    s:STATE_AQUITAINE = {
+		region_state:AQN = {
+			create_pop = {
+				culture = french
+				size = 369638
+			}
+		}
+	}
+}
