@@ -34,7 +34,7 @@ DHM = {
     capital = STATE_YORKSHIRE
 }
 
-LAC = {
+LAN = {
     color = hsv360 { 51 25 100 }
 
     country_type = unrecognized
@@ -543,7 +543,18 @@ FCB = { # Franche-Comté
     tier = principality
 
     cultures = { french }
-    capital = STATE_BURGUNDY
+    capital = STATE_FRANCHE_COMTE
+}
+
+MON = { # Montfort
+    color = rgb { 219 44 44 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_FRANCHE_COMTE
 }
 
 NEV = { # Nevers
@@ -602,3 +613,125 @@ HAI = { # Hainaut
     cultures = { french }
     capital = STATE_WALLONIA
 }
+
+ZEE = { # Zeeland
+    color = rgb { 187 193 216 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { dutch }
+    capital = STATE_HOLLAND
+}
+
+HOL = { # Holland
+    color = rgb { 220 138 57 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { dutch }
+    capital = STATE_HOLLAND
+}
+
+UTR = { # Utrecht
+    color = rgb { 223 198 64 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { dutch }
+    capital = STATE_FRIESLAND
+}
+
+FRI = { # Frisia
+    color = rgb { 0 128 255 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { dutch }
+    capital = STATE_FRIESLAND
+}
+
+BRB = { # Brabant
+    color = rgb { 118 193 153 }
+
+    country_type = unrecognized
+
+    tier = grand_principality
+
+    cultures = { dutch }
+    capital = STATE_GELRE
+}
+
+LOO = { # Loon
+    color = rgb { 125 90 30 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { dutch }
+    capital = STATE_GELRE
+}
+
+GEL = { # Guelders
+    color = rgb { 139 66 97 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { dutch }
+    capital = STATE_GELRE
+}
+
+ZUT = { # Zutphen
+    color = rgb { 79 157 202 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { dutch }
+    capital = STATE_GELRE
+}
+
+LIE = { # Liege
+    color = rgb { 149 186 37 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { wallonian }
+    capital = STATE_WALLONIA
+}
+
+LUX = { # Luxembourg
+    color = rgb { 53 140 73 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { wallonian }
+    capital = STATE_WALLONIA
+}
+
+FRT = { # Ferrette
+    color = rgb { 245 14 36 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { wallonian }
+    capital = STATE_FRANCHE_COMTE
+}
+

@@ -1,0 +1,4 @@
+INJECT:coastal_state = {
+	state_urbanization_per_level_mult = -0.1
+}
+

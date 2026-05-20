@@ -1,0 +1,11 @@
+
+SPR = { # Sparse Land
+	color = { 42 102 64 }
+
+	country_type = decentralized
+
+	tier = kingdom
+
+	cultures = { guajiro }
+	capital = STATE_UGANDA
+}

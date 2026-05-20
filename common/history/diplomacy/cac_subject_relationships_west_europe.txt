@@ -32,7 +32,7 @@
 			type = vassal
 		}
 		create_diplomatic_pact = {
-			country = c:LAC
+			country = c:LAN
 			type = vassal
 		}
 		create_diplomatic_pact = {

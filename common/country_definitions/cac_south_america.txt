@@ -1,0 +1,68 @@
+# South America
+
+GRI = { # Guarani
+	color = { 203 32 83 }
+
+	country_type = decentralized
+
+	tier = kingdom
+
+	cultures = { guarani }
+	capital = STATE_BAJO_PARAGUAY
+}
+
+TPI = { # Tupinamba
+	color = { 157 209 192 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { tupinamba }
+	capital = STATE_BAHIA
+}
+
+AMZ = { # Amazonia
+	color = { 42 102 64 }
+
+	country_type = decentralized
+
+	tier = kingdom
+
+	cultures = { amazonian }
+	capital = STATE_AMAZONAS
+}
+
+JEE = { # Jê / Gê
+	color = { 42 102 64 }
+
+	country_type = decentralized
+
+	tier = kingdom
+
+	cultures = { tupinamba }
+	capital = STATE_GOIAS
+}
+
+CRB = { # Carib
+	color = hsv{ 0.28 0.79 0.47 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { cariban }
+
+	capital = STATE_MIRANDA
+}
+
+PAT = { # Patagonia
+	color = { 196 25 10 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { patagonian }
+	capital = STATE_PATAGONIA
+}
