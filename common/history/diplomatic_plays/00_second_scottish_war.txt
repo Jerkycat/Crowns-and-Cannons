@@ -8,9 +8,27 @@
 			type = dp_annex_war
 
 			add_war_goal = {
+				holder = c:SBL
+				type = annex_country
+				target_country = c:MOY
+			}
+
+			add_war_goal = {
+				holder = c:SBL
+				type = annex_country
+				target_country = c:ROS
+			}
+
+			add_war_goal = {
 				holder = c:SCO
 				type = annex_country
 				target_country = c:SBL
+			}
+
+			add_war_goal = {
+				holder = c:SCO
+				type = annex_country
+				target_country = c:LOI
 			}
 		}
 	}

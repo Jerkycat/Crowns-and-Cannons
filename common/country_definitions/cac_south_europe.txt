@@ -33,3 +33,146 @@ BOU = { # Bourbon
     cultures = { french }
     capital = STATE_AUVERGNE_LIMOUSIN
 }
+
+PER = { # Perigord
+    color = rgb { 230 66 66 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_AUVERGNE_LIMOUSIN
+}
+
+VNT = { # Ventadour
+    color = rgb { 211 21 22 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_AUVERGNE_LIMOUSIN
+}
+
+MDM = { # Mont-de-Marsan
+    color = rgb { 188 46 46 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_AUVERGNE_LIMOUSIN
+}
+
+BRR = { # Bearne
+    color = rgb { 251 212 72 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_AUVERGNE_LIMOUSIN
+}
+
+AMG = { # Armagnac
+    color = rgb { 187 206 247 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_AUVERGNE_LIMOUSIN
+}
+
+AST = { # Astarac
+    color = rgb { 253 243 111 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_AUVERGNE_LIMOUSIN
+}
+
+VDM = { # Vendome
+    color = rgb { 216 38 38 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_AUVERGNE_LIMOUSIN
+}
+
+FRZ = { # Forez
+    color = rgb { 211 150 35 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_RHONE
+}
+
+VLN = { # Valentinois
+    color = rgb { 107 142 246 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_RHONE
+}
+
+DAU = { # Viennois
+    color = rgb { 93 194 122 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_RHONE
+}
+
+SAV = { # Savoy
+    color = rgb { 235 196 231 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_SAVOY
+}
+
+PAP = { # Rome
+    color = rgb { 211 220 178 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_PROVENCE
+}
+
+PRO = { # Provença
+    color = rgb { 93 160 163 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { occitan }
+    capital = STATE_PROVENCE
+}

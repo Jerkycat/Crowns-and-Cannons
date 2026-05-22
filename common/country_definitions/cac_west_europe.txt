@@ -568,6 +568,50 @@ NEV = { # Nevers
     capital = STATE_BURGUNDY
 }
 
+LOR = { # Lorraine
+    color = rgb { 115 142 205 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_LORRAINE
+}
+
+BAR = { # Bar
+    color = hsv360 { 240 80 68 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_LORRAINE
+}
+
+VDU = { # Verdun
+    color = rgb { 223 255 0 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_LORRAINE
+}
+
+RET = { # Rethel
+    color = hsv360 { 240 80 68 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_CHAMPAGNE
+}
+
 # Low Countries & Germany
 
 ARS = { # Artois
@@ -735,3 +779,124 @@ FRT = { # Ferrette
     capital = STATE_FRANCHE_COMTE
 }
 
+KOL = { # Cologne
+    color = rgb { 84 124 48 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_NORTH_RHINE
+}
+
+JUL = { # Jülich
+    color = rgb { 103 79 33 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_NORTH_RHINE
+}
+
+MDS = { # Manderscheid
+    color = rgb { 180 150 120 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_NORTH_RHINE
+}
+
+AAC = { # Aachen
+    color = rgb { 157 51 167 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_NORTH_RHINE
+}
+
+DUN = { # Daun
+    color = rgb { 200 211 22 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_RHINELAND
+}
+
+TRI = { # Trier
+    color = rgb { 208 104 44 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_RHINELAND
+}
+
+SPO = { # Sponheim
+    color = rgb { 215 66 74 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_RHINELAND
+}
+
+
+VEL = { # Veldenz
+    color = rgb { 190 130 90 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_RHINELAND
+}
+
+ALS = { # Strasbourg
+    color = rgb { 246 223 15 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { alemannic }
+    capital = STATE_ALSACE_LORRAINE
+}
+
+PAL = { # Rhine / Reno
+    color = rgb { 57 151 142 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_ALSACE_LORRAINE
+}
+
+ZWE = { # Zweibrücken
+    color = rgb { 251 187 0 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_ALSACE_LORRAINE
+}

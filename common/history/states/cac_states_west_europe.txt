@@ -351,21 +351,33 @@ STATES = {
 	s:STATE_CHAMPAGNE = {
 		create_state = {
 			country = c:FRA
-			owned_provinces = { x600883 x4B7684 x5FEA2F x669027 x8AE8D1 xD6A06D xE280FC xEF00DF xEF40A0 xEFBF20 }
+			owned_provinces = { x600883 x4B7684 x5FEA2F x669027 x8AE8D1 xD6A06D xE280FC xEF00DF xEF40A0 }
+		}
+		create_state = {
+			country = c:RET
+			owned_provinces = { xEFBF20 }
 		}
 		add_homeland = cu:french	}
 
 	s:STATE_LORRAINE = {
 		create_state = {
-			country = c:FRA
-			owned_provinces = { x7FC1E6 x282DCC x3080E0 x70BFA0 xB080E0 xC5F13A }
+			country = c:BAR
+			owned_provinces = { x282DCC xC5F13A x7FC1E6 }
+		}
+		create_state = {
+			country = c:VDU
+			owned_provinces = { x70BFA0 }
+		}
+		create_state = {
+			country = c:LOR
+			owned_provinces = { x3080E0 xB080E0 }
 		}
 		add_homeland = cu:french	}
 
 	s:STATE_BURGUNDY = {
 		create_state = {
 			country = c:FRA
-			owned_provinces = { x10DF00 x708060 x999D4B x7000E0 }
+			owned_provinces = { x10DF00 x999D4B x7000E0 }
 		}
 		create_state = {
 			country = c:BUR
@@ -374,6 +386,10 @@ STATES = {
 		create_state = {
 			country = c:NEV
 			owned_provinces = { x09BB96 xF08060 xC69235 }
+		}
+		create_state = {
+			country = c:SAV
+			owned_provinces = { x708060 }
 		}
 		add_homeland = cu:french	}
 
@@ -479,26 +495,66 @@ STATES = {
 
 	s:STATE_NORTH_RHINE = {
 		create_state = {
-			country = c:GRI
-			owned_provinces = { x9F4072 x834B66 x518021 x29CCD6 x486F6A }
-		}
-		create_state = {
 			country = c:GEL
 			owned_provinces = { x8001E0 }
+		}
+		create_state = {
+			country = c:KOL
+			owned_provinces = { x9F4072 x518021 }
+		}
+		create_state = {
+			country = c:JUL
+			owned_provinces = { x834B66 }
+		}
+		create_state = {
+			country = c:MDS
+			owned_provinces = { x29CCD6 }
+		}
+		create_state = {
+			country = c:AAC
+			owned_provinces = { x486F6A }
 		}
 		add_homeland = cu:north_german	}
 
 	s:STATE_RHINELAND = {
 		create_state = {
-			country = c:GRI
-			owned_provinces = { xD080A0 x904020 xC1B963 x5D7A68 x11C021 x707505 }
+			country = c:DUN
+			owned_provinces = { xD080A0 }
+		}
+		create_state = {
+			country = c:TRI
+			owned_provinces = { x904020 xC1B963 }
+		}
+		create_state = {
+			country = c:SPO
+			owned_provinces = { x5D7A68 }
+		}
+		create_state = {
+			country = c:VEL
+			owned_provinces = { x11C021 }
+		}
+		create_state = {
+			country = c:PAL
+			owned_provinces = { x707505 }
 		}
 		add_homeland = cu:north_german	}
 
 	s:STATE_ALSACE_LORRAINE = {
 		create_state = {
-			country = c:GRI
-			owned_provinces = { x4899A2 x6E4891 xCC3250 xF0C0A0 }
+			country = c:LOR
+			owned_provinces = { x4899A2 }
+		}
+		create_state = {
+			country = c:ALS
+			owned_provinces = { xF0C0A0 }
+		}
+		create_state = {
+			country = c:PAL
+			owned_provinces = { x6E4891 }
+		}
+		create_state = {
+			country = c:ZWE
+			owned_provinces = { xCC3250 }
 		}
 		add_homeland = cu:french
 		add_homeland = cu:south_german

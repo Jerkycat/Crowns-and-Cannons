@@ -57,9 +57,58 @@ STATES = {
 	s:STATE_RHONE = {
 		create_state = {
 			country = c:FRA
-			owned_provinces = { x1B4B66 x30C060 x3369C6 x704060 x71A804 x73F176 x7516B6 x8E88DA xB04060 xB8E48D xEF4060 }
+			owned_provinces = { x3369C6 }
+		}
+		create_state = {
+			country = c:FRZ
+			owned_provinces = { x71A804 xEF4060 }
+		}
+		create_state = {
+			country = c:VLN
+			owned_provinces = { x704060 x73F176 }
+		}
+		create_state = {
+			country = c:FRA
+			owned_provinces = { xB8E48D }
+		}
+		create_state = {
+			country = c:DAU
+			owned_provinces = { x1B4B66 x30C060 x8E88DA xB04060 }
+		}
+		create_state = {
+			country = c:SAV
+			owned_provinces = { x7516B6 }
 		}
 		add_homeland = cu:french
 		add_homeland = cu:occitan
 		add_homeland = cu:francoprovencal	}
+
+	s:STATE_SAVOY = {
+		create_state = {
+			country = c:SPR
+			owned_provinces = { x56B04B }
+		}
+		create_state = {
+			country = c:SAV
+			owned_provinces = { xD000E0 x6B4BA4 xDDDD3B }
+		}
+		add_homeland = cu:north_italian
+		add_homeland = cu:french
+		add_homeland = cu:francoprovencal	}
+
+	s:STATE_PROVENCE = {
+		create_state = {
+			country = c:DAU
+			owned_provinces = { xC03918 }
+		}
+		create_state = {
+			country = c:PAP
+			owned_provinces = { xB0C0E0 }
+		}
+		create_state = {
+			country = c:PRO
+			owned_provinces = { x5080E0 x3040E0 x31C0DF x6D5E3F xB040E0 xB0C060 xCB9C34 }
+		}
+		add_homeland = cu:french
+		add_homeland = cu:occitan	}
 }
