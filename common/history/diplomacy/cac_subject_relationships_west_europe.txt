@@ -102,6 +102,14 @@
 			country = c:NEV
 			type = vassal
 		}
+		create_diplomatic_pact = {
+			country = c:RET
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:BAR
+			type = vassal
+		}
 
 		# South France
 		create_diplomatic_pact = {
@@ -114,6 +122,42 @@
 		}
 		create_diplomatic_pact = {
 			country = c:BOU
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:FRZ
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:VLN
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:PER
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:BRR
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:MDM
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:AMG
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:AST
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:VNT
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:COM
 			type = vassal
 		}
 

@@ -1,0 +1,28 @@
+﻿INJECT:base_values = {
+	state_tax_capacity_add = -75
+}
+
+INJECT:insufficient_tax_capacity = {
+	state_assimilation_mult = -0.5
+	state_conversion_mult = -0.5
+
+	state_conscription_rate_mult = -0.75
+	building_training_rate_mult = -0.5
+}
+
+INJECT:efficient_bureaucracy = {
+	state_construction_mult = -0.10
+
+	state_pop_qualifications_mult = 0.20
+}
+
+INJECT:administrative_overburden = {
+	state_tax_waste_add = -1
+}
+
+INJECT:legislative_efficiency = {
+	country_law_enactment_time_mult = 0.25
+
+	state_tax_capacity_mult = 0.1
+	country_prestige_add = 10
+}

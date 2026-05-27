@@ -1,3 +1,5 @@
 ﻿INJECT:capital_state = {
+	state_tax_capacity_mult = 0.75
+
 	state_building_barrack_max_level_add = 5
 }

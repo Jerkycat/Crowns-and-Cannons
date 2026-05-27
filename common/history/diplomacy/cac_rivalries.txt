@@ -1,0 +1,15 @@
+﻿DIPLOMACY = {
+	c:ENG ?= { # English / French Rivalry
+		create_diplomatic_pact = {
+			country = c:FRA
+			type = rivalry
+		}
+	}
+
+	c:FRA ?= { # English / French Rivalry
+		create_diplomatic_pact = {
+			country = c:ENG
+			type = rivalry
+		}
+	}
+}

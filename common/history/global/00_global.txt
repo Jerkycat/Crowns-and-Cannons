@@ -5,4 +5,19 @@ GLOBAL = {
 
 		add_technology_researched = catholicism
 	}
+
+	every_country = {
+		every_state = {
+			limit = {
+				OR {
+					has_state_trait = state_trait_great_terroir
+					has_state_trait = state_trait_douro_valley
+				}
+			}
+			create_building = {
+				building = building_vineyard
+				level = 1
+			}
+		}
+	}
 }

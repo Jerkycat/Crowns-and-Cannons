@@ -1,0 +1,200 @@
+﻿
+# Era 1 - Agriculture
+
+agriculture = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+windmill = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		agriculture
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+city_building = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		agriculture
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+alchemy = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		windmill
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+road_building = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		city_building
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+apothecary = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		alchemy
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+# Era 1 - Quarrying
+
+quarrying = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+metallurgy = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		quarrying
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+mining_law = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		quarrying
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+bronze_working = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		metallurgy
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+fine_metals_mining = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		bronze_working
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+# Era 1 - Quarrying -> Iron Working
+
+iron_working = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		metallurgy
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+rural_smelter = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		iron_working
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+advanced_mining = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		iron_working
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}

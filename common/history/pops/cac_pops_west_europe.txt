@@ -302,6 +302,12 @@ POPS = {
 				size = 357
 			}
 		}
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 323062
+			}
+		}
 	}
 
 	s:STATE_ILE_DE_FRANCE = {
@@ -314,15 +320,61 @@ POPS = {
 	}
 
 	s:STATE_CHAMPAGNE = {
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 330667
+			}
+		}
 	}
 
 	s:STATE_LORRAINE = {
 	}
 
 	s:STATE_BURGUNDY = {
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 253606
+			}
+		}
+		region_state:NEV = {
+			create_pop = {
+				culture = french
+				size = 177000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 1357
+			}
+		}
+		region_state:BUR = {
+			create_pop = {
+				culture = french
+				size = 454242
+			}
+			create_pop = {
+				culture = francoprovencal
+				size = 33943
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 3937
+			}
+		}
 	}
 
 	s:STATE_FRANCHE_COMTE = {
+		region_state:FCB = {
+			create_pop = {
+				culture = french
+				size = 259000
+			}
+			create_pop = {
+				culture = francoprovencal
+				size = 121000
+			}
+		}
 	}
 
 	# Low Countries & Germany

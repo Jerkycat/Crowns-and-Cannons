@@ -1,18 +1,12 @@
-﻿### ERA 1
+﻿
+# Era 1 - Ship Building
 
-# Era 1 - Written Alphabet
-
-written_alphabet = {
+ship_building = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-	}
-
-	modifier = {
-		state_education_access_add = 0.05
-		state_literacy_growth_add = 0.0001
 	}
 
 	ai_weight = {
@@ -20,13 +14,13 @@ written_alphabet = {
 	}
 }
 
-cultural_traditions = {
+trade_fairs = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		written_alphabet
+		ship_building
 	}
 
 	ai_weight = {
@@ -34,13 +28,13 @@ cultural_traditions = {
 	}
 }
 
-map_making = {
+merchant_guilds = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		written_alphabet
+		trade_fairs
 	}
 
 	ai_weight = {
@@ -48,13 +42,15 @@ map_making = {
 	}
 }
 
-codified_laws = {
+# Era 1 - Ship Building -> Traditional Galley
+
+traditional_galley = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		written_alphabet
+		ship_building
 	}
 
 	ai_weight = {
@@ -62,13 +58,13 @@ codified_laws = {
 	}
 }
 
-scriptorium = {
+cog = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		written_alphabet
+		traditional_galley
 	}
 
 	ai_weight = {
@@ -76,13 +72,28 @@ scriptorium = {
 	}
 }
 
-cultural_acceptance = {
+# Era 1 - Ranching
+
+ranching = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		cultural_traditions
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+horse_riding = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		ranching
 	}
 
 	ai_weight = {
@@ -90,13 +101,13 @@ cultural_acceptance = {
 	}
 }
 
-colonies = {
+horsemen = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		map_making
+		horse_riding
 	}
 
 	ai_weight = {
@@ -104,13 +115,14 @@ colonies = {
 	}
 }
 
-distribution_of_power = {
+armored_horsemen = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		codified_laws
+		horsemen
+		feudalism
 	}
 
 	ai_weight = {
@@ -118,13 +130,29 @@ distribution_of_power = {
 	}
 }
 
-subject_nations = {
+# Era 1 - Ranching -> Feudalism
+
+feudalism = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		codified_laws
+		horse_riding
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+castle = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		feudalism
 	}
 
 	ai_weight = {
@@ -132,13 +160,13 @@ subject_nations = {
 	}
 }
 
-taxation = {
+assemblies = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		codified_laws
+		castle
 	}
 
 	ai_weight = {
@@ -146,13 +174,13 @@ taxation = {
 	}
 }
 
-chancery = {
+castellany_system = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		codified_laws
+		castle
 	}
 
 	ai_weight = {
@@ -160,13 +188,15 @@ chancery = {
 	}
 }
 
-paper_guild = {
+# Era 1 - Feudalism -> Armies
+
+feudal_levies = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		scriptorium
+		feudalism
 	}
 
 	ai_weight = {
@@ -174,13 +204,13 @@ paper_guild = {
 	}
 }
 
-library = {
+mandatory_training = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		scriptorium
+		feudal_levies
 	}
 
 	ai_weight = {
@@ -188,15 +218,13 @@ library = {
 	}
 }
 
-# Era 1 - Written Alphabet -> Legalism
-
-legalism = {
+weaponsmith = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		codified_laws
+		mandatory_training
 	}
 
 	ai_weight = {
@@ -204,13 +232,13 @@ legalism = {
 	}
 }
 
-medieval_administration = {
+footmen = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		legalism
+		weaponsmith
 	}
 
 	ai_weight = {
@@ -218,131 +246,17 @@ medieval_administration = {
 	}
 }
 
-pest_house = {
+archers = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
+	category = military
 
 	unlocking_technologies = {
-		medieval_administration
+		weaponsmith
 	}
 
 	ai_weight = {
 		value = 1
 	}
 }
-
-hospitals = {
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
-
-	unlocking_technologies = {
-		pest_house
-	}
-
-	ai_weight = {
-		value = 1
-	}
-}
-
-# Era 1 - Organized Religion
-
-organized_religion = {
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
-
-	unlocking_technologies = {
-	}
-
-	ai_weight = {
-		value = 1
-	}
-}
-
-class_scholastic = {
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
-
-	unlocking_technologies = {
-		organized_religion
-	}
-
-	ai_weight = {
-		value = 1
-	}
-}
-
-guilds = {
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
-
-	unlocking_technologies = {
-		organized_religion
-	}
-
-	ai_weight = {
-		value = 1
-	}
-}
-
-peasant_connections = {
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
-
-	unlocking_technologies = {
-		guilds
-	}
-
-	ai_weight = {
-		value = 1
-	}
-}
-
-expanded_archives = {
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
-
-	unlocking_technologies = {
-		guilds
-	}
-
-	ai_weight = {
-		value = 1
-	}
-}
-
-master_masons = {
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
-
-	unlocking_technologies = {
-		peasant_connections
-	}
-
-	ai_weight = {
-		value = 1
-	}
-}
-
-clearing_terrain = {
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
-
-	unlocking_technologies = {
-		peasant_connections
-	}
-
-	ai_weight = {
-		value = 1
-	}
-}
-
 
