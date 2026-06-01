@@ -19,8 +19,36 @@
 			add_war_goal = {
 				holder = c:AQN
 
+				type = conquer_state
+				target_state = s:STATE_GUYENNE.region_state:VNT
+			}
+
+			add_war_goal = {
+				holder = c:AQN
+
+				type = conquer_state
+				target_state = s:STATE_GUYENNE.region_state:AMG
+			}
+
+			add_war_goal = {
+				holder = c:AQN
+
+				type = conquer_state
+				target_state = s:STATE_GUYENNE.region_state:FRA
+			}
+
+			add_war_goal = {
+				holder = c:AQN
+
 				type = annex_country
 				target_country = c:ANG
+			}
+
+			add_war_goal = {
+				holder = c:AQN
+
+				type = annex_country
+				target_country = c:PER
 			}
 
 			add_war_goal = {

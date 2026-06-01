@@ -125,3 +125,7 @@ effect_tier_1_tech = {
 
 	# Cultural
 }
+
+effect_religion_catholicism = {
+	add_technology_researched = catholicism
+}

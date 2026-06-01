@@ -11,5 +11,4 @@ REPLACE:country_literacy_rate = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_weekly_innovation_mult = 1
 	country_weekly_innovation_max_add = 2
-	country_tech_spread_mult = 1
 }

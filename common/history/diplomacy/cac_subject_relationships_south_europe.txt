@@ -1,0 +1,56 @@
+﻿DIPLOMACY = {
+	c:NAP ?= {
+		create_diplomatic_pact = {
+			country = c:PRO
+			type = personal_union
+		}
+	}
+
+	c:SAV ?= {
+		create_diplomatic_pact = {
+			country = c:GNV
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:PIE
+			type = vassal
+		}
+	}
+
+	c:VER ?= {
+		create_diplomatic_pact = {
+			country = c:PAD
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:PAR
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:LUC
+			type = vassal
+		}
+	}
+
+	c:AQU ?= {
+		create_diplomatic_pact = {
+			country = c:GOR
+			type = vassal
+		}
+	}
+
+	c:PAP ?= {
+		create_diplomatic_pact = {
+			country = c:PEA
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:URB
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:RIM
+			type = vassal
+		}
+	}
+}

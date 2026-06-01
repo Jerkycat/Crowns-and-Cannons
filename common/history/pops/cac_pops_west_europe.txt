@@ -36,17 +36,10 @@ POPS = {
 			}
 		}
 
-		region_state:AUD = {
+		region_state:WLM = {
 			create_pop = {
 				culture = british
-				size = 21201
-			}
-		}
-
-		region_state:MAC = {
-			create_pop = {
-				culture = british
-				size = 26650
+				size = 47851
 			}
 		}
 	}
@@ -73,7 +66,7 @@ POPS = {
 			}
 		}
 
-		region_state:CET = {
+		region_state:WLM = {
 			create_pop = {
 				culture = british
 				size = 37523
@@ -110,38 +103,10 @@ POPS = {
 				size = 11771
 			}
 		}
-		region_state:GMG = {
-			create_pop = {
-				culture = british
-				size = 74681
-			}
-		}
-		region_state:CET = {
-			create_pop = {
-				culture = british
-				size = 27523
-			}
-		}
-		region_state:MAC = {
-			create_pop = {
-				culture = british
-				size = 7852
-			}
-		}
-		region_state:POS = {
-			create_pop = {
-				culture = british
-				size = 10823
-			}
-		}
-		region_state:PMB = {
-			create_pop = {
-				culture = british
-				size = 37369
-			}
+		region_state:WLM = {
 			create_pop = {
 				culture = welsh
-				size = 16533
+				size = 174781
 			}
 		}
     }

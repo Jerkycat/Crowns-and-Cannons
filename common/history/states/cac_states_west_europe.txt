@@ -28,12 +28,8 @@ STATES = {
 			owned_provinces = { x20A0C0 x11C2BB x6020C0 x99305F xE0E080 xA0A0C0 x2482B4 x60E080 x528DEE }
 		}
 		create_state = {
-			country = c:MAC
-			owned_provinces = { xA021B0 }
-		}
-		create_state = {
-			country = c:AUD
-			owned_provinces = { xA220D6 }
+			country = c:WLM
+			owned_provinces = { xA021B0 xA220D6 }
 		}
 		add_homeland = cu:british	}
 
@@ -51,7 +47,7 @@ STATES = {
 			owned_provinces = { x410CE6 x60E000 xE0E000 }
 		}
 		create_state = {
-			country = c:CET
+			country = c:WLM
 			owned_provinces = { x65617C }
 		}
 		add_homeland = cu:british	}
@@ -77,24 +73,8 @@ STATES = {
 			owned_provinces = { x2020C0 }
 		}
 		create_state = {
-			country = c:GMG
-			owned_provinces = { xA2308A }
-		}
-		create_state = {
-			country = c:CET
-			owned_provinces = { x633EF5 }
-		}
-		create_state = {
-			country = c:MAC
-			owned_provinces = { x20A040 }
-		}
-		create_state = {
-			country = c:POS
-			owned_provinces = { x70D92B }
-		}
-		create_state = {
-			country = c:PMB
-			owned_provinces = { xA0A040 }
+			country = c:WLM
+			owned_provinces = { xA2308A x633EF5 x20A040 x70D92B xA0A040 }
 		}
 		add_homeland = cu:british
 		add_homeland = cu:welsh

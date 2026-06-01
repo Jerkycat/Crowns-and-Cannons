@@ -1,0 +1,28 @@
+﻿prosper_in_piedmont_decision = {
+	is_shown = {
+		exists = c:SAV
+		c:SAV ?= THIS
+	}
+
+	possible = {
+		c:SAV ?= THIS
+		NOT = {
+			exists = C:PIE
+		}
+		hidden_trigger = {
+			NOT = { has_variable = prosper_in_piedmont_decision_taken }
+		}
+	}
+
+	when_taken = {
+		set_variable = {
+			name = prosper_in_piedmont_decision_taken
+			value = yes
+		}
+		set_capital = STATE_PIEDMONT
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}

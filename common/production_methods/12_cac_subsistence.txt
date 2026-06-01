@@ -1,0 +1,151 @@
+# Base Production Methods
+
+cac_default_building_subsistence_farm = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+
+	building_modifiers = {
+		workforce_scaled = { # 55
+			goods_output_local_food_add = 1.0 # 20
+			goods_output_wood_add = 0.25 # 10
+			goods_output_services_add = 0.5 # 15
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 5000
+		}
+	}
+}
+
+cac_default_building_subsistence_orchard = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+
+	building_modifiers = {
+		workforce_scaled = { # 55
+			goods_output_local_food_add = 1.0 # 20
+			goods_output_wood_add = 0.25 # 10
+			goods_output_services_add = 0.5 # 15
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 5000
+		}
+	}
+}
+
+cac_default_building_subsistence_pasture = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+
+	building_modifiers = {
+		workforce_scaled = { # 55
+			goods_output_local_food_add = 1.0 # 20
+			goods_output_wood_add = 0.25 # 5
+			goods_output_services_add = 0.5 # 15
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 5000
+		}
+	}
+}
+
+cac_default_building_subsistence_fishing_village = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+
+	building_modifiers = {
+		workforce_scaled = { # 55
+			goods_output_local_food_add = 1.0 # 20
+			goods_output_wood_add = 0.25 # 5
+			goods_output_services_add = 0.5 # 15
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 5000
+		}
+	}
+}
+
+cac_default_building_subsistence_rice_farm = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+
+	building_modifiers = {
+		workforce_scaled = { # 100
+			goods_output_local_food_add = 2.0 # 40
+			goods_output_wood_add = 0.5 # 15
+			goods_output_services_add = 0.5 # 15
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 10000
+		}
+	}
+}
+
+# Subsistence Income
+
+INJECT:pm_serfdom_no = {
+	building_modifiers = {
+		unscaled = {
+			building_subsistence_output_add = -0.5
+		}
+	}
+}
+
+INJECT:pm_corvee_labor = {
+	building_modifiers = {
+		unscaled = {
+			building_subsistence_output_add = -0.5
+		}
+	}
+}
+
+INJECT:pm_serfdom = {
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -0.25 # 10
+		}
+
+		unscaled = {
+			building_subsistence_output_add = -0.5
+		}
+	}
+}
+
+INJECT:pm_serfdom_building_subsistence_orchard = {
+	building_modifiers = {
+		unscaled = {
+			building_subsistence_output_add = -0.5
+		}
+	}
+}
+
+INJECT:pm_serfdom_building_subsistence_pasture = {
+	building_modifiers = {
+		unscaled = {
+			building_subsistence_output_add = -0.5
+		}
+	}
+}
+
+INJECT:pm_serfdom_building_subsistence_fishing_village = {
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_fish_add = -0.25 # 10
+		}
+
+		unscaled = {
+			building_subsistence_output_add = -0.5
+		}
+	}
+}
+
+INJECT:pm_serfdom_building_subsistence_rice_farm = {
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -0.5 # 20
+		}
+
+		unscaled = {
+			building_subsistence_output_add = -0.5
+		}
+	}
+}

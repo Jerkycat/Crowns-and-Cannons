@@ -1,0 +1,254 @@
+﻿###
+### Keep "unit tiers" per group in ascending order; the system will determine the default unit type for a country
+### by the last defined unit type that it can build
+###
+
+### ARMY
+
+### Infantry
+
+combat_unit_type_irregular_infantry = {
+	group = combat_unit_group_infantry
+	max_manpower = 250
+	supply_capacity = 25
+
+	conscript_peasant_levies = yes
+
+    battle_modifier = {
+        unit_offense_add = 10
+        unit_defense_add = 10
+        unit_morale_loss_add = 15
+        unit_naval_invasion_efficiency_mult = -0.25
+    }
+
+    upkeep_modifier = {
+    }
+
+    combat_unit_image = {
+        trigger = {
+			has_culture_graphics = decentralised_americas
+        }
+        texture = "gfx/unit_illustrations/infantry_decentralised_americas_irregular.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = polynesian
+        }
+        texture = "gfx/unit_illustrations/infantry_decentralised_polynesian_irregular.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = east_asian
+        }
+        texture = "gfx/unit_illustrations/infantry_east_asian_irregular.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = south_asian
+        }
+        texture = "gfx/unit_illustrations/infantry_south_asian_irregular.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = african
+        }
+        texture = "gfx/unit_illustrations/infantry_african_irregular.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = arabic
+        }
+        texture = "gfx/unit_illustrations/infantry_arabic_irregular.dds"
+    }
+
+    combat_unit_image = {
+		# fallback
+        texture = "gfx/unit_illustrations/infantry_eu_0.dds"
+    }
+
+	upgrades = {
+		combat_unit_type_footmen_infantry
+		combat_unit_type_men_at_arms_infantry
+        combat_unit_type_pike_and_shot_infantry
+	}
+}
+
+combat_unit_type_footmen_infantry = {
+	group = combat_unit_group_infantry
+	max_manpower = 500
+	supply_capacity = 30
+
+	conscript_peasant_levies = yes
+
+	upkeep_modifier = {
+	}
+
+	battle_modifier = {
+		unit_offense_add = 10
+		unit_defense_add = 10
+        unit_morale_loss_add = 10
+        unit_naval_invasion_efficiency_mult = -0.25
+    }
+
+	unlocking_technologies = { footmen }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = east_asian
+        }
+        texture = "gfx/unit_illustrations/infantry_east_asian_line.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = south_asian
+        }
+        texture = "gfx/unit_illustrations/infantry_south_asian_line.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = african
+        }
+        texture = "gfx/unit_illustrations/infantry_african_line.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = arabic
+        }
+        texture = "gfx/unit_illustrations/infantry_arabic_line.dds"
+    }
+
+    combat_unit_image = {
+		# fallback
+        texture = "gfx/unit_illustrations/infantry_eu_1.dds"
+    }
+
+	upgrades = {
+		combat_unit_type_men_at_arms_infantry
+        combat_unit_type_pike_and_shot_infantry
+	}
+}
+
+combat_unit_type_men_at_arms_infantry = {
+	group = combat_unit_group_infantry
+	max_manpower = 1000
+	supply_capacity = 40
+
+	conscript_peasant_levies = yes
+
+	upkeep_modifier = {
+		goods_input_small_arms_add = 1
+	}
+
+	battle_modifier = {
+		unit_offense_add = 10
+		unit_defense_add = 10
+        unit_morale_loss_add = 10
+        unit_naval_invasion_efficiency_mult = -0.25
+    }
+
+	unlocking_technologies = { footmen }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = east_asian
+        }
+        texture = "gfx/unit_illustrations/infantry_east_asian_line.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = south_asian
+        }
+        texture = "gfx/unit_illustrations/infantry_south_asian_line.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = african
+        }
+        texture = "gfx/unit_illustrations/infantry_african_line.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = arabic
+        }
+        texture = "gfx/unit_illustrations/infantry_arabic_line.dds"
+    }
+
+    combat_unit_image = {
+		# fallback
+        texture = "gfx/unit_illustrations/infantry_eu_2.dds"
+    }
+
+	upgrades = {
+        combat_unit_type_pike_and_shot_infantry
+	}
+}
+
+combat_unit_type_pike_and_shot_infantry = {
+	group = combat_unit_group_infantry
+	max_manpower = 1500
+	supply_capacity = 50
+
+	conscript_peasant_levies = yes
+
+	upkeep_modifier = {
+		goods_input_small_arms_add = 1
+	}
+
+	battle_modifier = {
+		unit_offense_add = 10
+		unit_defense_add = 10
+        unit_morale_loss_add = 8
+        unit_naval_invasion_efficiency_mult = -0.25
+    }
+
+	unlocking_technologies = { footmen }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = east_asian
+        }
+        texture = "gfx/unit_illustrations/infantry_east_asian_line.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = south_asian
+        }
+        texture = "gfx/unit_illustrations/infantry_south_asian_line.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = african
+        }
+        texture = "gfx/unit_illustrations/infantry_african_line.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = arabic
+        }
+        texture = "gfx/unit_illustrations/infantry_arabic_line.dds"
+    }
+
+    combat_unit_image = {
+		# fallback
+        texture = "gfx/unit_illustrations/infantry_eu_3.dds"
+    }
+
+	upgrades = {
+	}
+}
+
+### Artillery

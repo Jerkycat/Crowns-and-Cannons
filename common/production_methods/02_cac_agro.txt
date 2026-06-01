@@ -1,0 +1,75 @@
+pm_cac_simple_farming_building_sturdy_grain = {
+	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_grain_add = 4 # 80
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 800
+			building_employment_farmers_add = 200
+		}
+	}
+}
+
+pm_cac_simple_farming_building_super_grain = {
+	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_grain_add = 6 # 120
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 800
+			building_employment_farmers_add = 200
+		}
+	}
+}
+
+pm_cac_simple_farming_building_rice_farm = {
+	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_grain_add = 8 # 160
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1600
+			building_employment_farmers_add = 400
+		}
+	}
+}
+
+pm_cac_open_air_stockyards = {
+	texture = "gfx/interface/icons/production_method_icons/open_air_stockyards.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_meat_add = 2 # 60
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 800
+			building_employment_farmers_add = 200
+		}
+	}
+}
+
+cac_default_building_vineyard = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_wine_add = 4
+		}
+
+		level_scaled = {
+			# profit
+			building_employment_laborers_add = 800
+			building_employment_farmers_add = 200
+		}
+	}
+}

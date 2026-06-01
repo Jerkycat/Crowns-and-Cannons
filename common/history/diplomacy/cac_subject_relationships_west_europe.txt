@@ -1,27 +1,7 @@
 ﻿DIPLOMACY = {
 	c:WLS ?= {
 		create_diplomatic_pact = {
-			country = c:PMB
-			type = vassal
-		}
-		create_diplomatic_pact = {
-			country = c:GMG
-			type = vassal
-		}
-		create_diplomatic_pact = {
-			country = c:MAC
-			type = vassal
-		}
-		create_diplomatic_pact = {
-			country = c:POS
-			type = vassal
-		}
-		create_diplomatic_pact = {
-			country = c:CET
-			type = vassal
-		}
-		create_diplomatic_pact = {
-			country = c:AUD
+			country = c:WLM
 			type = vassal
 		}
 	}

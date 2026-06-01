@@ -1,0 +1,70 @@
+﻿COUNTRIES = {
+	# Great Britain
+
+	c:ENG ?= {
+		effect_tier_3_tech = yes
+		effect_religion_catholicism = yes
+
+		effect_starting_politics_traditional = yes
+	}
+
+	c:MNN ?= {
+		effect_tier_3_tech = yes
+		effect_religion_catholicism = yes
+
+		effect_starting_politics_traditional = yes
+	}
+
+	c:DHM ?= {
+		effect_tier_3_tech = yes
+		effect_religion_catholicism = yes
+
+		effect_starting_politics_traditional = yes
+	}
+
+	c:LAN ?= {
+		effect_tier_3_tech = yes
+		effect_religion_catholicism = yes
+
+		effect_starting_politics_traditional = yes
+	}
+
+	c:WLS ?= {
+		effect_tier_3_tech = yes
+		effect_religion_catholicism = yes
+
+		effect_starting_politics_traditional = yes
+	}
+
+	# North France
+
+	c:FRA ?= {
+		effect_tier_3_tech = yes
+		effect_religion_catholicism = yes
+
+		effect_starting_politics_traditional = yes
+	}
+
+	c:BRI ?= {
+		effect_tier_3_tech = yes
+		effect_religion_catholicism = yes
+
+		effect_starting_politics_traditional = yes
+	}
+
+	c:NRM ?= {
+		effect_tier_3_tech = yes
+		effect_religion_catholicism = yes
+
+		effect_starting_politics_traditional = yes
+	}
+
+	# South France
+
+	c:AQN ?= {
+		effect_tier_3_tech = yes
+		effect_religion_catholicism = yes
+
+		effect_starting_politics_traditional = yes
+	}
+}

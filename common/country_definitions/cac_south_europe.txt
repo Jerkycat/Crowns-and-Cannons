@@ -129,7 +129,7 @@ FRZ = { # Forez
 
     tier = principality
 
-    cultures = { occitan }
+    cultures = { francoprovencal }
     capital = STATE_RHONE
 }
 
@@ -151,7 +151,7 @@ DAU = { # Viennois
 
     tier = principality
 
-    cultures = { occitan }
+    cultures = { francoprovencal }
     capital = STATE_RHONE
 }
 
@@ -173,7 +173,18 @@ SAV = { # Savoy
 
     tier = principality
 
-    cultures = { occitan }
+    cultures = { francoprovencal }
+    capital = STATE_SAVOY
+}
+
+GNV = { # Savoy
+    color = rgb { 200 32 50 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { francoprovencal }
     capital = STATE_SAVOY
 }
 
@@ -188,7 +199,7 @@ PAP = { # Rome
     capital = STATE_PROVENCE
 }
 
-PRO = { # Provença
+PRO = { # Provence
     color = rgb { 93 160 163 }
 
     country_type = unrecognized
@@ -201,7 +212,7 @@ PRO = { # Provença
 
 # Iberia
 
-MLL = {
+MLL = { # Mallorca
 	color = rgb { 132 97 138 }
 
 	country_type = unrecognized
@@ -212,7 +223,7 @@ MLL = {
 	capital = STATE_BALEARIC_ISLANDS
 }
 
-NAV = {
+NAV = { # Navarra
 	color = hsv360 { 4 100 58 }
 
 	country_type = unrecognized
@@ -224,7 +235,7 @@ NAV = {
 	is_named_from_capital = yes
 }
 
-ARA = {
+ARA = { # Aragon
 	color = rgb { 166 68 72 }
 
 	country_type = unrecognized
@@ -235,7 +246,7 @@ ARA = {
 	capital = STATE_BASQUE_COUNTRY
 }
 
-CAS = {
+CAS = { # Castile
 	color = hsv360 { 35 94 92 }
 
 	country_type = unrecognized
@@ -247,7 +258,7 @@ CAS = {
 	is_named_from_capital = yes
 }
 
-POR = {
+POR = { # Portugal
 	color = rgb { 40 110 140 }
 
 	country_type = unrecognized
@@ -258,7 +269,7 @@ POR = {
 	capital = STATE_ESTREMADURA
 }
 
-ADU = {
+ADU = { # Andalusia
 	color = rgb { 240 230 155 }
 
 	country_type = unrecognized
@@ -270,7 +281,7 @@ ADU = {
 	is_named_from_capital = yes
 }
 
-MOR = {
+MOR = { # Morroco
 	color = rgb { 191 110 62 }
 
 	country_type = unrecognized
@@ -279,4 +290,318 @@ MOR = {
 
 	cultures = { maghrebi berber }
 	capital = STATE_FEZ
+}
+
+# North Italy
+
+GEN = { # Genoa
+	color = rgb { 218 215 56 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+}
+
+PIE = { # Piedmont
+	color = rgb { 1 255 177 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+}
+
+MSP = { # Malaspina
+	color = rgb { 245 215 0 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+}
+
+ATI = { # Asti
+	color = rgb { 138 140 212 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+}
+
+SAL = { # Saluzzo
+	color = rgb { 87 56 177 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { occitan }
+	capital = STATE_PIEDMONT
+}
+
+MLO = { # Milan
+	color = rgb { 137 98 195 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_LOMBARDY
+}
+
+
+MAN = { # Mantua
+	color = rgb { 191 83 101 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_LOMBARDY
+}
+
+TNT = { # Trento
+	color = rgb { 154 167 156 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { south_german }
+	capital = STATE_SOUTH_TYROL
+}
+
+TIR = { # Tyrol
+	color = rgb { 170 43 21 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { south_german }
+	capital = STATE_SOUTH_TYROL
+}
+
+VER = { # Verona
+	color = rgb { 0 156 255 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+}
+
+VEN = { # Venetia
+	color = rgb { 54 167 156 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+}
+
+AQU = { # Aquileia
+	color = rgb { 34 30 174 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+}
+
+PAD = { # Padua
+	color = rgb { 194 105 183 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+}
+
+PAR = { # Parma
+	color = rgb { 128 202 129 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+}
+
+LUC = { # Lucca
+	color = rgb { 160 60 30 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_VENETIA
+}
+
+GOR = { # Gorizia
+	color = rgb { 40 50 140 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { south_german }
+	capital = STATE_ISTRIA
+}
+
+FLO = { # Florence
+	color = rgb { 205 85 85 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_TUSCANY
+}
+
+PIS = { # Pisa
+	color = rgb { 177 150 109 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_TUSCANY
+}
+
+SIE = { # Siena
+	color = rgb { 105 111 55 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_TUSCANY
+}
+
+FER = { # Ferrara
+	color = rgb { 8 13 218 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_ROMAGNA
+}
+
+BLG = { # Bologna
+	color = rgb { 182 217 0 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_ROMAGNA
+}
+
+CES = { # Cesena
+	color = rgb { 113 110 110 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_ROMAGNA
+}
+
+# South Italy
+
+RIM = { # Rimini
+	color = rgb { 255 186 82 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { south_italian }
+	capital = STATE_UMBRIA
+}
+
+PEA = { # Perugia
+	color = rgb { 205 35 69 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { south_italian }
+	capital = STATE_UMBRIA
+}
+
+URB = { # Urbino
+	color = rgb { 61 152 180 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { south_italian }
+	capital = STATE_UMBRIA
+}
+
+SIC = { # Sicily
+	color = rgb { 100 100 0 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { south_italian }
+	capital = STATE_SICILY
+	is_named_from_capital = yes
+}
+
+NAP = { # Sicily
+	color = hsv360 { 200 86 53 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { south_italian }
+	capital = STATE_CAMPANIA
+}
+
+ARB = { # Arborea
+	color = rgb { 32 118 57 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { north_italian }
+	capital = STATE_SARDINIA
 }

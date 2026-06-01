@@ -199,8 +199,12 @@ legalism = {
 		codified_laws
 	}
 
+	modifier = {
+		country_weekly_innovation_mult = 0.05
+	}
+
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 

@@ -42,7 +42,7 @@ LAN = {
     tier = principality
 
     cultures = { british }
-    capital = STATE_YORKSHIRE
+    capital = STATE_LANCASHIRE
 }
 
 WLS = {
@@ -56,69 +56,14 @@ WLS = {
     capital = STATE_WALES
 }
 
-GMG = {
-    color = hsv360 { 125 80 95 }
+WLM = {
+    color = hsv360 { 229 33 68 }
 
     country_type = unrecognized
 
     tier = principality
 
-    cultures = { british }
-    capital = STATE_WALES
-}
-
-CET = {
-    color = hsv360 { 335 53 74 }
-
-    country_type = unrecognized
-
-    tier = principality
-
-    cultures = { british }
-    capital = STATE_WALES
-}
-
-MAC = {
-    color = hsv360 { 200 85 95 }
-
-    country_type = unrecognized
-
-    tier = principality
-
-    cultures = { british }
-    capital = STATE_WALES
-}
-
-AUD = {
-    color = hsv360 { 355 85 95 }
-
-    country_type = unrecognized
-
-    tier = principality
-
-    cultures = { british }
-    capital = STATE_MIDLANDS
-}
-
-POS = {
-    color = hsv360 { 150 80 95 }
-
-    country_type = unrecognized
-
-    tier = principality
-
-    cultures = { british }
-    capital = STATE_WALES
-}
-
-PMB = { # Pembroke
-    color = hsv360 { 150 80 95 }
-
-    country_type = unrecognized
-
-    tier = principality
-
-    cultures = { british }
+    cultures = { welsh }
     capital = STATE_WALES
 }
 

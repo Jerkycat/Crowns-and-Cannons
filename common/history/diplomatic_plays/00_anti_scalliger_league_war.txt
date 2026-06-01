@@ -1,0 +1,47 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:VEN ?= {
+		create_diplomatic_play = {
+			target_country = c:PAR
+
+			war = yes
+
+			type = dp_liberate_subject
+
+			add_initiator_backers = { C:FLO C:MLO C:MAN C:PAD }
+
+			add_war_goal = {
+				holder = c:VEN
+				type = liberate_subject
+				target_country = c:LUC
+			}
+
+			add_war_goal = {
+				holder = c:PAD
+				type = independence
+				target_country = c:VER
+			}
+
+			add_war_goal = {
+				holder = c:VER
+
+				type = conquer_state
+				target_state = s:STATE_VENETIA.region_state:VEN
+			}
+
+			add_war_goal = {
+				holder = c:VER
+
+				type = make_tributary
+				target_country = c:MAN
+			}
+
+			add_war_goal = {
+				holder = c:MLO
+
+				type = conquer_state
+				target_state = s:STATE_LOMBARDY.region_state:VER
+			}
+		}
+	}
+}
+
