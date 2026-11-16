@@ -1,0 +1,211 @@
+# South America
+
+KGN = { # Carib
+	color = hsv{ 0.28 0.79 0.47 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { cariban }
+
+	capital = STATE_MIRANDA
+}
+
+ZIP = { # Zipa
+	color = rgb { 204 186 1}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { muisca }
+	capital = STATE_PATAGONIA
+}
+
+ZAQ = { # Zaque
+	color = rgb { 122 171 216}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { muisca }
+	capital = STATE_PATAGONIA
+}
+
+AWK = { # Arawak
+	color = rgb { 107 156 204}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { guajiro }
+	capital = STATE_MIRANDA
+}
+
+WAO = { # Warao
+	color = rgb { 16 152 250}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { guajiro }
+	capital = STATE_BOLIVAR
+}
+
+CMG = { # Cumanagoto
+	color = rgb { 19 46 107}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { cariban }
+	capital = STATE_MIRANDA
+}
+
+CUC = { # Cuica
+	color = rgb { 33 96 75}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { cariban }
+	capital = STATE_ZULIA
+}
+
+TTY = { # Tatuy
+	color = rgb { 133 10 116}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { cariban }
+	capital = STATE_ZULIA
+}
+
+CML = { # Chimila
+	color = rgb { 55 86 208}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { cariban }
+	capital = STATE_ZULIA
+}
+
+CIM = { # Calima
+	color = rgb { 13 185 240}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { cariban }
+	capital = STATE_ZULIA
+}
+
+WAY = { # Wayuu
+	color = rgb { 103 4 195}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { guajiro }
+	capital = STATE_ZULIA
+}
+
+CQT = { # Caquetio
+	color = rgb { 128 103 201}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { guajiro }
+	capital = STATE_ZULIA
+}
+
+ZEN = { # Zenú
+	color = rgb { 12 117 121}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { muisca }
+	capital = STATE_ZULIA
+}
+
+NUT = { # Nutabes
+	color = rgb { 40 209 87}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { muisca }
+	capital = STATE_ZULIA
+}
+
+THM = { # Tahamíes
+	color = rgb { 158 128 2}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { muisca }
+	capital = STATE_ZULIA
+}
+
+QBY = { # Quimbaya
+	color = rgb { 75 104 75}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { cariban }
+	capital = STATE_CAUCA
+}
+
+PIJ = { # Pijao
+	color = rgb { 121 175 204}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { muisca }
+	capital = STATE_CAUCA
+}
+
+PUB = { # Puben
+	color = rgb { 1 128 131}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { muisca }
+	capital = STATE_CAUCA
+}
+
+TAM = { # Tama
+	color = rgb { 118 186 14}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { muisca }
+	capital = STATE_CAUCA
+}

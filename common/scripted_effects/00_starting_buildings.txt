@@ -1,0 +1,22 @@
+﻿effect_tier_3_b = {
+
+	# Government
+
+	# Production
+
+}
+
+effect_tier_2_b = {
+
+	# Government
+
+	# Production
+
+}
+
+effect_tier_1_b = {
+
+	# Government
+
+	# Production
+}

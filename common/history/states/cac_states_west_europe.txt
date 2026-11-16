@@ -99,7 +99,7 @@ STATES = {
 			owned_provinces = { xB7B8EA xF00652 x47C5CD x80DB90 x5B0884 }
 		}
 		create_state = {
-			country = c:ORK
+			country = c:NOR
 			owned_provinces = { x37518E x20E000 }
 		}
 		add_homeland = cu:scottish
@@ -136,22 +136,14 @@ STATES = {
 		}
 		create_state = {
 			country = c:TYR
-			owned_provinces = { xCFCD2B xAA6FA1 }
+			owned_provinces = { xCFCD2B xAA6FA1 x2BE1C8 x0A38AF }
 		}
 		create_state = {
 			country = c:TRY
 			owned_provinces = { xA0C0E0 }
 		}
 		create_state = {
-			country = c:KEE
-			owned_provinces = { x2BE1C8 }
-		}
-		create_state = {
 			country = c:ULS
-			owned_provinces = { x0A38AF }
-		}
-		create_state = {
-			country = c:CLA
 			owned_provinces = { x688E79 }
 		}
 		create_state = {
@@ -159,8 +151,6 @@ STATES = {
 			owned_provinces = { x20E040 }
 		}
 		add_homeland = cu:irish
-		add_homeland = cu:british
-		add_homeland = cu:scottish
 
 		add_claim = c:PLE}
 
@@ -175,15 +165,11 @@ STATES = {
 		}
 		create_state = {
 			country = c:LEI
-			owned_provinces = { x60E040 }
+			owned_provinces = { x60E040 xCC3E24 }
 		}
 		create_state = {
 			country = c:KID
 			owned_provinces = { x2060C0 }
-		}
-		create_state = {
-			country = c:FLY
-			owned_provinces = { xCC3E24 }
 		}
 		add_homeland = cu:irish
 
@@ -525,7 +511,7 @@ STATES = {
 			owned_provinces = { x4899A2 }
 		}
 		create_state = {
-			country = c:ALS
+			country = c:ZWE
 			owned_provinces = { xF0C0A0 }
 		}
 		create_state = {
@@ -533,7 +519,7 @@ STATES = {
 			owned_provinces = { x6E4891 }
 		}
 		create_state = {
-			country = c:ZWE
+			country = c:FRT
 			owned_provinces = { xCC3250 }
 		}
 		add_homeland = cu:french

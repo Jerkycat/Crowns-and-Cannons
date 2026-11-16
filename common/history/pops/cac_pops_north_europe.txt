@@ -1,0 +1,318 @@
+POPS = {
+	s:STATE_JUTLAND = {
+		region_state:DAN = {
+			create_pop = {
+				culture = danish
+				size = 82689
+			}
+		}
+	}
+
+	s:STATE_ZEALAND = {
+		region_state:DAN = {
+			create_pop = {
+				culture = danish
+				size = 36915
+			}
+		}
+	}
+
+	s:STATE_SCANIA = {
+		region_state:DAN = {
+			create_pop = {
+				culture = danish
+				size = 12797
+			}
+		}
+		region_state:SKE = {
+			create_pop = {
+				culture = swedish
+				size = 30713
+			}
+			create_pop = {
+				culture = danish
+				size = 20476
+			}
+		}
+	}
+
+	s:STATE_GOTALAND = {
+		region_state:SWE = {
+			create_pop = {
+				culture = swedish
+				size = 127971
+			}
+		}
+		region_state:NOR = {
+			create_pop = {
+				culture = swedish
+				size = 4922
+			}
+		}
+	}
+
+	s:STATE_GOTLAND = {
+		region_state:SWE = {
+			create_pop = {
+				culture = swedish
+				size = 8859
+			}
+		}
+	}
+
+	s:STATE_SVEALAND = {
+		region_state:SWE = {
+			create_pop = {
+				culture = swedish
+				size = 314022
+			}
+		}
+	}
+
+	s:STATE_NORRLAND = {
+		region_state:SMI = {
+			create_pop = {
+				culture = sami
+				size = 88595
+			}
+		}
+		region_state:SWE = {
+			create_pop = {
+				culture = swedish
+				size = 26579
+			}
+		}
+		region_state:NOR = {
+			create_pop = {
+				culture = norwegian
+				size = 22149
+			}
+		}
+	}
+
+	s:STATE_WESTERN_NORWAY = {
+		region_state:NOR = {
+			create_pop = {
+				culture = norwegian
+				size = 225918
+			}
+		}
+	}
+
+	s:STATE_EASTERN_NORWAY = {
+		region_state:NOR = {
+			create_pop = {
+				culture = norwegian
+				size = 196879
+			}
+		}
+	}
+
+	s:STATE_NORTHERN_NORWAY = {
+		region_state:NOR = {
+			create_pop = {
+				culture = norwegian
+				size = 91647
+			}
+			create_pop = {
+				culture = sami
+				size = 39277
+			}
+		}
+	}
+
+	s:STATE_OULU = {
+		region_state:SMI = {
+			create_pop = {
+				culture = sami
+				size = 72550
+			}
+			create_pop = {
+				culture = finnish
+				size = 39573
+			}
+			create_pop = {
+				culture = swedish
+				size = 19786
+			}
+		}
+	}
+
+	s:STATE_KOLA = {
+		region_state:SMI = {
+			create_pop = {
+				culture = sami
+				size = 16242
+			}
+			create_pop = {
+				culture = russian
+				size = 6768
+			}
+			create_pop = {
+				culture = finnish
+				size = 4061
+			}
+		}
+	}
+
+	s:STATE_EAST_KARELIA = {
+		region_state:KRL = {
+			create_pop = {
+				culture = karelian
+				size = 31894
+			}
+			create_pop = {
+				culture = finnish
+				size = 15947
+			}
+			create_pop = {
+				culture = russian
+				size = 5316
+			}
+		}
+		region_state:NOV = {
+			create_pop = {
+				culture = karelian
+				size = 27071
+			}
+			create_pop = {
+				culture = russian
+				size = 21657
+			}
+			create_pop = {
+				culture = finnish
+				size = 5414
+			}
+		}
+		region_state:BLO = {
+			create_pop = {
+				culture = russian
+				size = 1181
+			}
+			create_pop = {
+				culture = karelian
+				size = 788
+			}
+		}
+	}
+
+	s:STATE_KUOPIO = {
+		region_state:SVO = {
+			create_pop = {
+				culture = finnish
+				size = 46758
+			}
+		}
+		region_state:KRL = {
+			create_pop = {
+				culture = finnish
+				size = 22149
+			}
+		}
+		region_state:TAV = {
+			create_pop = {
+				culture = finnish
+				size = 9844
+			}
+		}
+	}
+
+	s:STATE_WEST_KARELIA = {
+		region_state:KRL = {
+			create_pop = {
+				culture = finnish
+				size = 8860
+			}
+		}
+		region_state:SWE = {
+			create_pop = {
+				culture = finnish
+				size = 5906
+			}
+		}
+		region_state:NOV = {
+			create_pop = {
+				culture = karelian
+				size = 8638
+			}
+			create_pop = {
+				culture = russian
+				size = 3322
+			}
+			create_pop = {
+				culture = finnish
+				size = 1329
+			}
+		}
+	}
+
+	s:STATE_UUSIMAA = {
+		region_state:SWE = {
+			create_pop = {
+				culture = swedish
+				size = 128463
+			}
+		}
+		region_state:TAV = {
+			create_pop = {
+				culture = finnish
+				size = 4430
+			}
+		}
+	}
+
+	s:STATE_OSTROBOTHNIA = {
+		region_state:TAV = {
+			create_pop = {
+				culture = finnish
+				size = 34454
+			}
+		}
+		region_state:SWE = {
+			create_pop = {
+				culture = swedish
+				size = 14766
+			}
+		}
+		region_state:SMI = {
+			create_pop = {
+				culture = sami
+				size = 17227
+			}
+		}
+	}
+
+	s:STATE_ALAND = {
+		region_state:SWE = {
+			create_pop = {
+				culture = swedish
+				size = 9844
+			}
+		}
+	}
+
+	s:STATE_GREENLAND = {
+		region_state:GRL = {
+			create_pop = {
+				culture = inuit
+				size = 4288
+			}
+		}
+	}
+
+	s:STATE_ICELAND = {
+		region_state:ICE = {
+			create_pop = {
+				culture = icelandic
+				size = 42384
+			}
+		}
+		region_state:NOR = {
+			create_pop = {
+				culture = icelandic
+				size = 614
+			}
+		}
+	}
+
+}

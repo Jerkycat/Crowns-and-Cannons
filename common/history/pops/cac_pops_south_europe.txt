@@ -1,12 +1,769 @@
 POPS = {
-    # South France
-
-    s:STATE_AQUITAINE = {
+	s:STATE_AQUITAINE = {
 		region_state:AQN = {
 			create_pop = {
-				culture = french
-				size = 369638
+				culture = occitan
+				size = 475773
+			}
+		}
+		region_state:BRR = {
+			create_pop = {
+				culture = occitan
+				size = 135935
+			}
+		}
+		region_state:MDM = {
+			create_pop = {
+				culture = occitan
+				size = 67968
+			}
+		}
+		region_state:AMG = {
+			create_pop = {
+				culture = occitan
+				size = 67967
+			}
+		}
+		region_state:NAV = {
+			create_pop = {
+				culture = basque
+				size = 67967
 			}
 		}
 	}
+
+	s:STATE_GUYENNE = {
+		region_state:FRA = {
+			create_pop = {
+				culture = occitan
+				size = 478491
+			}
+			create_pop = {
+				culture = french
+				size = 119623
+			}
+		}
+		region_state:ANG = {
+			create_pop = {
+				culture = occitan
+				size = 74765
+			}
+		}
+		region_state:AMG = {
+			create_pop = {
+				culture = occitan
+				size = 74764
+			}
+		}
+		region_state:PER = {
+			create_pop = {
+				culture = occitan
+				size = 74764
+			}
+		}
+		region_state:VNT = {
+			create_pop = {
+				culture = occitan
+				size = 74764
+			}
+		}
+	}
+
+	s:STATE_LANGUEDOC = {
+		region_state:FRA = {
+			create_pop = {
+				culture = occitan
+				size = 652488
+			}
+			create_pop = {
+				culture = french
+				size = 163122
+			}
+		}
+		region_state:AST = {
+			create_pop = {
+				culture = occitan
+				size = 101951
+			}
+		}
+		region_state:COM = {
+			create_pop = {
+				culture = occitan
+				size = 203903
+			}
+		}
+		region_state:MLL = {
+			create_pop = {
+				culture = occitan
+				size = 203902
+			}
+		}
+	}
+
+	s:STATE_AUVERGNE_LIMOUSIN = {
+		region_state:FRA = {
+			create_pop = {
+				culture = occitan
+				size = 304494
+			}
+			create_pop = {
+				culture = french
+				size = 76124
+			}
+		}
+		region_state:MRC = {
+			create_pop = {
+				culture = occitan
+				size = 142732
+			}
+		}
+		region_state:BOU = {
+			create_pop = {
+				culture = occitan
+				size = 95154
+			}
+		}
+		region_state:VNT = {
+			create_pop = {
+				culture = occitan
+				size = 47577
+			}
+		}
+	}
+
+	s:STATE_RHONE = {
+		region_state:FRA = {
+			create_pop = {
+				culture = occitan
+				size = 108748
+			}
+		}
+		region_state:FRZ = {
+			create_pop = {
+				culture = occitan
+				size = 217496
+			}
+		}
+		region_state:VLN = {
+			create_pop = {
+				culture = occitan
+				size = 217496
+			}
+		}
+		region_state:DAU = {
+			create_pop = {
+				culture = francoprovencal
+				size = 434992
+			}
+		}
+		region_state:SAV = {
+			create_pop = {
+				culture = francoprovencal
+				size = 108748
+			}
+		}
+		region_state:ORA = {
+			create_pop = {
+				culture = occitan
+				size = 108748
+			}
+		}
+	}
+
+	s:STATE_SAVOY = {
+		region_state:SAV = {
+			create_pop = {
+				culture = francoprovencal
+				size = 122342
+			}
+		}
+		region_state:GNV = {
+			create_pop = {
+				culture = french
+				size = 40780
+			}
+		}
+	}
+
+	s:STATE_PROVENCE = {
+		region_state:DAU = {
+			create_pop = {
+				culture = occitan
+				size = 88358
+			}
+		}
+		region_state:PAP = {
+			create_pop = {
+				culture = occitan
+				size = 44179
+			}
+			create_pop = {
+				culture = french
+				size = 44179
+			}
+		}
+		region_state:PRO = {
+			create_pop = {
+				culture = occitan
+				size = 618504
+			}
+		}
+	}
+
+	s:STATE_CATALONIA = {
+		region_state:ARA = {
+			create_pop = {
+				culture = catalan
+				size = 657982
+			}
+			create_pop = {
+				culture = spanish
+				size = 116115
+			}
+		}
+	}
+
+	s:STATE_ARAGON = {
+		region_state:ARA = {
+			create_pop = {
+				culture = aragonese
+				size = 387049
+			}
+			create_pop = {
+				culture = spanish
+				size = 96762
+			}
+		}
+	}
+
+	s:STATE_VALENCIA = {
+		region_state:ARA = {
+			create_pop = {
+				culture = catalan
+				size = 369455
+			}
+			create_pop = {
+				culture = spanish
+				size = 92364
+			}
+		}
+	}
+
+	s:STATE_BALEARIC_ISLANDS = {
+		region_state:MLL = {
+			create_pop = {
+				culture = catalan
+				size = 82248
+			}
+			create_pop = {
+				culture = spanish
+				size = 14514
+			}
+		}
+	}
+
+	s:STATE_BASQUE_COUNTRY = {
+		region_state:NAV = {
+			create_pop = {
+				culture = basque
+				size = 89066
+			}
+			create_pop = {
+				culture = spanish
+				size = 29688
+			}
+		}
+		region_state:CAS = {
+			create_pop = {
+				culture = basque
+				size = 59377
+			}
+			create_pop = {
+				culture = spanish
+				size = 19792
+			}
+		}
+	}
+
+	s:STATE_OLD_CASTILE = {
+		region_state:CAS = {
+			create_pop = {
+				culture = spanish
+				size = 1161146
+			}
+		}
+	}
+
+	s:STATE_ASTURIAS = {
+		region_state:CAS = {
+			create_pop = {
+				culture = asturleonese
+				size = 104679
+			}
+			create_pop = {
+				culture = spanish
+				size = 18473
+			}
+		}
+	}
+
+	s:STATE_GALICIA = {
+		region_state:CAS = {
+			create_pop = {
+				culture = galician
+				size = 411679
+			}
+			create_pop = {
+				culture = spanish
+				size = 45742
+			}
+		}
+	}
+
+	s:STATE_LEON = {
+		region_state:CAS = {
+			create_pop = {
+				culture = asturleonese
+				size = 387049
+			}
+			create_pop = {
+				culture = spanish
+				size = 96762
+			}
+		}
+	}
+
+	s:STATE_EXTREMADURA = {
+		region_state:CAS = {
+			create_pop = {
+				culture = asturleonese
+				size = 174172
+			}
+			create_pop = {
+				culture = spanish
+				size = 116114
+			}
+		}
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 26390
+			}
+		}
+	}
+
+	s:STATE_NEW_CASTILE = {
+		region_state:CAS = {
+			create_pop = {
+				culture = spanish
+				size = 870859
+			}
+		}
+	}
+
+	s:STATE_MURCIA = {
+		region_state:CAS = {
+			create_pop = {
+				culture = spanish
+				size = 246304
+			}
+		}
+	}
+
+	s:STATE_UPPER_ANDALUSIA = {
+		region_state:ADU = {
+			create_pop = {
+				culture = spanish
+				size = 263897
+			}
+		}
+		region_state:MOR = {
+			create_pop = {
+				culture = spanish
+				size = 87965
+			}
+		}
+		region_state:CAS = {
+			create_pop = {
+				culture = spanish
+				size = 219914
+			}
+		}
+	}
+
+	s:STATE_LOWER_ANDALUSIA = {
+		region_state:CAS = {
+			create_pop = {
+				culture = spanish
+				size = 738911
+			}
+		}
+	}
+
+	s:STATE_ENTRE_DOURO_E_MINHO = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 448624
+			}
+		}
+	}
+
+	s:STATE_BEIRA = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 263897
+			}
+		}
+	}
+
+	s:STATE_ESTREMADURA = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 246304
+			}
+		}
+	}
+
+	s:STATE_ALENTEJO = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 237507
+			}
+		}
+	}
+
+	s:STATE_PIEDMONT = {
+		region_state:SAV = {
+			create_pop = {
+				culture = north_italian
+				size = 86589
+			}
+		}
+		region_state:GEN = {
+			create_pop = {
+				culture = north_italian
+				size = 259765
+			}
+		}
+		region_state:MLO = {
+			create_pop = {
+				culture = north_italian
+				size = 173177
+			}
+		}
+		region_state:PIE = {
+			create_pop = {
+				culture = north_italian
+				size = 259765
+			}
+		}
+		region_state:MSP = {
+			create_pop = {
+				culture = north_italian
+				size = 86589
+			}
+		}
+		region_state:ATI = {
+			create_pop = {
+				culture = north_italian
+				size = 86588
+			}
+		}
+		region_state:SAL = {
+			create_pop = {
+				culture = north_italian
+				size = 86588
+			}
+		}
+	}
+
+	s:STATE_LOMBARDY = {
+		region_state:VER = {
+			create_pop = {
+				culture = north_italian
+				size = 157433
+			}
+		}
+		region_state:MLO = {
+			create_pop = {
+				culture = north_italian
+				size = 787167
+			}
+		}
+		region_state:MAN = {
+			create_pop = {
+				culture = north_italian
+				size = 314867
+			}
+		}
+	}
+
+	s:STATE_SOUTH_TYROL = {
+		region_state:TNT = {
+			create_pop = {
+				culture = north_italian
+				size = 94460
+			}
+		}
+		region_state:TIR = {
+			create_pop = {
+				culture = south_german
+				size = 94460
+			}
+		}
+	}
+
+	s:STATE_VENETIA = {
+		region_state:VEN = {
+			create_pop = {
+				culture = north_italian
+				size = 299124
+			}
+		}
+		region_state:PAD = {
+			create_pop = {
+				culture = north_italian
+				size = 149562
+			}
+		}
+		region_state:VER = {
+			create_pop = {
+				culture = north_italian
+				size = 598247
+			}
+		}
+		region_state:AQU = {
+			create_pop = {
+				culture = north_italian
+				size = 448685
+			}
+		}
+	}
+
+	s:STATE_ISTRIA = {
+		region_state:VEN = {
+			create_pop = {
+				culture = north_italian
+				size = 125947
+			}
+		}
+		region_state:AQU = {
+			create_pop = {
+				culture = slovene
+				size = 125947
+			}
+		}
+		region_state:GOR = {
+			create_pop = {
+				culture = croat
+				size = 125946
+			}
+		}
+	}
+
+	s:STATE_EMILIA = {
+		region_state:LUC = {
+			create_pop = {
+				culture = north_italian
+				size = 125947
+			}
+		}
+		region_state:PAR = {
+			create_pop = {
+				culture = north_italian
+				size = 125947
+			}
+		}
+		region_state:MAN = {
+			create_pop = {
+				culture = north_italian
+				size = 125947
+			}
+		}
+		region_state:MLO = {
+			create_pop = {
+				culture = north_italian
+				size = 125947
+			}
+		}
+		region_state:MSP = {
+			create_pop = {
+				culture = north_italian
+				size = 125946
+			}
+		}
+	}
+
+	s:STATE_ROMAGNA = {
+		region_state:FLO = {
+			create_pop = {
+				culture = north_italian
+				size = 102332
+			}
+		}
+		region_state:CES = {
+			create_pop = {
+				culture = north_italian
+				size = 102332
+			}
+		}
+		region_state:FER = {
+			create_pop = {
+				culture = north_italian
+				size = 102332
+			}
+		}
+		region_state:BLG = {
+			create_pop = {
+				culture = north_italian
+				size = 102331
+			}
+		}
+	}
+
+	s:STATE_TUSCANY = {
+		region_state:FLO = {
+			create_pop = {
+				culture = north_italian
+				size = 425071
+			}
+		}
+		region_state:PIS = {
+			create_pop = {
+				culture = north_italian
+				size = 141690
+			}
+		}
+		region_state:SIE = {
+			create_pop = {
+				culture = north_italian
+				size = 283380
+			}
+		}
+	}
+
+	s:STATE_CORSICA = {
+		region_state:GEN = {
+			create_pop = {
+				culture = corsican
+				size = 118075
+			}
+		}
+	}
+
+	s:STATE_SARDINIA = {
+		region_state:ARA = {
+			create_pop = {
+				culture = south_italian
+				size = 196792
+			}
+		}
+		region_state:GEN = {
+			create_pop = {
+				culture = south_italian
+				size = 39358
+			}
+		}
+		region_state:ARB = {
+			create_pop = {
+				culture = south_italian
+				size = 78717
+			}
+		}
+	}
+
+	s:STATE_UMBRIA = {
+		region_state:PAP = {
+			create_pop = {
+				culture = south_italian
+				size = 157433
+			}
+		}
+		region_state:PEA = {
+			create_pop = {
+				culture = south_italian
+				size = 157433
+			}
+		}
+		region_state:URB = {
+			create_pop = {
+				culture = south_italian
+				size = 78717
+			}
+		}
+		region_state:RIM = {
+			create_pop = {
+				culture = south_italian
+				size = 78717
+			}
+		}
+	}
+
+	s:STATE_LAZIO = {
+		region_state:PAP = {
+			create_pop = {
+				culture = south_italian
+				size = 283380
+			}
+		}
+	}
+
+	s:STATE_ABRUZZO = {
+		region_state:NAP = {
+			create_pop = {
+				culture = south_italian
+				size = 275509
+			}
+		}
+	}
+
+	s:STATE_CAMPANIA = {
+		region_state:NAP = {
+			create_pop = {
+				culture = south_italian
+				size = 708450
+			}
+		}
+	}
+
+	s:STATE_APULIA = {
+		region_state:NAP = {
+			create_pop = {
+				culture = south_italian
+				size = 551017
+			}
+		}
+	}
+
+	s:STATE_CALABRIA = {
+		region_state:NAP = {
+			create_pop = {
+				culture = south_italian
+				size = 220407
+			}
+		}
+	}
+
+	s:STATE_SICILY = {
+		region_state:SIC = {
+			create_pop = {
+				culture = south_italian
+				size = 661220
+			}
+		}
+	}
+
+	s:STATE_MALTA = {
+		region_state:SIC = {
+			create_pop = {
+				culture = maltese
+				size = 125947
+			}
+		}
+	}
+
 }

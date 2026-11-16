@@ -1,0 +1,50 @@
+﻿MILITARY_FORMATIONS = {
+	c:ENG ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_western_europe
+			name = 1_Armee
+
+			# II. Armee-Korps
+			combat_unit = {
+				type = unit_type:combat_unit_type_cavalry_1
+				state_region = s:STATE_HOME_COUNTIES
+				count = 3
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_western_europe
+			name = 2_Armee
+
+			# II. Armee-Korps
+			combat_unit = {
+				type = unit_type:combat_unit_type_infantry_2
+				state_region = s:STATE_HOME_COUNTIES
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_artillery_1
+				state_region = s:STATE_HOME_COUNTIES
+				count = 2
+			}
+		}
+	}
+
+	c:FLA ?= {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_western_europe
+			name = 1_Armee
+
+			# II. Armee-Korps
+			combat_unit = {
+				type = unit_type:combat_unit_type_infantry_2
+				state_region = s:STATE_FLANDERS
+				count = 6
+			}
+		}
+	}
+}

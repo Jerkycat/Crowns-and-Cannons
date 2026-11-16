@@ -1,0 +1,34 @@
+﻿
+pm_cac_wooden_buildings = {
+	texture = "gfx/interface/icons/production_method_icons/wooden_buildings.dds"
+
+	is_default = yes
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_construction_add = 2
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_plant_fiber_add = 25
+			goods_input_wood_add = 75
+		}
+
+		level_scaled = {
+			building_employment_bureaucrats_add = 100
+			building_employment_clerks_add = 100
+			building_employment_laborers_add = 800
+		}
+		unscaled = {
+			building_laborers_mortality_mult = 0.1
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_construction_mult = 0.002
+		}
+	}
+}

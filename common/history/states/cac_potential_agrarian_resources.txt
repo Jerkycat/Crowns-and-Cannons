@@ -1,0 +1,808 @@
+# =============================================================================
+# AGRARIAN RESOURCE POTENTIAL - 1337 start
+# Place in: common/history/states/00_agrarian_potential.txt
+#
+# Rewrites the arable_resources of every state region so that only buildings
+# that were historically possible AND practiced around 1337 remain.
+# Philosophy (from the old Anno 1836 mod): at most 4 agricultural buildings per
+# state where possible (staple + livestock/sheep + up to 2 specialties).
+# Only Lower Egypt and Sicily are allowed 5.
+#
+# Staples: wheat, rye, rice, maize (Americas only), millet/sorghum
+# Others : livestock, sheep, cotton, tobacco (Americas only), sugar, banana
+#          (Old World only), coffee, tea, silk, dye, opium, vineyard, fiber
+# Rubber is removed everywhere. Gold fields, oil and subsistence are untouched.
+# Exception to the 1337 rule: states with no farming in 1337 and bare islands get
+# the colonial-era uses (cattle/sheep ranching, sugar, wine...) - see the last sections.
+#
+# Each line: s:STATE = { remove... add... }   # final agricultural list
+#   W wheat  R rye  RI rice  M maize  MI millet  L livestock  SH sheep
+#   C cotton  T tobacco  S sugar  B banana  CO coffee  TE tea  SI silk
+#   D dye  O opium  V vineyard  F fiber
+# Only differences from the base game are written.
+# =============================================================================
+
+STATES = {
+
+	# Rubber plantations did not exist anywhere in 1337 (Mesoamerica excepted, see notes)
+	every_state_region = {
+		remove_resource_potential = building_rubber_plantation
+	}
+
+
+	# ------------------------------------------------------------------
+	# EUROPE - Scandinavia and Iceland
+	# ------------------------------------------------------------------
+	s:STATE_SVEALAND = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_GOTALAND = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_SCANIA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_JUTLAND = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_ZEALAND = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_WESTERN_NORWAY = { add_resource_potential = building_sheep_ranch } # R L SH
+	s:STATE_EASTERN_NORWAY = { add_resource_potential = building_sheep_ranch } # R L SH
+	s:STATE_GOTLAND = { add_resource_potential = building_sheep_ranch } # R L SH
+	# STATE_NORRLAND: no change (L)
+	# STATE_NORTHERN_NORWAY: no change (L)
+	s:STATE_ICELAND = { remove_resource_potential = building_rye_farm add_resource_potential = building_sheep_ranch } # SH L
+	s:STATE_GREENLAND = { add_resource_potential = building_sheep_ranch } # SH L
+
+	# ------------------------------------------------------------------
+	# EUROPE - British Isles
+	# ------------------------------------------------------------------
+	s:STATE_HOME_COUNTIES = { remove_resource_potential = building_rye_farm add_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # W L SH F
+	s:STATE_EAST_ANGLIA = { remove_resource_potential = building_rye_farm add_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # W L SH F
+	s:STATE_MIDLANDS = { remove_resource_potential = building_rye_farm add_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_YORKSHIRE = { remove_resource_potential = building_rye_farm add_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_WEST_COUNTRY = { remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_LANCASHIRE = { add_resource_potential = building_sheep_ranch } # R L SH
+	s:STATE_WALES = { add_resource_potential = building_sheep_ranch } # R L SH
+	s:STATE_HIGHLANDS = { add_resource_potential = building_sheep_ranch } # R L SH
+	s:STATE_LOWLANDS = { add_resource_potential = building_sheep_ranch } # R L SH
+	s:STATE_CONNAUGHT = { add_resource_potential = building_sheep_ranch } # R L SH
+	s:STATE_ULSTER = { add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # R L SH F
+	s:STATE_MUNSTER = { add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # R L SH F
+	s:STATE_LEINSTER = { add_resource_potential = building_sheep_ranch } # R L SH
+
+	# ------------------------------------------------------------------
+	# EUROPE - France
+	# ------------------------------------------------------------------
+	# STATE_ILE_DE_FRANCE: no change (W L V)
+	s:STATE_NORMANDY = { remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # W L F SH
+	s:STATE_BRITTANY = { remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # W L F SH
+	s:STATE_PROVENCE = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_LANGUEDOC = { remove_resource_potential = building_cotton_plantation add_resource_potential = building_dye_plantation } # W V L D
+	s:STATE_GUYENNE = { add_resource_potential = building_dye_plantation } # W V L D
+	s:STATE_RHONE = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_POITOU = { add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_AUVERGNE_LIMOUSIN = { add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_BURGUNDY = { add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_CHAMPAGNE = { add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_FRANCHE_COMTE = { add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_FRENCH_LOW_COUNTRIES = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # W L F SH
+	s:STATE_PICARDY = { add_resource_potential = building_dye_plantation add_resource_potential = building_fiber_plantation } # W L D F
+	s:STATE_ALSACE_LORRAINE = { add_resource_potential = building_dye_plantation } # W V L D
+	s:STATE_LORRAINE = { add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_AQUITAINE = { add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_ORLEANS = { add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_MAINE_ANJOU = { add_resource_potential = building_fiber_plantation } # W V L F
+
+	# ------------------------------------------------------------------
+	# EUROPE - Low Countries
+	# ------------------------------------------------------------------
+	s:STATE_HOLLAND = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_FRIESLAND = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_GELRE = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_WALLONIA = { add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_FLANDERS = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # W L F SH
+
+	# ------------------------------------------------------------------
+	# EUROPE - Germany, Austria, Switzerland, Bohemia
+	# ------------------------------------------------------------------
+	s:STATE_AUSTRIA = { add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_BOHEMIA = { add_resource_potential = building_fiber_plantation } # R V L F
+	s:STATE_MORAVIA = { add_resource_potential = building_fiber_plantation } # W V L F
+	# STATE_STYRIA: no change (W V L)
+	s:STATE_TYROL = { add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_SOUTH_TYROL = { add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_POMERANIA = { add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # R L SH F
+	s:STATE_HANNOVER = { add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # R L SH F
+	s:STATE_ELBE = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_WESTPHALIA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_SCHLESWIG_HOLSTEIN = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_EAST_SWITZERLAND = { add_resource_potential = building_sheep_ranch } # R V L SH
+	# STATE_WEST_SWITZERLAND: no change (R V L)
+	s:STATE_ANHALT = { add_resource_potential = building_dye_plantation add_resource_potential = building_fiber_plantation } # R L D F
+	s:STATE_RHINELAND = { add_resource_potential = building_dye_plantation } # W V L D
+	s:STATE_NORTH_RHINE = { add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_WURTTEMBERG = { add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_BAVARIA = { add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_FRANCONIA = { add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_BRANDENBURG = { add_resource_potential = building_sheep_ranch } # R L SH
+	s:STATE_BRUNSWICK = { add_resource_potential = building_sheep_ranch } # R L SH
+	s:STATE_MECKLENBURG = { add_resource_potential = building_sheep_ranch } # R L SH
+	# STATE_BADEN: no change (W V L)
+	s:STATE_SAXONY = { add_resource_potential = building_dye_plantation } # R V L D
+	s:STATE_HESSE = { add_resource_potential = building_dye_plantation } # R V L D
+	s:STATE_RUHR = { add_resource_potential = building_fiber_plantation } # W L F
+
+	# ------------------------------------------------------------------
+	# EUROPE - Italy
+	# ------------------------------------------------------------------
+	s:STATE_LOMBARDY = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_PIEDMONT = { remove_resource_potential = building_rice_farm remove_resource_potential = building_cotton_plantation add_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_SAVOY = { remove_resource_potential = building_cotton_plantation add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_UMBRIA = { remove_resource_potential = building_cotton_plantation add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_ABRUZZO = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_LAZIO = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_TUSCANY = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_SARDINIA = { remove_resource_potential = building_cotton_plantation add_resource_potential = building_sheep_ranch } # W L V SH
+	s:STATE_MALTA = { remove_resource_potential = building_sugar_plantation } # W C L
+	s:STATE_CORSICA = { add_resource_potential = building_sheep_ranch } # L V SH
+	s:STATE_CAMPANIA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_EMILIA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_ROMAGNA = { remove_resource_potential = building_cotton_plantation add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_CALABRIA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_silk_plantation } # W SI L V
+	s:STATE_APULIA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # W L V SH
+	s:STATE_VENETIA = { remove_resource_potential = building_silk_plantation add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_SICILY = { remove_resource_potential = building_vineyard } # W S C L SI
+
+	# ------------------------------------------------------------------
+	# EUROPE - Iberia
+	# ------------------------------------------------------------------
+	s:STATE_NEW_CASTILE = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_OLD_CASTILE = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_GALICIA = { remove_resource_potential = building_maize_farm add_resource_potential = building_rye_farm add_resource_potential = building_fiber_plantation } # R V F L
+	s:STATE_ASTURIAS = { remove_resource_potential = building_maize_farm add_resource_potential = building_rye_farm add_resource_potential = building_sheep_ranch } # R L SH
+	s:STATE_BASQUE_COUNTRY = { remove_resource_potential = building_maize_farm add_resource_potential = building_wheat_farm } # W L V
+	s:STATE_ARAGON = { add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_EXTREMADURA = { remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_LEON = { add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_BEIRA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_ALENTEJO = { remove_resource_potential = building_banana_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_CATALONIA = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L V SH
+	s:STATE_BALEARIC_ISLANDS = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation } # W L V
+	s:STATE_LOWER_ANDALUSIA = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # W L V SH
+	s:STATE_UPPER_ANDALUSIA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard } # W SI S L
+	s:STATE_VALENCIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_wheat_farm add_resource_potential = building_sugar_plantation } # W RI S SI
+	s:STATE_ESTREMADURA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_ENTRE_DOURO_E_MINHO = { remove_resource_potential = building_wheat_farm add_resource_potential = building_rye_farm add_resource_potential = building_fiber_plantation } # R V L F
+	s:STATE_MURCIA = { remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W SI L SH
+
+	# ------------------------------------------------------------------
+	# EUROPE - Balkans and Greece
+	# ------------------------------------------------------------------
+	s:STATE_EASTERN_THRACE = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation } # W SI V C
+	s:STATE_DOBRUDJA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_ALBANIA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_MONTENEGRO = { add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_WESTERN_SERBIA = { add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_KOSOVO = { add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_SKOPIA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_BOSNIA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_NORTHERN_THRACE = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # W L SH F
+	s:STATE_BULGARIA = { remove_resource_potential = building_cotton_plantation add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_EASTERN_SERBIA = { add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_SLOVENIA = { add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_DALMATIA = { add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_ISTRIA = { add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_CROATIA = { add_resource_potential = building_fiber_plantation } # W V L F
+	# STATE_SLAVONIA: no change (W V L)
+	s:STATE_CRETE = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W V SH C
+	s:STATE_WEST_AEGEAN_ISLANDS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W V C SH
+	s:STATE_EAST_AEGEAN_ISLANDS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation } # W V C
+	s:STATE_ATTICA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_silk_plantation add_resource_potential = building_sheep_ranch } # W V SI SH
+	s:STATE_THESSALIA = { remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH C
+	s:STATE_MACEDONIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W V C SH
+	s:STATE_WESTERN_THRACE = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation } # W C SI V
+	s:STATE_IONIAN_ISLANDS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W V SH
+	s:STATE_PELOPONNESE = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation add_resource_potential = building_silk_plantation } # W SI V C
+
+	# ------------------------------------------------------------------
+	# EUROPE - Poland, Hungary, Romania
+	# ------------------------------------------------------------------
+	s:STATE_MAZOVIA = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # R L F SH
+	s:STATE_LOWER_SILESIA = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # R L F SH
+	s:STATE_UPPER_SILESIA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_GREATER_POLAND = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_LESSER_POLAND = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_WEST_PRUSSIA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_EAST_PRUSSIA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_POSEN = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_WEST_GALICIA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_EAST_GALICIA = { add_resource_potential = building_fiber_plantation } # W L F
+	s:STATE_CENTRAL_HUNGARY = { add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_BEKES = { add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_SLOVAKIA = { add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_RUTHENIA = { add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_SOUTHERN_TRANSYLVANIA = { remove_resource_potential = building_silk_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_NORTHERN_TRANSYLVANIA = { add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_TRANSDANUBIA = { add_resource_potential = building_fiber_plantation } # W V L F
+	# STATE_DELVIDEK: no change (W V L)
+	# STATE_BANAT: no change (W V L)
+	s:STATE_MOLDAVIA = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_cotton_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_WALLACHIA = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_cotton_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_BESSARABIA = { remove_resource_potential = building_cotton_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_BUKOVINA = { remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+
+	# ------------------------------------------------------------------
+	# EUROPE - Baltic, Finland, Russia, Ukraine
+	# ------------------------------------------------------------------
+	s:STATE_TALINN = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # R L F SH
+	s:STATE_LITHUANIA = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # R L F SH
+	s:STATE_TARTU = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_RIGA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_COURLAND = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_VILNIUS = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_KUOPIO = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_UUSIMAA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_WEST_KARELIA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_OSTROBOTHNIA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_EAST_KARELIA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_INGRIA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_BREST = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_SMOLENSK = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_MOGILEV = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_KURSK = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_TVER = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_VOLOGDA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_MINSK = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_PERM = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_KAZAN = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_TAMBOV = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_RYAZAN = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_VITEBSK = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_PSKOV = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_YAROSLAVL = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_NIZHNY_NOVGOROD = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_VYATKA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_CHUVASHIA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_TULA = { add_resource_potential = building_fiber_plantation } # R L F
+	s:STATE_KOSTROMA = { add_resource_potential = building_fiber_plantation } # R L F
+	# STATE_ALAND: no change (R L)
+	# STATE_OULU: no change (L)
+	# STATE_KOLA: no change (L)
+	s:STATE_ARKHANGELSK = { remove_resource_potential = building_rye_farm } # L
+	# STATE_NENETSIA: no change (L)
+	s:STATE_MOSCOW = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # R L F SH
+	s:STATE_ORYOL = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # R L F SH
+	s:STATE_NOVGOROD = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # R L F SH
+	s:STATE_VOLHYNIA = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # W L F SH
+	s:STATE_KIEV = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # W L F SH
+	s:STATE_KHARKOV = { add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # W L F SH
+	s:STATE_CHERNIHIV = { add_resource_potential = building_fiber_plantation } # W L F
+	s:STATE_CRIMEA = { remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_CHERSON = { remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_TAURIDA = { remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_ROSTOV = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_NORTH_CAUCASUS = { add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_SAMARA = { remove_resource_potential = building_rye_farm add_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_SARATOV = { remove_resource_potential = building_rye_farm add_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_URALSK = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_AKTOBE = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_KALMYKIA = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_SEMIRECHE = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_JETISY = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_AKMOLINSK = { remove_resource_potential = building_rye_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_URAL = { remove_resource_potential = building_rye_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_CHELYABINSK = { remove_resource_potential = building_rye_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_UFA = { remove_resource_potential = building_rye_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_STAVROPOL = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_ASTRAKHAN = { remove_resource_potential = building_rice_farm remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_KHIVA = { remove_resource_potential = building_opium_plantation add_resource_potential = building_sheep_ranch } # W C L SH
+	s:STATE_FERGANA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tea_plantation add_resource_potential = building_silk_plantation add_resource_potential = building_vineyard } # W C SI V
+	s:STATE_MERZ = { remove_resource_potential = building_tea_plantation add_resource_potential = building_cotton_plantation add_resource_potential = building_vineyard } # W C V L
+	s:STATE_SYRDARYA = { add_resource_potential = building_sheep_ranch add_resource_potential = building_wheat_farm } # L SH W
+	s:STATE_ELIZAVETPOL = { add_resource_potential = building_wheat_farm add_resource_potential = building_silk_plantation } # W L SI V
+
+	# ------------------------------------------------------------------
+	# SIBERIA
+	# ------------------------------------------------------------------
+	s:STATE_TUVA = { remove_resource_potential = building_rye_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_ALTAI = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_BURYATIA = { remove_resource_potential = building_rye_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_TRANS_BAIKAL = { remove_resource_potential = building_rye_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_UPPER_YENISEYSK = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_TOMSK = { remove_resource_potential = building_rye_farm } # L
+	s:STATE_TOBOLSK = { remove_resource_potential = building_rye_farm } # L
+	# STATE_YAKUTSK: no change (L)
+	s:STATE_IRKUTSK = { remove_resource_potential = building_rye_farm } # L
+	s:STATE_KRASNOYARSK = { remove_resource_potential = building_rye_farm } # L
+	s:STATE_OB = { remove_resource_potential = building_livestock_ranch } # (none)
+	s:STATE_KAMCHATKA = { remove_resource_potential = building_livestock_ranch } # (none)
+	s:STATE_OKHOTSK = { remove_resource_potential = building_livestock_ranch } # (none)
+	s:STATE_KOLYMA = { remove_resource_potential = building_livestock_ranch } # (none)
+	s:STATE_SURGUT = { remove_resource_potential = building_rye_farm remove_resource_potential = building_livestock_ranch } # (none)
+	s:STATE_AMUR = { remove_resource_potential = building_rye_farm remove_resource_potential = building_livestock_ranch add_resource_potential = building_millet_farm } # MI
+
+	# ------------------------------------------------------------------
+	# NORTH AFRICA AND SAHEL
+	# ------------------------------------------------------------------
+	s:STATE_LOWER_EGYPT = { remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation } # W F S C L
+	s:STATE_MIDDLE_EGYPT = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation } # W F S L
+	s:STATE_UPPER_EGYPT = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # W S D F
+	s:STATE_EGYPTIAN_DESERT = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_MATRUH = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_SINAI = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_INNER_MOROCCO = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_LIBYAN_DESERT = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_SAHARA = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_EAST_SAHARA = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_WEST_SAHARA = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_MAURITANIA = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_INNER_MAURITANIA = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_KORDOFAN = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_ERITREA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # MI L SH
+	s:STATE_DONGOLA = { remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # MI L C SH
+	s:STATE_BLUE_NILE = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # MI L C SH
+	s:STATE_DARFUR = { add_resource_potential = building_millet_farm } # MI L
+	s:STATE_MARRAKECH = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L S SH
+	s:STATE_FEZ = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # W L F SH
+	s:STATE_AL_RIF = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_CONSTANTINE = { remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_ORAN = { remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_TRIPOLI = { add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_LIBYA = { remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_ALGIERS = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # W L SH F
+	s:STATE_TUNISIA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation add_resource_potential = building_sheep_ranch } # W L F SH
+	s:STATE_EASTERN_MALI = { remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # MI C L SH
+	s:STATE_WESTERN_MALI = { remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_rice_farm } # MI RI C L
+	s:STATE_TIMBUKTU = { add_resource_potential = building_sheep_ranch add_resource_potential = building_millet_farm } # L SH MI
+	s:STATE_NIGER = { add_resource_potential = building_sheep_ranch add_resource_potential = building_millet_farm } # L SH MI
+	s:STATE_CHAD = { add_resource_potential = building_sheep_ranch add_resource_potential = building_millet_farm } # L SH MI
+
+	# ------------------------------------------------------------------
+	# SUB-SAHARAN AFRICA
+	# ------------------------------------------------------------------
+	s:STATE_IVORY_COAST = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI B C
+	s:STATE_TOGO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI B C
+	s:STATE_DAHOMEY = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI B C
+	s:STATE_BENIN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI B C
+	s:STATE_NIGER_DELTA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI B C
+	s:STATE_WINDWARD_COAST = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_rice_farm } # RI MI B C
+	s:STATE_LIBERIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_rice_farm } # RI MI B C
+	s:STATE_SIERRA_LEONE = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # RI MI B C
+	s:STATE_GUINEA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_rice_farm } # RI MI B C
+	s:STATE_GOLD_COAST = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI B C D
+	s:STATE_NIGERIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI B C D
+	s:STATE_YORUBA_STATES = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI C D B
+	s:STATE_VOLTA = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # MI C L SH
+	s:STATE_SENEGAL = { remove_resource_potential = building_sugar_plantation add_resource_potential = building_rice_farm } # MI RI C L
+	s:STATE_HAUSALAND = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # MI C D L
+	s:STATE_EAST_HAUSALAND = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # MI C D L
+	s:STATE_OUTER_HAUSALAND = { add_resource_potential = building_sheep_ranch } # MI L SH
+	s:STATE_BORNU = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # MI C L SH
+	s:STATE_WADDAI = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # MI C L SH
+	s:STATE_LINDI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI B C
+	s:STATE_ZANZIBAR = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI B C
+	s:STATE_TANGANYIKA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI L C B
+	s:STATE_KENYA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # MI L SH B
+	s:STATE_RIFT_VALLEY = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_sheep_ranch } # MI L SH
+	s:STATE_EQUATORIA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # MI L SH
+	s:STATE_OROMIA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # MI L SH CO
+	s:STATE_AMHARA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # MI L SH C
+	s:STATE_GONDER = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # MI L SH C
+	s:STATE_KAZEMBE = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI L B
+	s:STATE_SOMALILAND = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH MI
+	s:STATE_UGANDA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard } # MI B L
+	s:STATE_MOCAMBIQUE = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI C L B
+	s:STATE_LOURENCO_MARQUES = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI C L B
+	s:STATE_NORTH_CAMEROON = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_sheep_ranch } # MI L C SH
+	s:STATE_SOUTH_CAMEROON = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # MI B F
+	s:STATE_UBANGI_SHARI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # MI B F
+	s:STATE_CONGO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # MI B F
+	s:STATE_EQUATEUR = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # MI B F
+	s:STATE_GABON = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # MI B F
+	s:STATE_CONGO_ORIENTALE = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # MI B F L
+	s:STATE_KASAI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # MI B F C
+	s:STATE_BAS_CONGO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # MI B F C
+	s:STATE_NORTH_ANGOLA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation } # MI B F C
+	s:STATE_SOUTH_ANGOLA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # MI L SH C
+	s:STATE_EAST_ANGOLA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # MI L C F
+	s:STATE_KATANGA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation } # MI L C B
+	s:STATE_ZAMBEZIA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI L C B
+	s:STATE_ZAMBEZI = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # MI L C B
+	s:STATE_ZAMBIA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # MI L C SH
+	s:STATE_NAMAQUALAND = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_HEREROLAND = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_CAPE_COLONY = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_NORTHERN_CAPE = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_ZULULAND = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # MI L SH
+	s:STATE_VRYSTAAT = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # MI L SH
+	s:STATE_TRANSVAAL = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # MI L SH
+	s:STATE_EASTERN_CAPE = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_millet_farm add_resource_potential = building_sheep_ranch } # MI L SH
+	s:STATE_BOTSWANA = { add_resource_potential = building_sheep_ranch } # MI L SH
+	s:STATE_SOUTH_MADAGASCAR = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_rice_farm } # RI MI L B
+	s:STATE_NORTH_MADAGASCAR = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_rice_farm add_resource_potential = building_fiber_plantation } # RI MI B F
+
+	# ------------------------------------------------------------------
+	# NORTH AMERICA
+	# ------------------------------------------------------------------
+	s:STATE_DISTRICT_OF_COLUMBIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation } # M T
+	s:STATE_NEW_YORK = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_vineyard add_resource_potential = building_maize_farm } # M T
+	s:STATE_VIRGINIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_vineyard } # M T
+	s:STATE_MARYLAND = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_vineyard } # M T
+	s:STATE_DELAWARE = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_vineyard } # M T
+	s:STATE_PENNSYLVANIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_vineyard } # M T
+	s:STATE_NEW_JERSEY = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_vineyard } # M T
+	s:STATE_WEST_VIRGINIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard } # M T
+	s:STATE_OHIO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_vineyard } # M T
+	s:STATE_INDIANA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_vineyard } # M T
+	s:STATE_ILLINOIS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_vineyard } # M T
+	s:STATE_MICHIGAN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_vineyard add_resource_potential = building_tobacco_plantation } # M T
+	s:STATE_WISCONSIN = { remove_resource_potential = building_livestock_ranch } # M T
+	s:STATE_IOWA = { remove_resource_potential = building_livestock_ranch } # M T
+	s:STATE_MISSOURI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_vineyard } # M T
+	s:STATE_ARKANSAS = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation add_resource_potential = building_maize_farm } # M T
+	s:STATE_KENTUCKY = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_vineyard } # M T
+	s:STATE_TENNESSEE = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation } # M T
+	s:STATE_NORTH_CAROLINA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_vineyard } # M T
+	s:STATE_SOUTH_CAROLINA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation } # M T
+	s:STATE_RHODE_ISLAND = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_vineyard add_resource_potential = building_maize_farm } # M T
+	s:STATE_CONNECTICUT = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_vineyard add_resource_potential = building_maize_farm } # M T
+	s:STATE_MASSACHUSETTS = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_vineyard add_resource_potential = building_maize_farm } # M T
+	s:STATE_NEW_HAMPSHIRE = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch add_resource_potential = building_maize_farm } # M T
+	s:STATE_VERMONT = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch add_resource_potential = building_maize_farm } # M T
+	s:STATE_ONTARIO = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_vineyard add_resource_potential = building_maize_farm } # M T
+	s:STATE_QUEBEC = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch add_resource_potential = building_maize_farm } # M T
+	s:STATE_LOUISIANA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_sugar_plantation add_resource_potential = building_maize_farm } # M T C
+	s:STATE_MISSISSIPPI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_sugar_plantation } # M T C
+	s:STATE_ALABAMA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_sugar_plantation } # M T C
+	s:STATE_GEORGIA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_sugar_plantation remove_resource_potential = building_dye_plantation } # M T C
+	s:STATE_FLORIDA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_dye_plantation } # M
+	s:STATE_TEXAS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard } # M
+	s:STATE_MINNESOTA = { remove_resource_potential = building_livestock_ranch } # M
+	s:STATE_MAINE = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch add_resource_potential = building_maize_farm } # M
+	s:STATE_NORTH_DAKOTA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch add_resource_potential = building_maize_farm } # M
+	s:STATE_SOUTH_DAKOTA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch add_resource_potential = building_maize_farm } # M
+	s:STATE_NEBRASKA = { remove_resource_potential = building_livestock_ranch } # M
+	s:STATE_KANSAS = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch add_resource_potential = building_maize_farm } # M
+	s:STATE_OKLAHOMA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation add_resource_potential = building_maize_farm } # M
+	s:STATE_UTAH = { remove_resource_potential = building_livestock_ranch } # M
+	s:STATE_COLORADO = { remove_resource_potential = building_livestock_ranch } # M
+	s:STATE_ARIZONA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch add_resource_potential = building_maize_farm } # M C
+	s:STATE_NEW_MEXICO = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_vineyard add_resource_potential = building_maize_farm } # M C
+	s:STATE_SONORA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch add_resource_potential = building_maize_farm } # M C
+	s:STATE_CHIHUAHUA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_dye_plantation } # M C
+	s:STATE_RIO_GRANDE = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation } # M
+	s:STATE_DURANGO = { remove_resource_potential = building_livestock_ranch } # M
+	s:STATE_SINALOA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation add_resource_potential = building_cotton_plantation } # M C
+	s:STATE_ALASKA = { remove_resource_potential = building_livestock_ranch } # (none)
+	s:STATE_NEWFOUNDLAND = { remove_resource_potential = building_livestock_ranch } # (none)
+	s:STATE_YUKON_TERRITORY = { remove_resource_potential = building_livestock_ranch } # (none)
+	s:STATE_NORTHWEST_TERRITORIES = { remove_resource_potential = building_livestock_ranch } # (none)
+	s:STATE_NUNAVUT = { remove_resource_potential = building_livestock_ranch } # (none)
+
+	# ------------------------------------------------------------------
+	# MEXICO AND CENTRAL AMERICA
+	# ------------------------------------------------------------------
+	s:STATE_BAJIO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation add_resource_potential = building_cotton_plantation } # M F C
+	s:STATE_JALISCO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation add_resource_potential = building_cotton_plantation } # M F C T
+	s:STATE_ZACATECAS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation } # M F
+	s:STATE_MEXICO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation add_resource_potential = building_cotton_plantation } # M F C T
+	s:STATE_VERACRUZ = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_cotton_plantation add_resource_potential = building_fiber_plantation } # M C T F
+	s:STATE_GUERRERO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_cotton_plantation add_resource_potential = building_fiber_plantation } # M C T F
+	s:STATE_OAXACA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_cotton_plantation add_resource_potential = building_fiber_plantation } # M D C F
+	s:STATE_CHIAPAS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_cotton_plantation } # M C D T
+	s:STATE_YUCATAN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation add_resource_potential = building_cotton_plantation } # M F C D
+	s:STATE_SAN_SALVADOR = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_cotton_plantation } # M C D T
+	s:STATE_GUATEMALA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M C D T
+	s:STATE_HONDURAS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M C T
+	s:STATE_NICARAGUA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M C T
+	s:STATE_COSTA_RICA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_cotton_plantation } # M C
+	s:STATE_PANAMA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_cotton_plantation } # M C
+	s:STATE_BAHAMAS = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm add_resource_potential = building_cotton_plantation } # M C
+	s:STATE_HAITI = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_dye_plantation add_resource_potential = building_maize_farm add_resource_potential = building_cotton_plantation } # M C T
+	s:STATE_SANTO_DOMINGO = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_dye_plantation add_resource_potential = building_maize_farm add_resource_potential = building_cotton_plantation } # M C T
+	s:STATE_PUERTO_RICO = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm add_resource_potential = building_cotton_plantation } # M C T
+	s:STATE_WEST_INDIES = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm } # M C T
+	s:STATE_JAMAICA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm add_resource_potential = building_cotton_plantation } # M C T
+	s:STATE_WESTERN_CUBA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm add_resource_potential = building_cotton_plantation } # M C T
+	s:STATE_EASTERN_CUBA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm add_resource_potential = building_cotton_plantation } # M C T
+	s:STATE_CENTRAL_CUBA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm add_resource_potential = building_cotton_plantation } # M C T
+
+	# ------------------------------------------------------------------
+	# SOUTH AMERICA
+	# ------------------------------------------------------------------
+	s:STATE_ECUADOR = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation } # M L C F
+	s:STATE_CAJAMARCA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation } # M L C F
+	s:STATE_AREQUIPA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation } # M L C F
+	s:STATE_LIMA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard } # M C L D
+	s:STATE_ICA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard } # M C L D
+	s:STATE_LA_PAZ = { remove_resource_potential = building_rice_farm remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_maize_farm add_resource_potential = building_fiber_plantation } # M L F
+	s:STATE_POTOSI = { remove_resource_potential = building_rice_farm remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm add_resource_potential = building_fiber_plantation } # M L F
+	s:STATE_JUJUY = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # M L F
+	s:STATE_TARAPACA = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_banana_plantation } # L
+	# STATE_ANTOFAGASTA: no change (L)
+	s:STATE_SANTA_CRUZ = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm } # M T
+	s:STATE_GUAVIARE = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm } # M T
+	s:STATE_BOLIVAR = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_tobacco_plantation } # M T
+	s:STATE_GUAYANA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm add_resource_potential = building_tobacco_plantation } # M T
+	s:STATE_PASTAZA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M T
+	s:STATE_AMAZONAS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M T
+	s:STATE_TUCUMAN = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_cotton_plantation } # M L C
+	s:STATE_SANTIAGO = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard add_resource_potential = building_maize_farm } # M L
+	s:STATE_LOS_RIOS = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard add_resource_potential = building_maize_farm } # M
+	s:STATE_ARAUCANIA = { remove_resource_potential = building_livestock_ranch add_resource_potential = building_maize_farm } # M
+	s:STATE_ALTO_PARAGUAY = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm } # M
+	s:STATE_CHACO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation } # M
+	s:STATE_ACRE = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M
+	s:STATE_GOIAS = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_coffee_plantation add_resource_potential = building_maize_farm } # M
+	s:STATE_MINAS_GERAIS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M
+	s:STATE_BAJO_PARAGUAY = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm } # M C T
+	s:STATE_PARA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm } # M C T
+	s:STATE_MARANHAO = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm add_resource_potential = building_cotton_plantation } # M C T
+	s:STATE_RIO_GRANDE_DO_NORTE = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M C T
+	s:STATE_CEARA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M C T
+	s:STATE_PIAUI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M C T
+	s:STATE_PARAIBA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M C T
+	s:STATE_PERNAMBUCO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M C T
+	s:STATE_ZULIA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_maize_farm add_resource_potential = building_cotton_plantation } # M C T
+	s:STATE_MIRANDA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M C T
+	s:STATE_ANTIOQUIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M C T
+	s:STATE_CORRIENTES = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # M T
+	s:STATE_RIO_GRANDE_DO_SUL = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard } # M T
+	s:STATE_PARANA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_tobacco_plantation } # M T
+	s:STATE_SANTA_CATARINA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_vineyard add_resource_potential = building_tobacco_plantation } # M T
+	s:STATE_MATO_GROSSO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_banana_plantation } # M C
+	s:STATE_SAO_PAULO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_tobacco_plantation } # M T C
+	s:STATE_RIO_DE_JANEIRO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_tobacco_plantation add_resource_potential = building_cotton_plantation } # M T C
+	s:STATE_BAHIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_cotton_plantation } # M T C
+	s:STATE_CUNDINAMARCA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_opium_plantation add_resource_potential = building_maize_farm add_resource_potential = building_fiber_plantation } # M C F T
+	s:STATE_CAUCA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation } # M C F T
+
+	# ------------------------------------------------------------------
+	# MIDDLE EAST, PERSIA AND ANATOLIA
+	# ------------------------------------------------------------------
+	s:STATE_NEJD = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_OMAN = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_ABU_DHABI = { remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_HEDJAZ = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_HAIL = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_YEMEN = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_cotton_plantation add_resource_potential = building_dye_plantation } # W L C D
+	s:STATE_CYPRUS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_banana_plantation add_resource_potential = building_sugar_plantation } # W S V C
+	s:STATE_TRANSJORDAN = { remove_resource_potential = building_millet_farm remove_resource_potential = building_banana_plantation add_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch add_resource_potential = building_sugar_plantation } # W L SH S
+	s:STATE_PALESTINE = { remove_resource_potential = building_millet_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_wheat_farm add_resource_potential = building_sugar_plantation } # W S C V
+	s:STATE_LEBANON = { remove_resource_potential = building_millet_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_wheat_farm add_resource_potential = building_sugar_plantation } # W SI S V
+	s:STATE_SYRIA = { remove_resource_potential = building_millet_farm remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # W C L SH
+	s:STATE_ALEPPO = { remove_resource_potential = building_banana_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W C L SH
+	s:STATE_BAGHDAD = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_wheat_farm add_resource_potential = building_cotton_plantation } # W RI L C
+	s:STATE_MOSUL = { remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L SH C
+	s:STATE_DEIR_EZ_ZOR = { remove_resource_potential = building_millet_farm remove_resource_potential = building_tobacco_plantation add_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_BASRA = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_wheat_farm } # RI W L
+	s:STATE_FARS = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_dye_plantation } # W L V C
+	s:STATE_LARISTAN = { remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_LURISTAN = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_vineyard remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_SEMNAN = { remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_KERMAN = { remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH D
+	s:STATE_SISTAN = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation add_resource_potential = building_sheep_ranch } # W L C SH
+	s:STATE_KHORASAN = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_silk_plantation } # W L C V
+	s:STATE_KHUZESTAN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_silk_plantation } # W S C D
+	s:STATE_ISFAHAN = { remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_silk_plantation } # W L C V
+	s:STATE_MAZANDARAN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI SI C F
+	s:STATE_IRAKAJEMI = { remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH C
+	s:STATE_TABRIZ = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_dye_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_URMIA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_dye_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_PERSIAN_KURDISTAN = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_HUDAVENDIGAR = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation } # W SI V C
+	s:STATE_AYDIN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_silk_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W C V SH
+	s:STATE_KONYA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH O
+	s:STATE_KASTAMONU = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # W L SH F
+	s:STATE_DIYARBAKIR = { remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH C
+	s:STATE_ADANA = { remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sugar_plantation } # W C L S
+	s:STATE_TRABZON = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # W L F V
+	s:STATE_ERZURUM = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_KARS = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_ANKARA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH O
+
+	# ------------------------------------------------------------------
+	# CAUCASUS, CENTRAL ASIA, AFGHANISTAN, TIBET
+	# ------------------------------------------------------------------
+	s:STATE_DAGESTAN = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_KUBAN = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	# STATE_ARMENIA: no change (W V L SI)
+	s:STATE_AZERBAIJAN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_wheat_farm } # W SI V RI
+	s:STATE_GREATER_CAUCASUS = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation } # W L SI V
+	s:STATE_UZBEKIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation add_resource_potential = building_vineyard } # W C SI V
+	s:STATE_TAJIKISTAN = { remove_resource_potential = building_tea_plantation remove_resource_potential = building_opium_plantation add_resource_potential = building_cotton_plantation add_resource_potential = building_sheep_ranch } # W L C SH
+	s:STATE_KIRGHIZIA = { remove_resource_potential = building_tea_plantation add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_CENTRAL_HIGHLANDS = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_QUETTA = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation add_resource_potential = building_sheep_ranch } # W L SH
+	s:STATE_TURKMENIA = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_opium_plantation add_resource_potential = building_sheep_ranch add_resource_potential = building_cotton_plantation } # W L SH C
+	s:STATE_PASHTUNISTAN = { remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation add_resource_potential = building_sheep_ranch } # W L SH V
+	s:STATE_NORTHERN_BALUCHISTAN = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_HERAT = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation } # W C V L
+	s:STATE_KANDAHAR = { remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation } # W C V L
+	s:STATE_BALKH = { remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W C L SH
+	s:STATE_KABUL = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation add_resource_potential = building_sheep_ranch } # W V L SH
+	s:STATE_BALUCHISTAN = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation add_resource_potential = building_sheep_ranch add_resource_potential = building_cotton_plantation } # W L SH C
+	s:STATE_LHASA = { add_resource_potential = building_sheep_ranch } # R L SH
+	s:STATE_NGARI = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_HIMALAYAS = { remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # RI L SH F
+	s:STATE_EASTERN_HIMALAYAS = { remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation add_resource_potential = building_fiber_plantation } # RI L F
+
+	# ------------------------------------------------------------------
+	# INDIA AND BURMA
+	# ------------------------------------------------------------------
+	s:STATE_BIHAR = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation } # RI C S D
+	s:STATE_WEST_BENGAL = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_dye_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation } # RI S SI F
+	s:STATE_EAST_BENGAL = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_banana_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_cotton_plantation add_resource_potential = building_fiber_plantation } # RI C S F
+	s:STATE_ASSAM = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation add_resource_potential = building_fiber_plantation } # RI SI F L
+	s:STATE_DELHI = { remove_resource_potential = building_banana_plantation remove_resource_potential = building_opium_plantation } # W C S L
+	s:STATE_PUNJAB = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sugar_plantation } # W C S L
+	s:STATE_AWADH = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation } # RI S C D
+	s:STATE_AGRA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_wheat_farm } # W C D S
+	s:STATE_GUJARAT = { remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_silk_plantation } # W C D L
+	s:STATE_BUNDELKHAND = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_fiber_plantation } # W L C F
+	s:STATE_MALWA = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_sheep_ranch } # W C L SH
+	s:STATE_KASHMIR = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_sheep_ranch } # RI SH L V
+	s:STATE_HILL_PUNJAB = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # W L SH F
+	s:STATE_CENTRAL_PROVINCES = { remove_resource_potential = building_rice_farm remove_resource_potential = building_dye_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_millet_farm add_resource_potential = building_fiber_plantation } # MI C L F
+	s:STATE_SINDH = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_sheep_ranch } # W C L SH
+	s:STATE_RAJPUTANA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_dye_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_millet_farm add_resource_potential = building_sheep_ranch } # MI L SH C
+	s:STATE_CEYLON = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI B F C
+	s:STATE_INDIAN_OCEAN_TERRITORY = { remove_resource_potential = building_rice_farm remove_resource_potential = building_sugar_plantation remove_resource_potential = building_coffee_plantation add_resource_potential = building_fiber_plantation } # B F
+	s:STATE_ORISSA = { remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_fiber_plantation } # RI C L F
+	s:STATE_CIRCARS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_silk_plantation } # RI C D S
+	s:STATE_MYSORE = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_millet_farm } # MI RI C L
+	s:STATE_TRAVANCORE = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI B F C
+	s:STATE_MADRAS = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_silk_plantation } # RI C D L
+	s:STATE_KURNOOL = { remove_resource_potential = building_rice_farm remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_millet_farm } # MI C L D
+	s:STATE_HYDERABAD = { remove_resource_potential = building_rice_farm remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_millet_farm } # MI C L D
+	s:STATE_BOMBAY = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation } # RI C F L
+	s:STATE_TENASSERIM = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_dye_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI B C F
+	s:STATE_KACHIN = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation } # RI TE F L
+	s:STATE_SHAN_STATES = { remove_resource_potential = building_opium_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation } # RI TE C L
+	s:STATE_MANDALAY = { remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_silk_plantation add_resource_potential = building_fiber_plantation } # RI C L F
+	s:STATE_PEGU = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_dye_plantation add_resource_potential = building_cotton_plantation add_resource_potential = building_fiber_plantation } # RI C B F
+	s:STATE_ARAKAN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI C B F
+
+	# ------------------------------------------------------------------
+	# CHINA, MONGOLIA, MANCHURIA
+	# ------------------------------------------------------------------
+	s:STATE_DZUNGARIA = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_ALXA = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_ULIASTAI = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_URGA = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_QINGHAI = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_TIANSHAN = { remove_resource_potential = building_livestock_ranch add_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # W C V SH
+	s:STATE_SICHUAN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_silk_plantation add_resource_potential = building_fiber_plantation } # RI SI TE F
+	s:STATE_CHONGQING = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard remove_resource_potential = building_opium_plantation add_resource_potential = building_fiber_plantation } # RI SI TE F
+	s:STATE_YUNNAN = { remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation } # RI TE L F
+	s:STATE_GUIZHOU = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI TE D F
+	s:STATE_SHAOZHOU = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation } # RI SI TE F
+	s:STATE_ZHEJIANG = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI SI TE F
+	s:STATE_HINGGAN = { remove_resource_potential = building_wheat_farm add_resource_potential = building_millet_farm add_resource_potential = building_sheep_ranch } # MI L SH
+	s:STATE_NORTHERN_MANCHURIA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_millet_farm add_resource_potential = building_sheep_ranch } # MI L SH
+	s:STATE_GUANGXI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_silk_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI S F D
+	s:STATE_BEIJING = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # W C F L
+	s:STATE_ZHILI = { remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # W C F L
+	s:STATE_SHENGJING = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_millet_farm add_resource_potential = building_fiber_plantation } # MI F L
+	s:STATE_SOUTHERN_MANCHURIA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_millet_farm add_resource_potential = building_fiber_plantation } # MI F L
+	s:STATE_OUTER_MANCHURIA = { remove_resource_potential = building_rye_farm } # L
+	s:STATE_SHANXI = { remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # W V L F
+	s:STATE_NINGXIA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation add_resource_potential = building_millet_farm add_resource_potential = building_sheep_ranch } # MI L SH V
+	s:STATE_GANSU = { remove_resource_potential = building_rice_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_millet_farm add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # MI L SH F
+	s:STATE_XIAN = { remove_resource_potential = building_rice_farm remove_resource_potential = building_silk_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard remove_resource_potential = building_opium_plantation add_resource_potential = building_wheat_farm add_resource_potential = building_fiber_plantation } # W C F L
+	s:STATE_GUANGDONG = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_sugar_plantation } # RI S SI D
+	s:STATE_FUJIAN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation add_resource_potential = building_sugar_plantation } # RI TE SI S
+	s:STATE_JIANGSU = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI C SI F
+	s:STATE_SUZHOU = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI C SI F
+	s:STATE_NANJING = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tobacco_plantation } # RI C SI TE
+	s:STATE_HENAN = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_wheat_farm add_resource_potential = building_fiber_plantation } # W C SI F
+	s:STATE_JIANGXI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI TE SI F
+	s:STATE_SOUTHERN_ANHUI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI TE SI F
+	s:STATE_NORTHERN_ANHUI = { remove_resource_potential = building_rice_farm remove_resource_potential = building_silk_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_wheat_farm add_resource_potential = building_fiber_plantation } # W C F L
+	s:STATE_WESTERN_HUBEI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI TE F C
+	s:STATE_EASTERN_HUBEI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI C F SI
+	s:STATE_HUNAN = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI TE F L
+	s:STATE_FORMOSA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI B F
+	s:STATE_SHANDONG = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # W SI C F
+
+	# ------------------------------------------------------------------
+	# SOUTHEAST ASIA (mainland)
+	# ------------------------------------------------------------------
+	s:STATE_CAMBODIA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_silk_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI C B F
+	s:STATE_BANGKOK = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_silk_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI C B F
+	s:STATE_MEKONG = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI C B F
+	s:STATE_TONKIN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation } # RI SI TE F
+	s:STATE_ANNAM = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI SI B F
+	s:STATE_LAOS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI SI F B
+	s:STATE_CHIANG_MAI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI C F B
+	s:STATE_NAKHON_RATCHASIMA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_opium_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # RI C SI B
+
+	# ------------------------------------------------------------------
+	# KOREA AND JAPAN
+	# ------------------------------------------------------------------
+	s:STATE_SAKHALIN = { remove_resource_potential = building_livestock_ranch } # (none)
+	s:STATE_TOHOKU = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation } # RI SI F L
+	s:STATE_KANTO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_dye_plantation add_resource_potential = building_fiber_plantation } # RI SI F TE
+	s:STATE_TOKAI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation } # RI SI TE F
+	s:STATE_KYOTO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI SI TE F
+	s:STATE_CHUGOKU = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI SI TE F
+	s:STATE_HOKUSHINETSU = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_fiber_plantation } # RI SI F
+	s:STATE_KANSAI = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_opium_plantation remove_resource_potential = building_vineyard remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_dye_plantation add_resource_potential = building_fiber_plantation } # RI TE SI F
+	s:STATE_KYUSHU = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI TE F SI
+	s:STATE_RYUKYU_ISLANDS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_banana_plantation add_resource_potential = building_fiber_plantation } # RI B F
+	s:STATE_SHIKOKU = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_silk_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI F D TE
+	s:STATE_SEOUL = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation add_resource_potential = building_tea_plantation } # RI F SI TE
+	s:STATE_YANGHO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI F SI TE
+	s:STATE_BUSAN = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI TE F SI
+	s:STATE_SARIWON = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation add_resource_potential = building_fiber_plantation } # RI F SI
+	s:STATE_PYONGYANG = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_opium_plantation add_resource_potential = building_millet_farm add_resource_potential = building_fiber_plantation } # RI MI F SI
+
+	# ------------------------------------------------------------------
+	# INDONESIA, PHILIPPINES AND PACIFIC
+	# ------------------------------------------------------------------
+	s:STATE_MALAYA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tea_plantation add_resource_potential = building_fiber_plantation } # RI B F S
+	s:STATE_NORTH_BORNEO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI B F
+	s:STATE_WEST_BORNEO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI B F
+	s:STATE_EAST_BORNEO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI B F
+	s:STATE_NORTH_SUMATRA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI B F
+	s:STATE_ACEH = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI B F
+	s:STATE_MOLUCCAS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI B F
+	s:STATE_CELEBES = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI B F
+	s:STATE_WEST_JAVA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI C B F
+	s:STATE_EAST_JAVA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI C B F
+	s:STATE_CENTRAL_JAVA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation } # RI C B D
+	s:STATE_SOUTH_SUMATRA = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation add_resource_potential = building_cotton_plantation } # RI B F C
+	s:STATE_WESTERN_NEW_GUINEA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation } # B
+	s:STATE_EASTERN_NEW_GUINEA = { remove_resource_potential = building_rice_farm remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation } # B
+	s:STATE_NAURU = { remove_resource_potential = building_rice_farm remove_resource_potential = building_coffee_plantation } # B
+	s:STATE_SUNDA_ISLANDS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_cotton_plantation add_resource_potential = building_fiber_plantation } # RI C B F
+	s:STATE_MINDANAO = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_fiber_plantation } # RI C B F
+	s:STATE_LUZON = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI C B F
+	s:STATE_VISAYAS = { remove_resource_potential = building_livestock_ranch remove_resource_potential = building_coffee_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # RI C B F
+	s:STATE_WEST_MICRONESIA = { remove_resource_potential = building_rice_farm add_resource_potential = building_fiber_plantation } # B F
+	s:STATE_EAST_MICRONESIA = { remove_resource_potential = building_rice_farm add_resource_potential = building_fiber_plantation } # B F
+	s:STATE_SOLOMON_ISLANDS = { remove_resource_potential = building_rice_farm remove_resource_potential = building_coffee_plantation add_resource_potential = building_fiber_plantation } # B F
+	s:STATE_VANUATU = { remove_resource_potential = building_rice_farm remove_resource_potential = building_coffee_plantation add_resource_potential = building_fiber_plantation } # B F
+	s:STATE_BOUGAINVILLE = { remove_resource_potential = building_rice_farm remove_resource_potential = building_coffee_plantation add_resource_potential = building_fiber_plantation } # B F
+	s:STATE_TAHITI = { remove_resource_potential = building_rice_farm add_resource_potential = building_fiber_plantation } # B F
+	s:STATE_TONGA = { remove_resource_potential = building_rice_farm add_resource_potential = building_fiber_plantation } # B F
+
+	# ------------------------------------------------------------------
+	# COLONIAL-ERA PASTURE - states with no farming in 1337 (cattle, horses and sheep ranching)
+	# ------------------------------------------------------------------
+	s:STATE_URUGUAY = { remove_resource_potential = building_maize_farm remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_SANTA_FE = { remove_resource_potential = building_maize_farm remove_resource_potential = building_dye_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_BUENOS_AIRES = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_LA_PAMPA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_RIO_NEGRO = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_dye_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_PATAGONIA = { add_resource_potential = building_sheep_ranch } # SH L
+	s:STATE_SOUTH_ATLANTIC_ISLANDS = { add_resource_potential = building_sheep_ranch } # SH L
+	s:STATE_NEW_SOUTH_WALES = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # SH L
+	s:STATE_VICTORIA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # SH L
+	s:STATE_TASMANIA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_opium_plantation add_resource_potential = building_sheep_ranch } # SH L
+	s:STATE_QUEENSLAND = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_sugar_plantation add_resource_potential = building_sheep_ranch } # SH L
+	s:STATE_SOUTH_AUSTRALIA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # SH L
+	s:STATE_WESTERN_AUSTRALIA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # SH L
+	s:STATE_SOUTH_ISLAND = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # SH L
+	s:STATE_NORTHERN_TERRITORY = { remove_resource_potential = building_cotton_plantation } # L
+	s:STATE_NORTH_ISLAND = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch add_resource_potential = building_fiber_plantation } # SH L F
+	s:STATE_WASHINGTON = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_OREGON = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_IDAHO = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_WYOMING = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_MONTANA = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_NEVADA = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_CALIFORNIA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_BAJA_CALIFORNIA = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tobacco_plantation remove_resource_potential = building_vineyard add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_ALBERTA = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_BRITISH_COLUMBIA = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_SASKATCHEWAN = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_MANITOBA = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_NEW_BRUNSWICK = { add_resource_potential = building_sheep_ranch } # L SH
+	s:STATE_HOKKAIDO = { remove_resource_potential = building_wheat_farm add_resource_potential = building_sheep_ranch } # L SH
+
+	# ------------------------------------------------------------------
+	# COLONIAL-ERA ISLAND USES (what the colonizers settled them for)
+	# ------------------------------------------------------------------
+	s:STATE_MADEIRA = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_banana_plantation add_resource_potential = building_livestock_ranch } # S V W L
+	s:STATE_AZORES = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation remove_resource_potential = building_banana_plantation remove_resource_potential = building_tea_plantation add_resource_potential = building_dye_plantation add_resource_potential = building_livestock_ranch } # W D V L
+	s:STATE_CAPE_VERDE = { remove_resource_potential = building_wheat_farm remove_resource_potential = building_coffee_plantation add_resource_potential = building_dye_plantation add_resource_potential = building_livestock_ranch } # C S D L
+	s:STATE_CANARY_ISLANDS = { remove_resource_potential = building_coffee_plantation remove_resource_potential = building_cotton_plantation remove_resource_potential = building_dye_plantation remove_resource_potential = building_tobacco_plantation add_resource_potential = building_livestock_ranch } # S V W L
+	s:STATE_BERMUDA = { remove_resource_potential = building_cotton_plantation remove_resource_potential = building_sugar_plantation } # T L
+	s:STATE_HAWAIIAN_ISLANDS = { remove_resource_potential = building_rice_farm remove_resource_potential = building_cotton_plantation remove_resource_potential = building_tea_plantation remove_resource_potential = building_tobacco_plantation } # S CO L B
+	s:STATE_FIJI = { remove_resource_potential = building_rice_farm remove_resource_potential = building_coffee_plantation add_resource_potential = building_sugar_plantation add_resource_potential = building_fiber_plantation } # S B F
+	s:STATE_KANAK = { remove_resource_potential = building_rice_farm add_resource_potential = building_livestock_ranch add_resource_potential = building_fiber_plantation } # L CO B F
+}

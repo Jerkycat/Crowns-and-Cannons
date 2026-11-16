@@ -4,10 +4,10 @@
 # min_supply_share			If above 0, a minimum of this multiplier of the base weight will be applied to a good regardless of its market Sell Order share
 
 popneed_simple_clothing = {
-	default = fabric
+	default = plant_fiber
 
 	entry = {
-		goods = fabric
+		goods = plant_fiber
 
 		weight = 1
 		max_supply_share = 0.5
@@ -15,11 +15,27 @@ popneed_simple_clothing = {
 	}
 
 	entry = {
-		goods = clothes
+		goods = wool
+
+		weight = 1
+		max_supply_share = 0.5
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = textiles
 
 		weight = 2
 		max_supply_share = 1.0
 		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = services
+
+		weight = 0.125
+		max_supply_share = 0.125
+		min_supply_share = 0.0125
 	}
 }
 
@@ -29,8 +45,16 @@ popneed_crude_items = {
 	entry = {
 		goods = wood
 
-		weight = 1
+		weight = 0.75
 		max_supply_share = 0.5
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = pottery
+
+		weight = 1
+		max_supply_share = 1.0
 		min_supply_share = 0.0
 	}
 
@@ -40,6 +64,13 @@ popneed_crude_items = {
 		weight = 2
 		max_supply_share = 1.0
 		min_supply_share = 0.0
+	}
+	entry = {
+		goods = services
+
+		weight = 0.125
+		max_supply_share = 0.125
+		min_supply_share = 0.0125
 	}
 }
 
@@ -57,7 +88,7 @@ popneed_basic_food = {
 	entry = {
 		goods = grain
 
-		weight = 0.85
+		weight = 1
 		max_supply_share = 0.9
 		min_supply_share = 0.0
 	}
@@ -71,7 +102,15 @@ popneed_basic_food = {
 	}
 
 	entry = {
-		goods = meat
+		goods = livestock
+
+		weight = 1
+		max_supply_share = 0.9
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = wool
 
 		weight = 1
 		max_supply_share = 0.9
@@ -82,6 +121,14 @@ popneed_basic_food = {
 		goods = fruit
 
 		weight = 1
+		max_supply_share = 0.9
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = groceries
+
+		weight = 1.15
 		max_supply_share = 0.9
 		min_supply_share = 0.0
 	}
@@ -99,7 +146,15 @@ popneed_heating = {
 	}
 
 	entry = {
-		goods = fabric
+		goods = plant_fiber
+
+		weight = 0.25
+		max_supply_share = 0.25
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = wool
 
 		weight = 0.25
 		max_supply_share = 0.25
@@ -116,10 +171,10 @@ popneed_heating = {
 }
 
 popneed_household_items = {
-	default = furniture
+	default = pottery
 
 	entry = {
-		goods = furniture
+		goods = pottery
 
 		weight = 1
 		max_supply_share = 0.75
@@ -141,13 +196,29 @@ popneed_household_items = {
 		max_supply_share = 0.5
 		min_supply_share = 0.0
 	}
+
+	entry = {
+		goods = services
+
+		weight = 0.125
+		max_supply_share = 0.125
+		min_supply_share = 0.0125
+	}
 }
 
 popneed_standard_clothing = {
-	default = clothes
+	default = textiles
 
 	entry = {
-		goods = clothes
+		goods = textiles
+	}
+
+	entry = {
+		goods = services
+
+		weight = 0.125
+		max_supply_share = 0.125
+		min_supply_share = 0.0125
 	}
 }
 
@@ -241,6 +312,14 @@ popneed_free_movement = {
 		max_supply_share = 0.75
 		min_supply_share = 0.0
 	}
+
+	entry = {
+		goods = services
+
+		weight = 0.125
+		max_supply_share = 0.125
+		min_supply_share = 0.0125
+	}
 }
 
 popneed_communication = {
@@ -253,13 +332,21 @@ popneed_communication = {
 		max_supply_share = 0.75
 		min_supply_share = 0.0
 	}
+
+	entry = {
+		goods = services
+
+		weight = 0.125
+		max_supply_share = 0.125
+		min_supply_share = 0.0125
+	}
 }
 
 popneed_luxury_food = {
-	default = meat
+	default = livestock
 
 	entry = {
-		goods = meat
+		goods = livestock
 
 		weight = 1.25
 		max_supply_share = 0.75
@@ -284,14 +371,14 @@ popneed_luxury_food = {
 }
 
 popneed_luxury_items = {
-	default = silk
+	default = fine_textiles
 
 	obsession_demand_min = 0.75
 	obsession_demand_mult = 1.75
 	prestige_goods_demand_increase = 0.75
 
 	entry = {
-		goods = silk
+		goods = fine_textiles
 
 		weight = 0.5
 		max_supply_share = 0.25
@@ -304,6 +391,13 @@ popneed_luxury_items = {
 		weight = 1
 		max_supply_share = 0.5
 		min_supply_share = 0.1
+	}
+	entry = {
+		goods = services
+
+		weight = 0.125
+		max_supply_share = 0.125
+		min_supply_share = 0.0125
 	}
 }
 
@@ -323,15 +417,7 @@ popneed_leisure = {
 	}
 
 	entry = {
-		goods = fine_art
-
-		weight = 4
-		max_supply_share = 1.0
-		min_supply_share = 0.0
-	}
-
-	entry = {
-		goods = small_arms
+		goods = weaponry
 
 		weight = 0.75
 		max_supply_share = 0.25
@@ -343,14 +429,6 @@ popneed_leisure = {
 
 		weight = 0.5
 		max_supply_share = 0.5
-		min_supply_share = 0.0
-	}
-
-	entry = {
-		goods = clippers
-
-		weight = 1
-		max_supply_share = 0.25
 		min_supply_share = 0.0
 	}
 }

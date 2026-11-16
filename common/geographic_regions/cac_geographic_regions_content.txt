@@ -1,0 +1,37 @@
+﻿geographic_region_sheep_farming_region = {
+	short_key = "sheep_farming_region"
+
+	strategic_regions = {
+		# Europa — berço da lã medieval, ovelhas onipresentes
+		sr:region_western_europe        # Inglaterra, França, Países Baixos — lã inglesa e flamenga dominavam o comércio
+		sr:region_southern_europe       # Ibéria (merino nascente), Itália central e norte
+		sr:region_central_europe        # Alemanha, Boêmia, Áustria, Suíça
+		sr:region_northern_europe       # Escandinávia, Islândia (forte tradição ovina)
+		sr:region_eastern_europe        # Polônia, Ucrânia, Bálticos
+		sr:region_balkans               # Balcãs e planícies húngaras — raças valaques
+		sr:region_russia                # Rus, estepes ocidentais
+
+		# Oriente Médio e Ásia Central — ovelhas de cauda gorda, tradição nômade milenar
+		sr:region_near_east             # Anatólia, Levante, Mesopotâmia
+		sr:region_arabia                # Arábia — raças locais resistentes ao calor
+		sr:region_greater_persia        # Pérsia, Cáucaso, Afeganistão
+		sr:region_central_asia          # Estepes — cultura pastoril turco-mongol central
+
+		# Sul da Ásia
+		sr:region_north_india           # Punjab, Rajputana, regiões semi-áridas
+		sr:region_himalayas             # Tibet, Caxemira — ovelhas de altitude
+
+		# África do Norte e Nordeste
+		sr:region_north_africa          # Maghreb — tradição berbere de pastoreio
+		sr:region_nile_basin            # Egito e Sudão — presença histórica contínua
+
+		# Leste da Ásia
+		sr:region_north_china           # Norte da China, Mongólia — influência mongol/pastoril
+
+		# Oceania (excluída — não havia ovelhas em 1337)
+		# Américas (excluídas — sem Ovis aries pré-Colombo)
+		# África Subsaariana (excluída — sem tradição ovina relevante no período)
+	}
+}
+
+

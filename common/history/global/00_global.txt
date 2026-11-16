@@ -1,29 +1,39 @@
 ﻿# This is executed last among all history
 GLOBAL = {
-	every_country = { # Fixes Missing Port Connections
+    every_state = {
+        limit = {
+            owner = {
+                NOT = { is_country_type = decentralized }
+            }
+        }
+
+        # Fixes Missing Port Connections
+        if = {
+            limit = { is_sea_adjacent = yes }
+
+            if = {
+                limit = {
+                    OR = {
+                        is_isolated_from_market = yes
+                        is_capital = yes
+                    }
+                }
+                create_building = { building = building_port level = 1 }
+            }
+            if = {
+                limit = { is_capital = yes }
+                create_building = { building = building_trade_center level = 2 }
+                create_building = { building = building_shipyard level = 1 }
+            }
+        }
+    }
+
+    every_country = {
 		limit = {
-			OR = {
-				country_tier = principality
-				country_tier = grand_principality
-				country_tier = kingdom
-			}
+			NOT = { is_country_type = decentralized }
 		}
-		every_state = {
-			if = {
-				limit = {
-					AND = {
-						is_sea_adjacent = yes
-						OR = {
-							is_isolated_from_market = yes
-							is_capital = yes
-						}
-					}
-				}
-				create_building = {
-				building = building_port
-				level = 1
-				}
-			}
+		add_supply_ships = {
+			add = 10
 		}
 	}
 }

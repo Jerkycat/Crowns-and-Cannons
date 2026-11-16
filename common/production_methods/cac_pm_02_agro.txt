@@ -1,0 +1,119 @@
+﻿
+default_cac_building_vineyard = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_wine_add = 8 # x50 = 400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_farmers_add = 1000
+		}
+	}
+}
+
+# Grain Crops
+
+pm_cac_simple_farming = {
+	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_grain_add = 20 # 400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_farmers_add = 1000
+		}
+	}
+}
+
+pm_cac_simple_farming_building_rice_farm = {
+	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_grain_add = 35 # 700
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 8000
+			building_employment_farmers_add = 2000
+		}
+		unscaled = {
+			building_slaves_mortality_mult = 0.2
+		}
+	}
+}
+
+# Livestock Ranches
+
+pm_cac_open_air_stockyards = {
+	texture = "gfx/interface/icons/production_method_icons/open_air_stockyards.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_livestock_add = 10 # x30 = 300
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_farmers_add = 1000
+		}
+	}
+}
+
+# Sheep Ranches
+
+pm_cac_default_building_sheep_ranch = {
+	texture = "gfx/interface/icons/production_method_icons/open_air_stockyards.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_wool_add = 10 # x30 = 300
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_farmers_add = 1000
+		}
+	}
+}
+
+# Fiber Plantations
+
+pm_cac_default_building_fiber_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_plant_fiber_add = 20 # 400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_farmers_add = 1000
+		}
+	}
+}
+
+# Dye Plantations
+
+pm_cac_base_building_dye_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/plantation_production.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_dye_add = 10 # x40 = 400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_farmers_add = 1000
+		}
+	}
+}

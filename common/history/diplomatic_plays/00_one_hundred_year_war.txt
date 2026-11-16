@@ -7,7 +7,7 @@
 
 			type = dp_conquer_state
 
-			add_initiator_backers = { C:FLA C:ENG }
+			add_initiator_backers = { C:FLA C:ENG C:WLS C:WLM C:PLE }
 
 			add_war_goal = {
 				holder = c:AQN

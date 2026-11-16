@@ -1,0 +1,287 @@
+﻿
+# Era 2 - Professional Armies
+
+professional_army = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	modifier = {
+		country_weekly_innovation_mult = 0.05
+	}
+
+	unlocking_technologies = {
+		footmen
+		archers
+	}
+
+	ai_weight = {
+		value = 2
+	}
+}
+
+gunpowder = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		professional_army
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+organized_recruitment = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		professional_army
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+recruitment_law = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		professional_army
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+commissioned_officers = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		gunpowder
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+gunsmith = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		gunpowder
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+drill_army = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		organized_recruitment
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+permanent_field_training = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		organized_recruitment
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+cavalrymen = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		commissioned_officers
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+handgonners = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		gunsmith
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+cannon_maker = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		gunsmith
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+slave_center = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		gunsmith
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+supply_depots = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		permanent_field_training
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+armory = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		drill_army
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+heavy_armor = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		cavalrymen
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+houfnice = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		cannon_maker
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+men_at_arms = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		armory
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+crossbowmen = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		armory
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+coastal_fort = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		supply_depots
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+supply_carts = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = military
+
+	unlocking_technologies = {
+		supply_depots
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}

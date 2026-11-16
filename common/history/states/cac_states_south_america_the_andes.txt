@@ -1,0 +1,317 @@
+
+STATES = {
+		# The Andes
+
+	s:STATE_PASTAZA = {
+		create_state = {
+			country = c:AMZ
+			owned_provinces = { x6B0A5B x3C0D20 xF479D2 xD61646 x737C7E x51F069 xA54AD4 xB16F01 x411597 x3E32E2 xF73F96 xF86ADF x3799DE xA5ACFD x8C41E2 x096D46 x6D7047 x4F0E85 x299588 xFD33D9 xB47529 xD0BAEC x804050 x439628 x6675F2 x0EA863 x9110AC x8A1A0D x2521E8 x01CA2C xEB5ADD xD18F33 xD21383 xA29A00 x9FEB80 x7AC512 x8080D0 x63ED6E x6B096B x8FE675 x60DC96 x3DBF3C x598DEB x248E5D xFB499C xE043D2 xE85DC6 x667AE7 xE05359 xB7C18D xFD054C xDF9283 x917883 x7FE0D2 xC5B9B8 xD37CBF x877BF7 x9B0B43 x27EF71 x38C3BD x9EAA88 x8CD643 xA28606 x97F39F xC778AE x0080D0 x272E8C xDCA8CF xCF5C7B xF2735E x6DCE38 x7E3539 xD0D212 }
+		}
+		add_homeland = cu:amazonian	}
+
+	s:STATE_ACRE = {
+		create_state = {
+			country = c:AMZ
+			state_type = unincorporated
+			owned_provinces = { x06E343 x0BEC9D x20BB6B x449875 x5434FE x562DA4 x7949EB x897E6F xA296AF xB7152C xC4B4CD xD45C4D xDDB34E xF77646 xFD1ADF xFF2E3D x174A88 x2C1E28 x41C0D0 x46F090 x5720BB x5C413B x93D464 x9A5667 xAB73D1 xF23C51 xF605CB xFA73DA xFDB1E8 }
+		}
+		# NPU - x06E343 x0BEC9D x20BB6B x449875 x5434FE x562DA4 x7949EB x897E6F xA296AF xB7152C xC4B4CD xD45C4D xDDB34E xF77646 xFD1ADF xFF2E3D
+		# SPU - x174A88 x2C1E28 x41C0D0 x46F090 x5720BB x5C413B x93D464 x9A5667 xAB73D1 xF23C51 xF605CB xFA73DA xFDB1E8
+
+		add_homeland = cu:amazonian	}
+
+	s:STATE_TUCUMAN = {
+		create_state = {
+			country = c:CCH
+			owned_provinces = { xD0C0D0 xE44569 xAF104E x513BBF x0DE4E6 x19EBD4 xCD1304 xF9A9CB x040A5A x5EE1DE xA056EB xB00010 x273A8F x10EE5A x308010 x97CC8F x88069E xD176EE xA6E3FF x69CE0A x96A5C9 xE6D8DB x198016 xCD566B x751CEB x41A9D6 x34BCCC x8654E1 xEFB9CB x146973 xA9393F xDE7D37 x31DC15 x23D433 }
+		}
+		create_state = {
+			country = c:MYC
+			owned_provinces = { x1000D0 x4281BB x2D3184 }
+		}
+		create_state = {
+			country = c:ALC
+			owned_provinces = { xAABE4B xB08010 x75F2DC x3FE375 x7D1FA4 x7011E9 xAC403E xEE928C xFC58D2 xED426E x11B8D6 x1C5911 xFEE485 x940333 }
+		}
+		create_state = {
+			country = c:QIM
+			owned_provinces = { xCCD312 x274804 x1DAB0D xF72706 x8B1824 x09084A x21CD86 x6AF7F3 x59952D x9C6E7D x4EF694 x471BB2 x832F57 xC00241 xF6FCCF x33099A x140D33 xD0C050 }
+		}
+		add_homeland = cu:aimara	}
+
+	s:STATE_SANTIAGO = {
+		create_state = {
+			country = c:PHE
+			owned_provinces = { x94DFAD xAFBE09 x92EAB2 x73C0F8 x6F3C8F x9E95B8 xC6A968 xD080D0 xACD450 x5080D0 x5DED27 }
+		}
+		create_state = {
+			country = c:CYC
+			owned_provinces = { xB808E7 xA53405 x792B0A xFEDF06 xD3A966 x001886 x975852 x1D4FBD xF0147F x38BE02 x7CD76E x6B96A8 x1297F8 xB17E89 x423A89 }
+		}
+		create_state = {
+			country = c:CPU
+			owned_provinces = { xE3764F xD08050 xFFF993 xB6BD11 x61C0E9 x983742 x3B1319 x5F5835 xCF8B7D xD000D0 xB57224 x42CE23 xC3EC7E }
+		}
+		add_homeland = cu:aimara	}
+
+	s:STATE_ANTOFAGASTA = {
+		create_state = {
+			country = c:QTR
+			owned_provinces = { xEE0067 x7984DF x8BA717 xF5E20E x20E574 x40D35C xCC472E x8F918A xF39FDA x8238EF x82A274 x3FDC05 x208070 x2DF128 xE96CF4 x4DCF72 xDE43F7 xCE7F3B x71C02C x694D06 }
+		}
+		create_state = {
+			country = c:CYC
+			owned_provinces = { x2000F0 xCAECEF x291C71 x1B2EC2 x6B33D0 }
+		}
+		add_homeland = cu:aimara	}
+
+	s:STATE_JUJUY = {
+		create_state = {
+			country = c:QIM
+			owned_provinces = { x2080F0 xAB66CC x702282 x5F3E39 xD2B642 x0D83A7 x829F7D xE6D25C x5CCB77 xC0183E xA3EF4A }
+		}
+		create_state = {
+			country = c:MGR
+			owned_provinces = { x204070 x92E924 xEAB107 x8C37BE x256EF2 xC11533 x8D1ED0 xE6ADAE xC3F7F6 xB01D65 x3DEF82 x369CE3 xC9249D }
+		}
+		create_state = {
+			country = c:OMG
+			owned_provinces = { x02AD51 x0643B5 x15263F x155297 x2040F0 x239211 x245987 x2D4E45 x2F5C46 x35DA48 x40F4EB x45BE94 x463063 x4C03D0 x90F196 x98DD14 xA94375 xAB88AD xCA4A31 xDF0030 xDF80F0 }
+		}
+		create_state = {
+			country = c:TUP
+			owned_provinces = { x402B62 }
+		}
+		add_homeland = cu:aimara	}
+
+	s:STATE_TARAPACA = {
+		create_state = {
+			country = c:QTR
+			owned_provinces = { xB3DA33 x380AE9 xC9DDC4 x8733A4 x79C7F7 x2F3768 x1040D0 xD46425 xCB9DD5 xF391A7 xA00070 x49DD3B x2FB295 }
+		}
+		add_homeland = cu:aimara	}
+
+	s:STATE_POTOSI = {
+		create_state = {
+			country = c:KLL
+			owned_provinces = { x540F3D x82F7D6 xCEB68F x47733E x0AD269 xF2F873 x5AD6BE x77DD69 x32B79C x0D59CE x9AB55F xA08070 xA78878 x50379F x6955EB x270774 xEF3699 xF0A4ED xF6C024 xA040B0 x41FA9C x7E2F00 x0900B4 x7D78F0 x4E93E5 xEE24B4 x7084E0 }
+		}
+		create_state = {
+			country = c:KRK
+			owned_provinces = { x42886B x48CD30 }
+		}
+		create_state = {
+			country = c:SUR
+			owned_provinces = { x97595D x0B0C75 }
+		}
+		add_homeland = cu:aimara	}
+
+	s:STATE_SANTA_CRUZ = {
+		create_state = {
+			country = c:KLL
+			owned_provinces = { xCDAB17 x3778CC x81F86A xE56E10 }
+		}
+		create_state = {
+			country = c:TUP
+			owned_provinces = { x15D9B2 xDF00F0 x1FD39C x3B871C x28C317 x9319AA xF32BA0 xD60DF3 x6080F0 xD719A6 xAB85CC x7CB313 x496AE7 x6E0801 x39CC32 xAF5843 x250074 x714C4D xB6774C }
+		}
+		create_state = {
+			country = c:QQH
+			owned_provinces = { xA801A4 xDF8070 x6E61DE x0661EB x2D510D xA04706 x2B9564 x6000F0 x7015DC x2BBF68 xAD23DA }
+		}
+		create_state = {
+			country = c:CCT
+			owned_provinces = { xEE8908 x68E287 xC2D2CF xA71790 x98DAA7 x6FC251 x6A5C0E x15042F x415E16 xE715DC }
+		}
+		create_state = {
+			country = c:AVA
+			owned_provinces = { x09E90D x109FC9 x1193B7 x16B43C x2DAAD1 x2F94D3 x3773C8 x3F6940 x3FE30B x416E95 x432105 x4A7B7B x4C2019 x4D08EA x5356CA x54427F x55B384 x58FBC7 x5A913F x5B0D34 x5FF188 x624F3D x64A540 x691486 x6CF6C6 x76E7BA x7FD195 x844B67 x84B7A4 x85CF67 x89686F x8E3218 x9FEE87 xA8591E xA85D14 xAFDC1F xB5A755 xBD5D04 xC82DAF xC855AA xC8F896 xC96050 xDF80B0 xE1E5C8 xE52AD9 xEAC53B xEC9913 xF7F93C xFD351A x965499 xF0ACDA }
+		}
+		create_state = {
+			country = c:CRA
+			owned_provinces = { x5E03A7 }
+		}
+		add_homeland = cu:guarani
+		add_homeland = cu:quechua	}
+
+	s:STATE_AREQUIPA = {
+		create_state = {
+			country = c:CBY
+			owned_provinces = { x007035 x451783 x67EC55 x79A3B0 x7C1054 x923040 x96798E xBED190 xC72B01 xD66487 xDF23D0 xDFC0B0 xE326BA xF6869A }
+		}
+		create_state = {
+			country = c:KWY
+			owned_provinces = { x89775D xD619E0 x8EC087 x3BC37F }
+		}
+		create_state = {
+			country = c:LUP
+			owned_provinces = { x72698B x96AB5D }
+		}
+		create_state = {
+			country = c:QUL
+			owned_provinces = { xC16B62 xBB02B0 xB077B0 x2E3791 }
+		}
+		add_homeland = cu:quechua
+		add_homeland = cu:aimara	}
+
+	s:STATE_LA_PAZ = {
+		create_state = {
+			country = c:KWY
+			owned_provinces = { x045D66 x0CD27A x0D584B x11DE6C x131739 x1F3664 x22BE37 x253E79 x4040D0 x42895F x451DFA x4758AE x49B3A4 x4B6AB8 x4F8420 x542F50 x57125B x627358 x677249 x678125 x6B8F1E x725B6B x72B0FA x735E45 x7B95EA x88E8DC x9084FB x959B26 x9E207E xA00788 xA0C0F0 xB19B32 xB4F357 xB94EE4 xC0524B xC29D17 xC4AA63 xC8FBC2 xCF0442 xD08CB2 xDBFFFF xDE2B7D xDEA235 xDEDC30 xE00010 xE26287 xE527E3 xE74282 xEB3580 xF1BD3D xF4D455 xF940B8 xFBAC56 x0A51AC x1A8BA1 x20F378 x2410B7 x32FA5C x49B0BF x4C4D63 x7B4D37 xB5966F xF79A14 }
+		}
+		create_state = {
+			country = c:CBY
+			owned_provinces = { xE1BCCE x23D4CF }
+		}
+		create_state = {
+			country = c:MOX
+			owned_provinces = { xA04030 xCECD40 xDFF14D x969B22 xB127BC x913574 xED0E96 x0AAAAC x4F58C9 x84F56A x4721A4 x2CBF49 x12108F x95A83A x46BCB9 x931FDA }
+		}
+		create_state = {
+			country = c:CRA
+			owned_provinces = { x8FE404 x2815D0 }
+		}
+		create_state = {
+			country = c:SUR
+			owned_provinces = { xA2A5FA xD6FCA4 }
+		}
+		create_state = {
+			country = c:PCJ
+			owned_provinces = { xBF0E01 xF3EEF0 x07D111 }
+		}
+		create_state = {
+			country = c:UMA
+			owned_provinces = { x59B309 }
+		}
+		add_homeland = cu:aimara
+		add_homeland = cu:quechua
+		add_homeland = cu:amazonian	}
+
+	s:STATE_ICA = {
+		create_state = {
+			country = c:AMN
+			owned_provinces = { x3B8AB8 x40E12A x6040B0 x728391 x7B9FBE x807F09 x82F15A xB0BAC0 xC6E532 xD464CF xE5E702 x7991EE x32FF31 x52BF37 xDF00B0 xA7C0A9 x0D8A39 x003582 x68D883 x08623F xDFC030 xFB1969 }
+		}
+		create_state = {
+			country = c:KWY
+			owned_provinces = { x1CA561 xBDFBD1 x199608 x7DD2F8 x1F2F47 x817BB5 xFF8828 x186AEE xB2AB53 xF211E2 xB15AC4 x83E894 xD54205 x3F9FD5 xF0A4FE x0AF425 x43494D xB3DC65 }
+		}
+		create_state = {
+			country = c:CBY
+			owned_provinces = { xDF4030 }
+		}
+		create_state = {
+			country = c:KNA
+			owned_provinces = { x08BBBC x38EE47 xE7EB9B }
+		}
+		create_state = {
+			country = c:CSU
+			owned_provinces = { xA4CA0B x98E058 }
+		}
+		create_state = {
+			country = c:AYA
+			owned_provinces = { x44B4A5 xF3A702 }
+		}
+		create_state = {
+			country = c:KKE
+			owned_provinces = { x4061BE xA4DAF3 }
+		}
+		create_state = {
+			country = c:URC
+			owned_provinces = { x5F849A }
+		}
+		create_state = {
+			country = c:MYM
+			owned_provinces = { xCAB5E1 }
+		}
+		create_state = {
+			country = c:PCR
+			owned_provinces = { x3C568C }
+		}
+		create_state = {
+			country = c:HNK
+			owned_provinces = { xF333CF xA101CC }
+		}
+		create_state = {
+			country = c:HCR
+			owned_provinces = { x08AC16 x6780B3 }
+		}
+		add_homeland = cu:quechua	}
+
+	s:STATE_LIMA = {
+		create_state = {
+			country = c:HCR
+			owned_provinces = { x03B9CB x0B1EE1 x131D6D x187234 x20C0B0 x26F77F x2AFF79 x2B7493 x3060D7 x4411B8 x48284E x539023 x59E553 x5E4494 x631487 x64989F x690D59 x6EB212 x786D2C x7C29E5 x7C6BF6 x88CDF0 x91B0BF x96560E x9866F2 x99E70D x9BBC5E x9E0F14 xA03573 xA06991 xA146DE xA3F17B xA4735B xC2FE32 xC9CBD8 xCBB91A xCD4EF2 xCF5BB8 xD7B13A xDEA3E2 xE69BC9 xF2A18E xF3F25C xF405A2 x3528D6 }
+		}
+		create_state = {
+			country = c:AMN
+			owned_provinces = { x05FB9B }
+		}
+		create_state = {
+			country = c:HNK
+			owned_provinces = { xC64601 }
+		}
+		create_state = {
+			country = c:CIC
+			owned_provinces = { x32863F xD3F539 x25CF2A }
+		}
+		create_state = {
+			country = c:HRC
+			owned_provinces = { x60C030 xF19D07 }
+		}
+		create_state = {
+			country = c:ICM
+			owned_provinces = { x6BEF27 x928ED8 }
+		}
+		create_state = {
+			country = c:CLQ
+			owned_provinces = { xC0A53C }
+		}
+		create_state = {
+			country = c:NTA
+			owned_provinces = { xA0C0B0 }
+		}
+		add_homeland = cu:quechua	}
+
+	s:STATE_CAJAMARCA = {
+		create_state = {
+			country = c:PUK
+			owned_provinces = { x5ED420 xA33231 xE8C4B9 x49AE7D xA6A663 x069581 x53C9A1 xDC3D44 x6EDBA1 x215FF5 xD57EEE x54BF7F xC000D0 x1D15F7 xE709F8 x4CD5E4 x2A7F60 x3EA1E4 x4080D0 x08FB24 xF91A3D x66279A x2E0608 x5C955D xC8294A x8170A2 x769175 xB26C25 x1FAA35 x8D62E6 x2ACF46 xAD65A3 xEF024D }
+		}
+		create_state = {
+			country = c:TLN
+			owned_provinces = {  }
+		}
+		create_state = {
+			country = c:QTO
+			owned_provinces = { xD12A1F }
+		}
+		add_homeland = cu:quechua	}
+
+	s:STATE_ECUADOR = {
+		create_state = {
+			country = c:CNO
+			owned_provinces = { xEB4AA0 xC08050 xC962DE x5A704F }
+		}
+		create_state = {
+			country = c:AMZ
+			owned_provinces = { x6D9C0C xBC2EA9 x3C5C5E xE9C0F3 xBCA8C3 xCC826C xC734B8 xB8908A xB37B33 xDAEE9F xF36B5E xC48C3C xF5B8CC }
+		}
+		create_state = {
+			country = c:TLN
+			owned_provinces = { x1A243F x7DCF6B xE873F1 x8D6B95 x459CD5 x4000D0 x10BCFE }
+		}
+		create_state = {
+			country = c:PUB
+			owned_provinces = { x755FE4 x0582C9 x92111D x15959C x98A7D9 x2F44A7 x71A577 x60C210 x08149E }
+		}
+		create_state = {
+			country = c:GCV
+			owned_provinces = { xC8F0FB xFF2114 xC00050 x697D35 x29EE91 x9C2C85 x6ECA62 }
+		}
+		create_state = {
+			country = c:QTO
+			owned_provinces = { x55DF94 xAAA314 x248C22 x071415 x464276 x1B533D xFD39FD x7EC991 xE3A387 }
+		}
+		add_homeland = cu:quechua	}
+}

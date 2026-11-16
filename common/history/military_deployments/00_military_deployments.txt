@@ -1,0 +1,29 @@
+﻿MILITARY_DEPLOYMENTS = {
+	c:ENG ?= {
+		# 1_Armee: só cavalaria
+		random_military_formation = {
+			limit = {
+				is_army = yes
+				formation_army_unit_type_fraction = {
+					target = unit_type:combat_unit_type_cavalry_1
+					value > 0
+				}
+			}
+			fully_mobilize_army = yes
+			teleport_to_front = p:xE0A624.front
+		}
+
+		# 2_Armee: infantaria
+		random_military_formation = {
+			limit = {
+				is_army = yes
+				formation_army_unit_type_fraction = {
+					target = unit_type:combat_unit_type_infantry_2
+					value > 0
+				}
+			}
+			fully_mobilize_army = yes
+			teleport_to_front = p:xD0A040.front
+		}
+	}
+}

@@ -1,0 +1,181 @@
+# Crowns & Cannons Goods
+
+texticon = {
+	icon = local_food
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/local_food.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = wool
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/wool.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = plant_fiber
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/plant_fiber.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = cotton
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/cotton.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = textiles
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/textiles.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = fine_textiles
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/fine_textiles.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = beer
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/beer.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = horse
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/horse.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = saltpetre
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/saltpetre.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = sand
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/sand.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = pottery
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/pottery.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = beer
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/beer.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = leather
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/leather.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = weaponry
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/weaponry.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = livestock
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/livestock.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = book
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/book.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = jewelry
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/jewelry.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+texticon = {
+	icon = fur
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/fur.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}

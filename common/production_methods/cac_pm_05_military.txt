@@ -1,0 +1,18 @@
+﻿REPLACE:pm_no_organization = {
+	texture = "gfx/interface/icons/production_method_icons/no_specialists.dds"
+	is_default = yes
+
+	profession_ratio = {
+		soldiers = 97
+		officers = 3
+	}
+	building_modifiers = {
+		unscaled = {
+			building_training_rate_add = 25
+		}
+
+		level_scaled = {
+			building_training_rate_add = 5
+		}
+	}
+}

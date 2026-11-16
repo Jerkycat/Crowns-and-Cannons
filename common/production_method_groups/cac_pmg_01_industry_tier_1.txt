@@ -1,0 +1,148 @@
+﻿
+# Papermakers' Guild
+
+pmg_cac_base_building_papermakers_tier_0_animal_parchment = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_papermakers_tier_0_animal_parchment
+	}
+}
+
+pmg_cac_base_building_papermakers_tier_1_fiber_pulp_paper = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_papermakers_tier_1_fiber_pulp_paper
+	}
+}
+
+# Brewery
+
+pmg_cac_base_building_brewery_tier_1_grain_breweries = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_brewery_tier_1_grain_breweries
+	}
+}
+
+pmg_cac_base_building_brewery_tier_1_fruit_cideries = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_brewery_tier_1_fruit_cideries
+	}
+}
+
+# Tools Guild
+
+pmg_cac_base_building_tools_tier_0_crude_tools = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_tools_tier_0_crude_tools
+	}
+}
+
+pmg_cac_base_building_tools_tier_1_blacksmiths = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_tools_tier_1_blacksmiths
+	}
+}
+
+pmg_cac_base_building_tools_tier_1_bronze_tool_makers = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_tools_tier_1_bronze_tool_makers
+	}
+}
+
+# Glass Guild
+
+pmg_cac_base_building_glass_tier_0_forest_glass = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_glass_tier_0_forest_glass
+	}
+}
+
+pmg_cac_base_building_glass_tier_1_alum_and_lead = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_glass_tier_1_alum_and_lead
+	}
+}
+
+# Spinners' Guild
+
+pmg_cac_base_building_spinners_tier_1_linen_spinners_guild = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_spinners_tier_1_linen_spinners_guild
+	}
+}
+
+pmg_cac_base_building_spinners_tier_1_wool_spinners_guild = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_spinners_tier_1_wool_spinners_guild
+	}
+}
+
+# Potters' Guild
+
+pmg_cac_base_building_potters_tier_1_potteries = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_potters_tier_1_potteries
+	}
+}
+
+# Tailors' Guild
+
+pmg_cac_base_building_tailors_tier_1_tailors_guild = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_tailors_tier_1_tailors_guild
+	}
+}
+
+pmg_cac_alt_building_tailors_tier_1_tailors_guild = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_cac_alt_no_extra_tailors
+		pm_cac_alt_dye_makers
+		pm_cac_alt_dyes_with_alum
+	}
+}
+
+# Weaponsmith
+
+pmg_cac_base_building_weaponsmith_tier_0_weaponmakers = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_weaponsmith_tier_0_weaponmakers
+	}
+}
+
+pmg_cac_base_building_weaponsmith_tier_1_bladesmiths = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_weaponsmith_tier_1_bladesmiths
+	}
+}
+
+# Naval Supplies
+
+pmg_cac_base_building_shipyard = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_shipyard_tier_1
+	}
+}
+
+# Tannery
+
+pmg_cac_base_building_tannery_tier_1_leather_guild = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_tannery_tier_1_leather_guild
+	}
+}

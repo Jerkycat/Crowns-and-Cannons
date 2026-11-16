@@ -1,2 +1,40 @@
 ﻿l_english:
  GENERIC_FLAVOR_TEXT:0 "In this pivotal moment, our nation faces new opportunities and challenges. As global trade routes expand, we stand to benefit from novel ideas, goods, and cultural exchanges. However, maintaining our traditions and sovereignty amid these shifts remains a critical task.\n\nOur country must choose whether to focus on enhancing cultural richness or fortifying military strength. Our decisions will shape our nation's future trajectory in this increasingly interconnected world."
+
+ CSU_FLAVOR_TEXT:0 "Guided by the sun god, Inti, the first of our leaders founded Qusqu on the precise spot where his golden staff sank into the earth. After centuries of living alongside other groups, the Inca finally achieved dominance, and we established ourselves as the scions of this beautiful place. The high volcanoes and rushing rivers of the Andes Mountains shelter and nourish the Sacred Valley of the Incas, where we, the sons of the Sun, dwell in our magnificent city and make ready for the glorious future awaiting us. From our towering bulwark of mountains to our bountiful terraced farmlands, other nations can only gaze in envy at our riches.\n\nAfter years of power consolidation and politics, the time has come for our people to expand their influence outside our precious valley; to defeat our enemies and follow the paths of the mountains until we stand in each corner of this world. Are we prepared to face this destiny? Or will our enemies defeat us before we can reach our prime?"
+
+ ANDEAN_FLAVOR_TEXT:0 "The sacred mountains of the Andes have watched over our ancestors since the beginning of time. Their harsh climate and steep valleys have cultivated a strong and resourceful people, capable of not only surviving but thriving on the hostile terrain that characterizes the mountaintops, short coastline, and deep jungles. Against the harsh environment of our homelands, we have constructed strong stone buildings that easily withstand the seismic calamities we often face. Despite the hardscrabble existence we faced in the earliest days of our civilization, we now are a people know for artisanry, faith, and quality weaving.\n\nBut we do not always reap a sufficient harvest; nor are our neighbors always cooperative. Will fortune favor our people, or will we fall to the whims of destiny?"
+
+ CRA_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ KRK_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ SUR_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ PCJ_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ UMA_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ LUP_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ QUL_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ KNA_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ PIG_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ AYA_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ KKE_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ URC_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ MYM_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ PCR_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ HNK_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ CIC_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"
+
+ HRC_FLAVOR_TEXT:0 "$ANDEAN_FLAVOR_TEXT$"

@@ -1,7 +1,7 @@
 ﻿INJECT:base_values = {
 	country_weekly_innovation_add = -49
 	country_weekly_innovation_max_add = -49
-	country_tech_spread_add = -24.7
+	country_tech_spread_add = -24.9
 
 	state_literacy_growth_add = -0.0004
 }

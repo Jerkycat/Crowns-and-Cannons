@@ -1,0 +1,80 @@
+﻿
+pmg_cac_base_building_vineyard = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		default_cac_building_vineyard
+	}
+}
+
+# Grain Crops
+
+pmg_cac_base_building_rye_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_simple_farming
+	}
+}
+
+pmg_cac_base_building_wheat_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_simple_farming
+	}
+}
+
+pmg_cac_base_building_rice_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_simple_farming_building_rice_farm
+	}
+}
+
+pmg_cac_base_building_maize_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_simple_farming
+	}
+}
+
+pmg_cac_base_building_millet_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_simple_farming
+	}
+}
+
+# Livestock Ranches
+
+pmg_cac_base_building_livestock_ranch = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_cac_open_air_stockyards
+	}
+}
+
+# Sheep Ranches
+
+pmg_cac_base_building_sheep_ranch = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_cac_default_building_sheep_ranch
+	}
+}
+
+# Fiber Plantations
+
+pmg_cac_base_building_fiber_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_default_building_fiber_plantation
+	}
+}
+
+# Dye Plantation
+
+pmg_cac_base_building_dye_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_dye_plantation
+	}
+}

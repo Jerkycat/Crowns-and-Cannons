@@ -1,0 +1,493 @@
+STATES = {
+    s:STATE_WEST_SWITZERLAND = {
+		create_state = {
+			country = c:HAB
+			owned_provinces = { xE51E78 }
+		}
+		create_state = {
+			country = c:VUD
+			owned_provinces = { xA042B5 x9041E0 }
+		}
+		create_state = {
+			country = c:NEU
+			owned_provinces = { x117FE0 }
+		}
+		create_state = {
+			country = c:BAS
+			owned_provinces = { x9080E0 }
+		}
+		create_state = {
+			country = c:KYB
+			owned_provinces = { xED07F7 }
+		}
+		create_state = {
+			country = c:LSA
+			owned_provinces = { xD08060 }
+		}
+		create_state = {
+			country = c:BRN
+			owned_provinces = { xEBF5B1 x508060 }
+		}
+		create_state = {
+			country = c:SIT
+			owned_provinces = { x7ACC0B }
+		}
+		add_homeland = cu:alemannic
+		add_homeland = cu:francoprovencal	}
+
+    s:STATE_EAST_SWITZERLAND = {
+		create_state = {
+			country = c:MLO
+			owned_provinces = { x11C0E0 }
+		}
+		create_state = {
+			country = c:HAB
+			owned_provinces = { x7E4B86 x5FB41E }
+		}
+		create_state = {
+			country = c:ZUR
+			owned_provinces = { xD00161 }
+		}
+		create_state = {
+			country = c:WER
+			owned_provinces = { x90C0E0 }
+		}
+		add_homeland = cu:alemannic	}
+
+    s:STATE_BADEN = {
+		create_state = {
+			country = c:HAB
+			owned_provinces = { xB08061 xAEBA2A }
+		}
+		create_state = {
+			country = c:BDE
+			owned_provinces = { xE0A2B9 xB00160 }
+		}
+		create_state = {
+			country = c:UFF
+			owned_provinces = { x318061 }
+		}
+		add_homeland = cu:south_german
+		add_homeland = cu:alemannic	}
+
+    s:STATE_WURTTEMBERG = {
+		create_state = {
+			country = c:WUR
+			owned_provinces = { xDBB84C x118060 x8F0060 xC541D2 }
+		}
+		create_state = {
+			country = c:ANS
+			owned_provinces = { x100060 }
+		}
+		create_state = {
+			country = c:TUB
+			owned_provinces = { x908060 }
+		}
+		add_homeland = cu:south_german
+		add_homeland = cu:alemannic	}
+
+    s:STATE_FRANCONIA = {
+		create_state = {
+			country = c:HNB
+			owned_provinces = { xA55FB1 }
+		}
+		create_state = {
+			country = c:WBG
+			owned_provinces = { x9040A0 x51C0A0 }
+		}
+		create_state = {
+			country = c:ANS
+			owned_provinces = { xF91154 }
+		}
+		create_state = {
+			country = c:NUR
+			owned_provinces = { xD0C0A0 }
+		}
+		create_state = {
+			country = c:BAM
+			owned_provinces = { x0B0DBA xD041A0 x648AD1 }
+		}
+		add_homeland = cu:south_german	}
+
+    s:STATE_BAVARIA = {
+		create_state = {
+			country = c:UBV
+			owned_provinces = { xB00121 xE76994 x68CE1C x318021 xA7094D }
+		}
+		create_state = {
+			country = c:LBV
+			owned_provinces = { x6EA29B xE75868 xFE59E7 x3101A0 x8C26DD xB08021 }
+		}
+		create_state = {
+			country = c:HAB
+			owned_provinces = { x565185 x704A5F }
+		}
+		create_state = {
+			country = c:PAL
+			owned_provinces = { x82F4B9 }
+		}
+		create_state = {
+			country = c:KIR
+			owned_provinces = { xC347B1 }
+		}
+		create_state = {
+			country = c:AUG
+			owned_provinces = { x18A2E1 }
+		}
+		create_state = {
+			country = c:EIC
+			owned_provinces = { x010AD7 }
+		}
+		add_homeland = cu:south_german	}
+
+    s:STATE_TYROL = {
+		create_state = {
+			country = c:TIR
+			owned_provinces = { x51C0E0 xEC6873 xC74CD7 xF0E0C0 }
+		}
+		create_state = {
+			country = c:SLZ
+			owned_provinces = { xAB7EB0 x5D4166 xF061C0 }
+		}
+		create_state = {
+			country = c:UBV
+			owned_provinces = { x4A9C68 }
+		}
+		create_state = {
+			country = c:MBZ
+			owned_provinces = { xD0C0E0 }
+		}
+		add_homeland = cu:south_german	}
+
+    s:STATE_STYRIA = {
+		create_state = {
+			country = c:GOR
+			owned_provinces = { xB4D292 }
+		}
+		create_state = {
+			country = c:HAB
+			owned_provinces = { xB06141 x86FD73 x8F8020 x1101A0 x155A44 x59D927 x017E3C }
+		}
+		add_homeland = cu:south_german	}
+
+    s:STATE_AUSTRIA = {
+		create_state = {
+			country = c:HAB
+			owned_provinces = { xA40093 x316141 x7F2E4E x1180A0 x0CBB8F x20CF50 x84C7C3 xA9793B x62F70E x9001A0 }
+		}
+		create_state = {
+			country = c:SLZ
+			owned_provinces = { xFDA6CB }
+		}
+		add_homeland = cu:south_german	}
+
+    s:STATE_BOHEMIA = {
+		create_state = {
+			country = c:BOH
+			owned_provinces = { x71E041 xCDE96E x0B9B4F x465A13 x81C142 x9080A0 xFA371D x9C175D x61902F xEE1941 x716141 xA40163 x400226 x1D6B94 x67FE18 xF06141 xAFD2D1 xF0E041 xD286DB x2ED2B3 x74C71F }
+		}
+		add_homeland = cu:czech
+		add_homeland = cu:south_german	}
+
+    s:STATE_MORAVIA = {
+		create_state = {
+			country = c:MVA
+			owned_provinces = { x08AA4B xD9A784 x49C8F7 xEF6080 x12778D x4B3444 x1D088E xF0E080 x71E080 x10DFDF }
+		}
+		add_homeland = cu:czech
+		add_homeland = cu:south_german	}
+
+    s:STATE_UPPER_SILESIA = {
+		create_state = {
+			country = c:SIL
+			owned_provinces = { x5E9091 x7B2F62 x821F52 x90B12B xAF9F20 x88194B }
+		}
+		add_homeland = cu:polish	}
+
+    s:STATE_LOWER_SILESIA = {
+		create_state = {
+			country = c:SIL
+			owned_provinces = { x1B72C9 x272E48 x6E617F x732DC0 x94D624 xC00121 xC108EA xCE74AB }
+		}
+		create_state = {
+			country = c:BOH
+			owned_provinces = { x614121 }
+		}
+		add_homeland = cu:polish
+		add_homeland = cu:sorb	}
+
+    s:STATE_SAXONY = {
+		create_state = {
+			country = c:BOH
+			owned_provinces = { x169073 x43CE26 }
+		}
+		create_state = {
+			country = c:MEI
+			owned_provinces = { x795368 xAFDFBF x31E0C0 x917939 }
+		}
+		create_state = {
+			country = c:LDB
+			owned_provinces = { xC00A37 }
+		}
+		create_state = {
+			country = c:THU
+			owned_provinces = { xD0C021 x51C021 }
+		}
+		create_state = {
+			country = c:SWZ
+			owned_provinces = { x5141A0 }
+		}
+		create_state = {
+			country = c:WMA
+			owned_provinces = { x66FE0A }
+		}
+		add_homeland = cu:north_german
+		add_homeland = cu:sorb	}
+
+    s:STATE_HESSE = {
+		create_state = {
+			country = c:HES
+			owned_provinces = { x8B7C67 xFF1DBB x2248E2 xC08020 }
+		}
+		create_state = {
+			country = c:MAI
+			owned_provinces = { x90C020 x1141A0 }
+		}
+		create_state = {
+			country = c:FRN
+			owned_provinces = { x11C0A0 }
+		}
+		create_state = {
+			country = c:FLD
+			owned_provinces = { xD04121 }
+		}
+		create_state = {
+			country = c:NSS
+			owned_provinces = { x1357DB }
+		}
+		create_state = {
+			country = c:WTG
+			owned_provinces = { x3E794B }
+		}
+		create_state = {
+			country = c:DIE
+			owned_provinces = { x90C0A0 }
+		}
+		add_homeland = cu:north_german	}
+
+    s:STATE_RUHR = {
+		create_state = {
+			country = c:KLE
+			owned_provinces = { x0180E0 }
+		}
+		create_state = {
+			country = c:BRG
+			owned_provinces = { x2101E0 xD08021 }
+		}
+		create_state = {
+			country = c:SYN
+			owned_provinces = { x5101A0 }
+		}
+		add_homeland = cu:north_german	}
+
+    s:STATE_WESTPHALIA = {
+		create_state = {
+			country = c:MUN
+			owned_provinces = { xA08061 x1DD141 x910095 }
+		}
+		create_state = {
+			country = c:KOL
+			owned_provinces = { x4101A0 }
+		}
+		create_state = {
+			country = c:RVA
+			owned_provinces = { x1BA4F6 }
+		}
+		create_state = {
+			country = c:LPP
+			owned_provinces = { x9F0060 }
+		}
+		create_state = {
+			country = c:PDB
+			owned_provinces = { x218061 }
+		}
+		create_state = {
+			country = c:GMK
+			owned_provinces = { x418021 }
+		}
+		add_homeland = cu:north_german	}
+
+    s:STATE_HANNOVER = {
+		create_state = {
+			country = c:FRI
+			owned_provinces = { x784B8E xF9DCA2 }
+		}
+		create_state = {
+			country = c:MUN
+			owned_provinces = { x8080E0 xBF00DF }
+		}
+		create_state = {
+			country = c:BRU
+			owned_provinces = { x694B91 }
+		}
+		create_state = {
+			country = c:OLD
+			owned_provinces = { xECC3B4 xC00161 }
+		}
+		create_state = {
+			country = c:TCK
+			owned_provinces = { x4101E0 }
+		}
+		create_state = {
+			country = c:OSN
+			owned_provinces = { x4D62A0 }
+		}
+		create_state = {
+			country = c:MDN
+			owned_provinces = { xBBA504 }
+		}
+		create_state = {
+			country = c:RVA
+			owned_provinces = { x165E05 }
+		}
+		add_homeland = cu:north_german	}
+
+    s:STATE_BRUNSWICK = {
+		create_state = {
+			country = c:BRU
+			owned_provinces = { xA61E6E x2180E0 }
+		}
+		create_state = {
+			country = c:HBS
+			owned_provinces = { x43D537 }
+		}
+		create_state = {
+			country = c:GBH
+			owned_provinces = { xA001E0 }
+		}
+		create_state = {
+			country = c:WGO
+			owned_provinces = { x4C16EA }
+		}
+		add_homeland = cu:north_german	}
+
+    s:STATE_ANHALT = {
+		create_state = {
+			country = c:BRA
+			owned_provinces = { xA51232 xCBA4A5 }
+		}
+		create_state = {
+			country = c:MAG
+			owned_provinces = { x12694A xA080E0 xE0C0A0 x3C9B93 }
+		}
+		create_state = {
+			country = c:SWB
+			owned_provinces = { x34386E xCF5D8E x8A448C }
+		}
+		create_state = {
+			country = c:ANH
+			owned_provinces = { xED8F7B }
+		}
+		create_state = {
+			country = c:LDB
+			owned_provinces = { x618061 }
+		}
+		add_homeland = cu:north_german	}
+
+    s:STATE_BRANDENBURG = {
+		create_state = {
+			country = c:BRA
+			owned_provinces = { x069CFB x28CEC2 x514C51 x60BF20 x61C0A0 x76EF4E x82F9A8 x83B1A8 x9B9076 x9E7304 xA040A0 xA65DA6 xB90BFF xF77289 xF8D457 }
+		}
+		create_state = {
+			country = c:SOR
+			owned_provinces = { xDF4020 }
+		}
+		add_homeland = cu:north_german
+		add_homeland = cu:sorb	}
+
+    s:STATE_POMERANIA = {
+		create_state = {
+			country = c:TEU
+			owned_provinces = { x3E3572 }
+		}
+		create_state = {
+			country = c:BRA
+			owned_provinces = { x86E6F2 x0180A0 xA0C020 x19AE19 }
+		}
+		create_state = {
+			country = c:WOL
+			owned_provinces = { xCDEAE4 xEF5730 x89A2A9 x8001A0 xD4C37D x8C6982 xA9BD82 x3C26DD xE1A03A x567452 }
+		}
+		create_state = {
+			country = c:STE
+			owned_provinces = { x6A53CF xA04121 }
+		}
+		create_state = {
+			country = c:KMM
+			owned_provinces = { x8D1E12 }
+		}
+		add_homeland = cu:north_german	}
+
+    s:STATE_MECKLENBURG = {
+		create_state = {
+			country = c:STE
+			owned_provinces = { xD9A469 }
+		}
+		create_state = {
+			country = c:MKL
+			owned_provinces = { x4545BE xD8F441 xE080A0 xE041A0 }
+		}
+		create_state = {
+			country = c:GSW
+			owned_provinces = { x12E54F x24CA48 }
+		}
+		add_homeland = cu:north_german	}
+
+    s:STATE_ELBE = {
+		create_state = {
+			country = c:LUN
+			owned_provinces = { x7C8FD3 x392FDA xA5E2E8 xC080E0 }
+		}
+		create_state = {
+			country = c:BRE
+			owned_provinces = { xC08061 x68BE66 xF54C13 }
+		}
+		create_state = {
+			country = c:HTR
+			owned_provinces = { x587297 }
+		}
+		create_state = {
+			country = c:VRD
+			owned_provinces = { x418061 }
+		}
+		add_homeland = cu:north_german	}
+
+    s:STATE_SCHLESWIG_HOLSTEIN = {
+		create_state = {
+			country = c:DAN
+			owned_provinces = { x78B203 }
+		}
+		create_state = {
+			country = c:SLV
+			owned_provinces = { x00C060 xE3C876 xBFCC21 }
+		}
+		create_state = {
+			country = c:DIT
+			owned_provinces = { x804160 }
+		}
+		create_state = {
+			country = c:HPL
+			owned_provinces = { x64824C }
+		}
+		create_state = {
+			country = c:LUB
+			owned_provinces = { x60809F }
+		}
+		create_state = {
+			country = c:LAU
+			owned_provinces = { xE000A0 }
+		}
+		add_homeland = cu:danish
+		add_homeland = cu:north_german	}
+}

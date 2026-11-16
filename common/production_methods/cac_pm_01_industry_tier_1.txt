@@ -1,0 +1,433 @@
+﻿
+# Papermakers' Guild
+
+pm_cac_base_building_papermakers_tier_0_animal_parchment = {
+	texture = "gfx/interface/icons/production_method_icons/pulp_pressing.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_livestock_add = 1
+			goods_input_wood_add = 2
+
+			# output goods
+			goods_output_paper_add = 4
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+pm_cac_base_building_papermakers_tier_1_fiber_pulp_paper = {
+	texture = "gfx/interface/icons/production_method_icons/sulfite_pulping.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_plant_fiber_add = 2	# x20 = 40
+			goods_input_wood_add = 2	# x20 = 40
+			goods_input_tools_add = 1		# x40 =  40
+
+			# output goods
+			goods_output_paper_add = 8 # x30 = 240
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+# Brewery
+
+pm_cac_base_building_brewery_tier_1_grain_breweries = {
+	texture = "gfx/interface/icons/production_method_icons/bakeries.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_grain_add = 4		# x20 =  80
+			goods_input_wood_add = 2		# x20 =  40
+			goods_input_tools_add = 1		# x40 =  40
+
+			# output goods
+			goods_output_liquor_add = 9	# x30 = 270
+		}
+
+		level_scaled = {
+			# profit = 110
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+pm_cac_base_building_brewery_tier_1_fruit_cideries = {
+	texture = "gfx/interface/icons/production_method_icons/bakeries.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_fruit_add = 2		# x30 =  60
+			goods_input_wood_add = 3		# x20 =  60
+			goods_input_tools_add = 1		# x40 =  40
+
+			# output goods
+			goods_output_liquor_add = 9	# x30 = 270
+		}
+
+		level_scaled = {
+			# profit = 110
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+# Tools Guild
+
+pm_cac_base_building_tools_tier_0_crude_tools = {
+	texture = "gfx/interface/icons/production_method_icons/crude_tools.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 3 # x20 = 60
+
+			# output goods
+			goods_output_tools_add = 3 # x40 = 120
+		}
+
+		level_scaled = {
+			# profit = 60
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+pm_cac_base_building_tools_tier_1_blacksmiths = {
+	texture = "gfx/interface/icons/production_method_icons/crude_tools.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_iron_add = 3 # x40 = 120
+
+			# output goods
+			goods_output_tools_add = 6 # x40 = 240
+		}
+
+		level_scaled = {
+			# profit = 120
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 800
+			building_employment_machinists_add = 100
+		}
+	}
+}
+
+pm_cac_base_building_tools_tier_1_bronze_tool_makers = {
+	texture = "gfx/interface/icons/production_method_icons/crude_tools.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_copper_add = 2 # x40 = 80
+			goods_input_lead_add = 1 # x40 = 40
+
+			# output goods
+			goods_output_tools_add = 6 # x40 = 240
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 800
+			building_employment_machinists_add = 100
+		}
+	}
+}
+
+# Glass Guild
+
+pm_cac_base_building_glass_tier_0_forest_glass = {
+	texture = "gfx/interface/icons/production_method_icons/forest_glass.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 1.5
+			goods_input_wood_add = 3
+
+			# output goods
+			goods_output_glass_add = 6
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+pm_cac_base_building_glass_tier_1_alum_and_lead = {
+	texture = "gfx/interface/icons/production_method_icons/leaded_glass.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 2
+			goods_input_wood_add = 2
+			goods_input_sulfur_add = 1
+			goods_input_lead_add = 1
+
+			# output goods
+			goods_output_glass_add = 9
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 800
+			building_employment_machinists_add = 100
+		}
+	}
+}
+
+# Spinners' Guild
+
+pm_cac_base_building_spinners_tier_1_linen_spinners_guild = {
+	texture = "gfx/interface/icons/production_method_icons/handsewn_clothes.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_plant_fiber_add = 6		# x20 =  120
+			goods_input_tools_add = 1		# x40 =  40
+
+			# output goods
+			goods_output_textiles_add = 9	# x30 = 270
+		}
+
+		level_scaled = {
+			# profit = 110 (6.3)
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+pm_cac_base_building_spinners_tier_1_wool_spinners_guild = {
+	texture = "gfx/interface/icons/production_method_icons/handsewn_clothes.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wool_add = 4		# x30 =  120
+			goods_input_tools_add = 1		# x40 =  40
+
+			# output goods
+			goods_output_textiles_add = 10	# x30 = 300
+		}
+
+		level_scaled = {
+			# profit = 140 (6.3)
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+# Potters' Guild
+
+pm_cac_base_building_potters_tier_1_potteries = {
+	texture = "gfx/interface/icons/production_method_icons/traditional_art.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 6		# x20 =  120
+			goods_input_tools_add = 1		# x40 =  40
+
+			# output goods
+			goods_output_pottery_add = 9	# x30 = 270
+		}
+
+		level_scaled = {
+			# profit = 110 (6.3)
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+# Tailors' Guild
+
+pm_cac_base_building_tailors_tier_1_tailors_guild = {
+	texture = "gfx/interface/icons/production_method_icons/handsewn_clothes.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_textiles_add = 3		# x30 =  120
+			goods_input_tools_add = 1		# x40 =  40
+
+			# output goods
+			goods_output_fine_textiles_add = 6	# x40 = 240
+		}
+
+		level_scaled = {
+			# profit = 110 (6.3)
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+pm_cac_alt_no_extra_tailors = {
+	texture = "gfx/interface/icons/production_method_icons/no_luxury_clothes.dds"
+}
+
+pm_cac_alt_dye_makers = {
+	texture = "gfx/interface/icons/production_method_icons/craftsman_sewing.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_dye_add = 0.3		# x40 =  12
+
+			# output goods
+			goods_output_fine_textiles_add = 1	# x40 = 40
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_shopkeepers_add = 25
+			building_employment_laborers_add = 225
+		}
+	}
+}
+
+pm_cac_alt_dyes_with_alum = {
+	texture = "gfx/interface/icons/production_method_icons/craftsman_sewing.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_dye_add = 0.3		# x40 =  12
+			goods_input_sulfur_add = 0.3		# x50 =  15
+
+			# output goods
+			goods_output_fine_textiles_add = 2	# x40 = 80
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_shopkeepers_add = 50
+			building_employment_laborers_add = 200
+		}
+	}
+}
+
+# Weaponsmith
+
+pm_cac_base_building_weaponsmith_tier_0_weaponmakers = {
+	texture = "gfx/interface/icons/production_method_icons/crude_tools.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 5 # 20 x 1 = 100
+
+			# output goods
+			goods_output_weaponry_add = 3 # 6 x 60 = 180
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 800
+			building_employment_machinists_add = 100
+		}
+	}
+}
+
+pm_cac_base_building_weaponsmith_tier_1_bladesmiths = {
+	texture = "gfx/interface/icons/production_method_icons/crude_tools.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 2 # 40 x 2 = 80
+			goods_input_coal_add = 2 # 30 x 2 = 60
+			goods_input_wood_add = 1 # 20 x 1 = 20
+
+			# output goods
+			goods_output_weaponry_add = 6 # 6 x 60 = 360
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 800
+			building_employment_machinists_add = 100
+		}
+	}
+}
+
+# Naval Supplies
+
+pm_cac_base_building_shipyard_tier_1 = {
+	texture = "gfx/interface/icons/production_method_icons/wooden_ships.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_ship_construction_add = 1
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_textiles_add = 2		# x30 =  60
+			goods_input_plant_fiber_add = 3		# x20 =  60
+			goods_input_wood_add = 1		# x20 =  20
+
+			# output goods
+			goods_output_merchant_marine_add = 5	# x40 = 250
+		}
+
+		level_scaled = {
+			# profit = 110 (6.3)
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+# Tannery
+
+pm_cac_base_building_tannery_tier_1_leather_guild = {
+	texture = "gfx/interface/icons/production_method_icons/handsewn_clothes.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_livestock_add = 3		# x30 =  90
+			goods_input_wood_add = 2		# x20 =  40
+			goods_input_tools_add = 1		# x40 =  40
+
+			# output goods
+			goods_output_leather_add = 9	# x30 = 240
+		}
+
+		level_scaled = {
+			# profit = 110 (6.3)
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}

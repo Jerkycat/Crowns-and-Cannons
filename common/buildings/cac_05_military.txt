@@ -1,0 +1,32 @@
+﻿
+building_sergeantry = {
+	building_group = bg_public_infrastructure
+	icon = "gfx/interface/icons/building_icons/sergeantry.dds"
+
+	has_max_level = yes
+
+	unlocking_technologies = {
+		feudalism
+	}
+
+	production_method_groups = {
+		pmg_cac_base_building_sergeantry
+	}
+
+	required_construction = construction_cost_medium
+
+	potential = {
+		AND = {
+			is_capital = yes
+			has_law = law_type:law_monarchy
+		}
+	}
+
+	ai_value = {
+		value = 1000
+	}
+
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_military.dds"
+}

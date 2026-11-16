@@ -1,0 +1,8 @@
+﻿DIPLOMACY = {
+	c:GEN ?= {
+		create_diplomatic_pact = {
+			country = c:GAZ
+			type = vassal
+		}
+	}
+}

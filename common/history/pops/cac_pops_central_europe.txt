@@ -1,0 +1,701 @@
+POPS = {
+	s:STATE_UPPER_SILESIA = {
+		region_state:SIL = {
+			create_pop = {
+				culture = polish
+				size = 252512
+			}
+		}
+	}
+
+	s:STATE_LOWER_SILESIA = {
+		region_state:SIL = {
+			create_pop = {
+				culture = polish
+				size = 374092
+			}
+		}
+		region_state:BOH = {
+			create_pop = {
+				culture = sorb
+				size = 46762
+			}
+		}
+	}
+
+	s:STATE_SAXONY = {
+		region_state:BOH = {
+			create_pop = {
+				culture = sorb
+				size = 121580
+			}
+		}
+		region_state:MEI = {
+			create_pop = {
+				culture = north_german
+				size = 243160
+			}
+		}
+		region_state:LDB = {
+			create_pop = {
+				culture = north_german
+				size = 60790
+			}
+		}
+		region_state:THU = {
+			create_pop = {
+				culture = north_german
+				size = 121580
+			}
+		}
+		region_state:SWZ = {
+			create_pop = {
+				culture = north_german
+				size = 60790
+			}
+		}
+		region_state:WMA = {
+			create_pop = {
+				culture = north_german
+				size = 60790
+			}
+		}
+	}
+
+	s:STATE_HESSE = {
+		region_state:HES = {
+			create_pop = {
+				culture = north_german
+				size = 205750
+			}
+		}
+		region_state:MAI = {
+			create_pop = {
+				culture = north_german
+				size = 102875
+			}
+		}
+		region_state:FRN = {
+			create_pop = {
+				culture = north_german
+				size = 51438
+			}
+		}
+		region_state:FLD = {
+			create_pop = {
+				culture = north_german
+				size = 51438
+			}
+		}
+		region_state:NSS = {
+			create_pop = {
+				culture = north_german
+				size = 51438
+			}
+		}
+		region_state:WTG = {
+			create_pop = {
+				culture = north_german
+				size = 51438
+			}
+		}
+		region_state:DIE = {
+			create_pop = {
+				culture = north_german
+				size = 51437
+			}
+		}
+	}
+
+	s:STATE_RUHR = {
+		region_state:KLE = {
+			create_pop = {
+				culture = north_german
+				size = 42085
+			}
+		}
+		region_state:BRG = {
+			create_pop = {
+				culture = north_german
+				size = 84171
+			}
+		}
+		region_state:SYN = {
+			create_pop = {
+				culture = north_german
+				size = 42085
+			}
+		}
+	}
+
+	s:STATE_WESTPHALIA = {
+		region_state:MUN = {
+			create_pop = {
+				culture = north_german
+				size = 140285
+			}
+		}
+		region_state:KOL = {
+			create_pop = {
+				culture = north_german
+				size = 46762
+			}
+		}
+		region_state:RVA = {
+			create_pop = {
+				culture = north_german
+				size = 46762
+			}
+		}
+		region_state:LPP = {
+			create_pop = {
+				culture = north_german
+				size = 46761
+			}
+		}
+		region_state:PDB = {
+			create_pop = {
+				culture = north_german
+				size = 46761
+			}
+		}
+		region_state:GMK = {
+			create_pop = {
+				culture = north_german
+				size = 46761
+			}
+		}
+	}
+
+	s:STATE_HANNOVER = {
+		region_state:FRI = {
+			create_pop = {
+				culture = north_german
+				size = 84171
+			}
+		}
+		region_state:MUN = {
+			create_pop = {
+				culture = north_german
+				size = 84171
+			}
+		}
+		region_state:BRU = {
+			create_pop = {
+				culture = north_german
+				size = 42086
+			}
+		}
+		region_state:OLD = {
+			create_pop = {
+				culture = north_german
+				size = 84171
+			}
+		}
+		region_state:TCK = {
+			create_pop = {
+				culture = north_german
+				size = 42085
+			}
+		}
+		region_state:OSN = {
+			create_pop = {
+				culture = north_german
+				size = 42085
+			}
+		}
+		region_state:MDN = {
+			create_pop = {
+				culture = north_german
+				size = 42085
+			}
+		}
+		region_state:RVA = {
+			create_pop = {
+				culture = north_german
+				size = 42085
+			}
+		}
+	}
+
+	s:STATE_BRUNSWICK = {
+		region_state:BRU = {
+			create_pop = {
+				culture = north_german
+				size = 93523
+			}
+		}
+		region_state:HBS = {
+			create_pop = {
+				culture = north_german
+				size = 46762
+			}
+		}
+		region_state:GBH = {
+			create_pop = {
+				culture = north_german
+				size = 46762
+			}
+		}
+		region_state:WGO = {
+			create_pop = {
+				culture = north_german
+				size = 46761
+			}
+		}
+	}
+
+	s:STATE_ANHALT = {
+		region_state:BRA = {
+			create_pop = {
+				culture = north_german
+				size = 84171
+			}
+		}
+		region_state:MAG = {
+			create_pop = {
+				culture = north_german
+				size = 168342
+			}
+		}
+		region_state:SWB = {
+			create_pop = {
+				culture = north_german
+				size = 126256
+			}
+		}
+		region_state:ANH = {
+			create_pop = {
+				culture = north_german
+				size = 42085
+			}
+		}
+		region_state:LDB = {
+			create_pop = {
+				culture = north_german
+				size = 42085
+			}
+		}
+	}
+
+	s:STATE_BRANDENBURG = {
+		region_state:BRA = {
+			create_pop = {
+				culture = north_german
+				size = 357726
+			}
+			create_pop = {
+				culture = sorb
+				size = 63128
+			}
+		}
+		region_state:SOR = {
+			create_pop = {
+				culture = sorb
+				size = 28057
+			}
+		}
+	}
+
+	s:STATE_POMERANIA = {
+		region_state:SPR = {
+			create_pop = {
+				culture = north_german
+				size = 23381
+			}
+		}
+		region_state:BRA = {
+			create_pop = {
+				culture = north_german
+				size = 93523
+			}
+		}
+		region_state:WOL = {
+			create_pop = {
+				culture = north_german
+				size = 233808
+			}
+		}
+		region_state:STE = {
+			create_pop = {
+				culture = north_german
+				size = 46761
+			}
+		}
+		region_state:KMM = {
+			create_pop = {
+				culture = north_german
+				size = 23381
+			}
+		}
+	}
+
+	s:STATE_MECKLENBURG = {
+		region_state:STE = {
+			create_pop = {
+				culture = north_german
+				size = 28057
+			}
+		}
+		region_state:MKL = {
+			create_pop = {
+				culture = north_german
+				size = 112227
+			}
+		}
+		region_state:GSW = {
+			create_pop = {
+				culture = north_german
+				size = 56114
+			}
+		}
+	}
+
+	s:STATE_ELBE = {
+		region_state:LUN = {
+			create_pop = {
+				culture = north_german
+				size = 243160
+			}
+		}
+		region_state:BRE = {
+			create_pop = {
+				culture = north_german
+				size = 182370
+			}
+		}
+		region_state:HTR = {
+			create_pop = {
+				culture = north_german
+				size = 60790
+			}
+		}
+		region_state:VRD = {
+			create_pop = {
+				culture = north_german
+				size = 60790
+			}
+		}
+	}
+
+	s:STATE_SCHLESWIG_HOLSTEIN = {
+		region_state:DAN = {
+			create_pop = {
+				culture = danish
+				size = 42086
+			}
+		}
+		region_state:SLV = {
+			create_pop = {
+				culture = north_german
+				size = 126256
+			}
+		}
+		region_state:DIT = {
+			create_pop = {
+				culture = north_german
+				size = 42086
+			}
+		}
+		region_state:HPL = {
+			create_pop = {
+				culture = north_german
+				size = 42085
+			}
+		}
+		region_state:LUB = {
+			create_pop = {
+				culture = north_german
+				size = 42085
+			}
+		}
+		region_state:LAU = {
+			create_pop = {
+				culture = north_german
+				size = 42085
+			}
+		}
+	}
+
+	s:STATE_WEST_SWITZERLAND = {
+		region_state:HAB = {
+			create_pop = {
+				culture = alemannic
+				size = 54742
+			}
+		}
+		region_state:VUD = {
+			create_pop = {
+				culture = francoprovencal
+				size = 109485
+			}
+		}
+		region_state:NEU = {
+			create_pop = {
+				culture = francoprovencal
+				size = 54742
+			}
+		}
+		region_state:BAS = {
+			create_pop = {
+				culture = alemannic
+				size = 54742
+			}
+		}
+		region_state:KYB = {
+			create_pop = {
+				culture = alemannic
+				size = 54742
+			}
+		}
+		region_state:LSA = {
+			create_pop = {
+				culture = francoprovencal
+				size = 54742
+			}
+		}
+		region_state:BRN = {
+			create_pop = {
+				culture = alemannic
+				size = 109485
+			}
+		}
+		region_state:SIT = {
+			create_pop = {
+				culture = francoprovencal
+				size = 54742
+			}
+		}
+	}
+
+	s:STATE_EAST_SWITZERLAND = {
+		region_state:MLO = {
+			create_pop = {
+				culture = alemannic
+				size = 48660
+			}
+		}
+		region_state:HAB = {
+			create_pop = {
+				culture = alemannic
+				size = 97319
+			}
+		}
+		region_state:ZUR = {
+			create_pop = {
+				culture = alemannic
+				size = 48660
+			}
+		}
+		region_state:WER = {
+			create_pop = {
+				culture = alemannic
+				size = 48660
+			}
+		}
+	}
+
+	s:STATE_BADEN = {
+		region_state:HAB = {
+			create_pop = {
+				culture = south_german
+				size = 145979
+			}
+		}
+		region_state:BDE = {
+			create_pop = {
+				culture = south_german
+				size = 145979
+			}
+		}
+		region_state:UFF = {
+			create_pop = {
+				culture = south_german
+				size = 72990
+			}
+		}
+	}
+
+	s:STATE_WURTTEMBERG = {
+		region_state:WUR = {
+			create_pop = {
+				culture = south_german
+				size = 316289
+			}
+		}
+		region_state:ANS = {
+			create_pop = {
+				culture = south_german
+				size = 79072
+			}
+		}
+		region_state:TUB = {
+			create_pop = {
+				culture = south_german
+				size = 79072
+			}
+		}
+	}
+
+	s:STATE_FRANCONIA = {
+		region_state:HNB = {
+			create_pop = {
+				culture = south_german
+				size = 79072
+			}
+		}
+		region_state:WBG = {
+			create_pop = {
+				culture = south_german
+				size = 158144
+			}
+		}
+		region_state:ANS = {
+			create_pop = {
+				culture = south_german
+				size = 79072
+			}
+		}
+		region_state:NUR = {
+			create_pop = {
+				culture = south_german
+				size = 79072
+			}
+		}
+		region_state:BAM = {
+			create_pop = {
+				culture = south_german
+				size = 237217
+			}
+		}
+	}
+
+	s:STATE_BAVARIA = {
+		region_state:UBV = {
+			create_pop = {
+				culture = south_german
+				size = 364948
+			}
+		}
+		region_state:LBV = {
+			create_pop = {
+				culture = south_german
+				size = 437938
+			}
+		}
+		region_state:HAB = {
+			create_pop = {
+				culture = south_german
+				size = 145979
+			}
+		}
+		region_state:PAL = {
+			create_pop = {
+				culture = south_german
+				size = 72990
+			}
+		}
+		region_state:KIR = {
+			create_pop = {
+				culture = south_german
+				size = 72990
+			}
+		}
+		region_state:AUG = {
+			create_pop = {
+				culture = south_german
+				size = 72990
+			}
+		}
+		region_state:EIC = {
+			create_pop = {
+				culture = south_german
+				size = 72989
+			}
+		}
+	}
+
+	s:STATE_TYROL = {
+		region_state:TIR = {
+			create_pop = {
+				culture = south_german
+				size = 145979
+			}
+		}
+		region_state:SLZ = {
+			create_pop = {
+				culture = south_german
+				size = 109485
+			}
+		}
+		region_state:UBV = {
+			create_pop = {
+				culture = south_german
+				size = 36495
+			}
+		}
+		region_state:MBZ = {
+			create_pop = {
+				culture = south_german
+				size = 36495
+			}
+		}
+	}
+
+	s:STATE_STYRIA = {
+		region_state:GOR = {
+			create_pop = {
+				culture = south_german
+				size = 42577
+			}
+		}
+		region_state:HAB = {
+			create_pop = {
+				culture = south_german
+				size = 298041
+			}
+		}
+	}
+
+	s:STATE_AUSTRIA = {
+		region_state:HAB = {
+			create_pop = {
+				culture = south_german
+				size = 790721
+			}
+		}
+		region_state:SLZ = {
+			create_pop = {
+				culture = south_german
+				size = 79072
+			}
+		}
+	}
+
+	s:STATE_BOHEMIA = {
+		region_state:BOH = {
+			create_pop = {
+				culture = czech
+				size = 1520010
+			}
+			create_pop = {
+				culture = south_german
+				size = 268237
+			}
+		}
+	}
+
+	s:STATE_MORAVIA = {
+		region_state:MVA = {
+			create_pop = {
+				culture = czech
+				size = 588783
+			}
+			create_pop = {
+				culture = south_german
+				size = 80289
+			}
+		}
+	}
+
+}

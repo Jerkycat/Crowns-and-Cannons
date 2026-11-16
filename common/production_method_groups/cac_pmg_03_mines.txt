@@ -1,0 +1,45 @@
+﻿
+# Alloy Mines
+
+pmg_cac_mining_equipment_building_alloy_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_picks_and_shovels_building_alloy_mine
+	}
+}
+
+# Alum Mines
+
+pmg_cac_mining_equipment_building_alum_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_picks_and_shovels_building_alum_mine
+	}
+}
+
+# Coal Mines
+
+pmg_cac_mining_equipment_building_coal_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_picks_and_shovels_building_coal_mine
+	}
+}
+
+# Copper Mines
+
+pmg_cac_mining_equipment_building_copper_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_picks_and_shovels_building_copper_mine
+	}
+}
+
+# Iron Mines
+
+pmg_cac_mining_equipment_building_iron_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_picks_and_shovels_building_iron_mine
+	}
+}

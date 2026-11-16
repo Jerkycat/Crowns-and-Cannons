@@ -2,6 +2,16 @@
 	state_tax_capacity_add = -75
 
 	state_building_conscription_center_max_level_add = 5
+
+	building_group_bg_agriculture_allowed_collectivization_add = 0.05
+
+	building_group_bg_manufacturing_allowed_collectivization_add = 0.9
+	building_group_bg_extraction_allowed_collectivization_add = 0.9
+	building_group_bg_power_allowed_collectivization_add = 0.9
+	building_group_bg_private_infrastructure_allowed_collectivization_add = 0.9
+	building_group_bg_arts_allowed_collectivization_add = 0.9
+
+	state_assimilation_mult = -0.5
 }
 
 INJECT:insufficient_tax_capacity = {
@@ -28,5 +38,3 @@ INJECT:legislative_efficiency = {
 	state_tax_capacity_mult = 0.1
 	country_prestige_add = 10
 }
-
-# Tax Modifiers

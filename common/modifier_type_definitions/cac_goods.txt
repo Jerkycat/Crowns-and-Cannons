@@ -6,3 +6,163 @@ goods_output_local_food_add={
 		ai_value=0
 	}
 }
+
+goods_input_livestock_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_livestock_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_wool_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_wool_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_plant_fiber_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_plant_fiber_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_cotton_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_cotton_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_textiles_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_textiles_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_leather_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_leather_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_fine_textiles_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_fine_textiles_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_weaponry_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_weaponry_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_pottery_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_pottery_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_beer_add={
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_output_beer_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}

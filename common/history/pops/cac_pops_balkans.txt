@@ -1,0 +1,915 @@
+POPS = {
+	# Eastern Europe — populations distributed by state and then by owning country
+	# Region totals are fixed; within each region population is split by a
+	# historically-informed 1337 weight per state, then per owner (by owned_provinces)
+	# and per culture. Source states file: cac_states_balkans.txt
+
+	# --- carpathia_region (3,668,722 of 3,668,722 in this file) ---
+
+	s:STATE_SOUTHERN_TRANSYLVANIA = {
+		region_state:HUN = {
+			create_pop = {
+				culture = romanian
+				size = 107423
+			}
+			create_pop = {
+				culture = szekely
+				size = 47744
+			}
+			create_pop = {
+				culture = south_german
+				size = 47743
+			}
+			create_pop = {
+				culture = hungarian
+				size = 35808
+			}
+		}
+	}
+
+	s:STATE_NORTHERN_TRANSYLVANIA = {
+		region_state:HUN = {
+			create_pop = {
+				culture = romanian
+				size = 138205
+			}
+			create_pop = {
+				culture = hungarian
+				size = 96744
+			}
+			create_pop = {
+				culture = szekely
+				size = 27641
+			}
+			create_pop = {
+				culture = south_german
+				size = 13821
+			}
+		}
+	}
+
+	s:STATE_BUKOVINA = {
+		region_state:SSI = {
+			create_pop = {
+				culture = romanian
+				size = 33169
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 27139
+			}
+		}
+		region_state:BIA = {
+			create_pop = {
+				culture = romanian
+				size = 11057
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 9046
+			}
+		}
+		region_state:HTN = {
+			create_pop = {
+				culture = romanian
+				size = 11056
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 9046
+			}
+		}
+	}
+
+	s:STATE_MOLDAVIA = {
+		region_state:IAS = {
+			create_pop = {
+				culture = romanian
+				size = 126359
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 18954
+			}
+			create_pop = {
+				culture = hungarian
+				size = 12636
+			}
+		}
+		region_state:WAL = {
+			create_pop = {
+				culture = romanian
+				size = 15795
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 2369
+			}
+			create_pop = {
+				culture = hungarian
+				size = 1580
+			}
+		}
+		region_state:BLD = {
+			create_pop = {
+				culture = romanian
+				size = 31590
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 4738
+			}
+			create_pop = {
+				culture = hungarian
+				size = 3159
+			}
+		}
+		region_state:BIA = {
+			create_pop = {
+				culture = romanian
+				size = 47385
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 7108
+			}
+			create_pop = {
+				culture = hungarian
+				size = 4738
+			}
+		}
+	}
+
+	s:STATE_WALLACHIA = {
+		region_state:WAL = {
+			create_pop = {
+				culture = romanian
+				size = 485478
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 42215
+			}
+		}
+	}
+
+	s:STATE_SLOVAKIA = {
+		region_state:HUN = {
+			create_pop = {
+				culture = slovak
+				size = 343754
+			}
+			create_pop = {
+				culture = hungarian
+				size = 71615
+			}
+			create_pop = {
+				culture = south_german
+				size = 47744
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 14323
+			}
+		}
+	}
+
+	s:STATE_RUTHENIA = {
+		region_state:HUN = {
+			create_pop = {
+				culture = ukrainian
+				size = 79154
+			}
+			create_pop = {
+				culture = slovak
+				size = 16961
+			}
+			create_pop = {
+				culture = hungarian
+				size = 11308
+			}
+			create_pop = {
+				culture = romanian
+				size = 5654
+			}
+		}
+	}
+
+	s:STATE_BEKES = {
+		region_state:HUN = {
+			create_pop = {
+				culture = hungarian
+				size = 141347
+			}
+			create_pop = {
+				culture = romanian
+				size = 37692
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 9423
+			}
+		}
+	}
+
+	s:STATE_TRANSDANUBIA = {
+		region_state:HUN = {
+			create_pop = {
+				culture = hungarian
+				size = 515129
+			}
+			create_pop = {
+				culture = south_german
+				size = 62821
+			}
+			create_pop = {
+				culture = croat
+				size = 25128
+			}
+			create_pop = {
+				culture = slovene
+				size = 25128
+			}
+		}
+	}
+
+	s:STATE_CENTRAL_HUNGARY = {
+		region_state:HUN = {
+			create_pop = {
+				culture = hungarian
+				size = 452308
+			}
+			create_pop = {
+				culture = slovak
+				size = 56539
+			}
+			create_pop = {
+				culture = south_german
+				size = 56538
+			}
+		}
+	}
+
+	s:STATE_DELVIDEK = {
+		region_state:HUN = {
+			create_pop = {
+				culture = hungarian
+				size = 76013
+			}
+			create_pop = {
+				culture = serb
+				size = 48372
+			}
+			create_pop = {
+				culture = romanian
+				size = 13820
+			}
+		}
+	}
+
+	s:STATE_BANAT = {
+		region_state:HUN = {
+			create_pop = {
+				culture = romanian
+				size = 55282
+			}
+			create_pop = {
+				culture = hungarian
+				size = 48372
+			}
+			create_pop = {
+				culture = serb
+				size = 34551
+			}
+		}
+	}
+
+	# --- steppes_region (108,537 of 1,398,919 in this file) ---
+
+	s:STATE_BESSARABIA = {
+		region_state:HSC = {
+			create_pop = {
+				culture = romanian
+				size = 9303
+			}
+			create_pop = {
+				culture = tatar
+				size = 8140
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 5815
+			}
+		}
+		region_state:GLH = {
+			create_pop = {
+				culture = romanian
+				size = 18606
+			}
+			create_pop = {
+				culture = tatar
+				size = 16281
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 11629
+			}
+		}
+		region_state:BLD = {
+			create_pop = {
+				culture = romanian
+				size = 9303
+			}
+			create_pop = {
+				culture = tatar
+				size = 8140
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 5815
+			}
+		}
+		region_state:SRC = {
+			create_pop = {
+				culture = romanian
+				size = 6202
+			}
+			create_pop = {
+				culture = tatar
+				size = 5427
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 3876
+			}
+		}
+	}
+
+	# --- balkan_region (4,730,381 of 4,730,381 in this file) ---
+
+	s:STATE_DOBRUDJA = {
+		region_state:BUL = {
+			create_pop = {
+				culture = bulgarian
+				size = 48269
+			}
+			create_pop = {
+				culture = romanian
+				size = 24135
+			}
+			create_pop = {
+				culture = turkish
+				size = 24134
+			}
+		}
+	}
+
+	s:STATE_EASTERN_THRACE = {
+		region_state:BYZ = {
+			create_pop = {
+				culture = greek
+				size = 260654
+			}
+			create_pop = {
+				culture = turkish
+				size = 28961
+			}
+		}
+	}
+
+	s:STATE_IONIAN_ISLANDS = {
+		region_state:ALB = {
+			create_pop = {
+				culture = greek
+				size = 30410
+			}
+			create_pop = {
+				culture = albanian
+				size = 3379
+			}
+		}
+		region_state:ARG = {
+			create_pop = {
+				culture = greek
+				size = 30409
+			}
+			create_pop = {
+				culture = albanian
+				size = 3379
+			}
+		}
+	}
+
+	s:STATE_PELOPONNESE = {
+		region_state:ACH = {
+			create_pop = {
+				culture = greek
+				size = 234473
+			}
+			create_pop = {
+				culture = albanian
+				size = 20389
+			}
+		}
+		region_state:BYZ = {
+			create_pop = {
+				culture = greek
+				size = 58618
+			}
+			create_pop = {
+				culture = albanian
+				size = 5097
+			}
+		}
+	}
+
+	s:STATE_ALBANIA = {
+		region_state:SER = {
+			create_pop = {
+				culture = albanian
+				size = 56475
+			}
+			create_pop = {
+				culture = serb
+				size = 30410
+			}
+		}
+		region_state:ALB = {
+			create_pop = {
+				culture = albanian
+				size = 69508
+			}
+			create_pop = {
+				culture = greek
+				size = 10426
+			}
+			create_pop = {
+				culture = serb
+				size = 6951
+			}
+		}
+		region_state:EPI = {
+			create_pop = {
+				culture = albanian
+				size = 28962
+			}
+			create_pop = {
+				culture = greek
+				size = 28961
+			}
+		}
+		region_state:BYZ = {
+			create_pop = {
+				culture = greek
+				size = 17377
+			}
+			create_pop = {
+				culture = albanian
+				size = 11584
+			}
+		}
+	}
+
+	s:STATE_BOSNIA = {
+		region_state:BOS = {
+			create_pop = {
+				culture = bosniak
+				size = 194213
+			}
+			create_pop = {
+				culture = croat
+				size = 33663
+			}
+			create_pop = {
+				culture = serb
+				size = 31074
+			}
+		}
+		region_state:CRO = {
+			create_pop = {
+				culture = croat
+				size = 45317
+			}
+			create_pop = {
+				culture = bosniak
+				size = 19421
+			}
+		}
+		region_state:SER = {
+			create_pop = {
+				culture = serb
+				size = 30211
+			}
+			create_pop = {
+				culture = bosniak
+				size = 12947
+			}
+		}
+	}
+
+	s:STATE_ATTICA = {
+		region_state:NEO = {
+			create_pop = {
+				culture = greek
+				size = 34875
+			}
+			create_pop = {
+				culture = albanian
+				size = 6154
+			}
+		}
+		region_state:EPI = {
+			create_pop = {
+				culture = greek
+				size = 17438
+			}
+			create_pop = {
+				culture = albanian
+				size = 3077
+			}
+		}
+		region_state:NEG = {
+			create_pop = {
+				culture = greek
+				size = 17437
+			}
+			create_pop = {
+				culture = albanian
+				size = 3077
+			}
+		}
+		region_state:ATH = {
+			create_pop = {
+				culture = greek
+				size = 52312
+			}
+			create_pop = {
+				culture = albanian
+				size = 9231
+			}
+		}
+		region_state:SAO = {
+			create_pop = {
+				culture = greek
+				size = 17437
+			}
+			create_pop = {
+				culture = albanian
+				size = 3077
+			}
+		}
+	}
+
+	s:STATE_SKOPIA = {
+		region_state:SER = {
+			create_pop = {
+				culture = serb
+				size = 49649
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 49648
+			}
+			create_pop = {
+				culture = albanian
+				size = 12412
+			}
+			create_pop = {
+				culture = greek
+				size = 12412
+			}
+		}
+		region_state:BUL = {
+			create_pop = {
+				culture = bulgarian
+				size = 18618
+			}
+			create_pop = {
+				culture = greek
+				size = 2069
+			}
+		}
+	}
+
+	s:STATE_MACEDONIA = {
+		region_state:BYZ = {
+			create_pop = {
+				culture = greek
+				size = 141590
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 113272
+			}
+			create_pop = {
+				culture = serb
+				size = 14159
+			}
+			create_pop = {
+				culture = albanian
+				size = 14159
+			}
+		}
+		region_state:SER = {
+			create_pop = {
+				culture = serb
+				size = 17699
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 10619
+			}
+			create_pop = {
+				culture = greek
+				size = 7079
+			}
+		}
+	}
+
+	s:STATE_THESSALIA = {
+		region_state:BYZ = {
+			create_pop = {
+				culture = greek
+				size = 61544
+			}
+			create_pop = {
+				culture = albanian
+				size = 7240
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 3620
+			}
+		}
+		region_state:EPI = {
+			create_pop = {
+				culture = greek
+				size = 61543
+			}
+			create_pop = {
+				culture = albanian
+				size = 7240
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 3620
+			}
+		}
+	}
+
+	s:STATE_WESTERN_THRACE = {
+		region_state:BYZ = {
+			create_pop = {
+				culture = greek
+				size = 104261
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 52131
+			}
+			create_pop = {
+				culture = turkish
+				size = 17377
+			}
+		}
+	}
+
+	s:STATE_NORTHERN_THRACE = {
+		region_state:BUL = {
+			create_pop = {
+				culture = bulgarian
+				size = 231692
+			}
+			create_pop = {
+				culture = greek
+				size = 43442
+			}
+			create_pop = {
+				culture = turkish
+				size = 14481
+			}
+		}
+	}
+
+	s:STATE_BULGARIA = {
+		region_state:BUL = {
+			create_pop = {
+				culture = bulgarian
+				size = 451800
+			}
+			create_pop = {
+				culture = greek
+				size = 20080
+			}
+			create_pop = {
+				culture = romanian
+				size = 20080
+			}
+			create_pop = {
+				culture = turkish
+				size = 10040
+			}
+		}
+	}
+
+	s:STATE_MONTENEGRO = {
+		region_state:SER = {
+			create_pop = {
+				culture = serb
+				size = 72403
+			}
+			create_pop = {
+				culture = albanian
+				size = 19308
+			}
+			create_pop = {
+				culture = croat
+				size = 4827
+			}
+		}
+	}
+
+	s:STATE_WESTERN_SERBIA = {
+		region_state:SER = {
+			create_pop = {
+				culture = serb
+				size = 132740
+			}
+			create_pop = {
+				culture = hungarian
+				size = 9051
+			}
+			create_pop = {
+				culture = romanian
+				size = 9050
+			}
+		}
+		region_state:HUN = {
+			create_pop = {
+				culture = serb
+				size = 63354
+			}
+			create_pop = {
+				culture = hungarian
+				size = 18101
+			}
+			create_pop = {
+				culture = croat
+				size = 9050
+			}
+		}
+	}
+
+	s:STATE_EASTERN_SERBIA = {
+		region_state:SER = {
+			create_pop = {
+				culture = serb
+				size = 92033
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 35397
+			}
+			create_pop = {
+				culture = romanian
+				size = 14159
+			}
+		}
+		region_state:BUL = {
+			create_pop = {
+				culture = bulgarian
+				size = 49557
+			}
+			create_pop = {
+				culture = serb
+				size = 14159
+			}
+			create_pop = {
+				culture = romanian
+				size = 7079
+			}
+		}
+	}
+
+	s:STATE_KOSOVO = {
+		region_state:SER = {
+			create_pop = {
+				culture = serb
+				size = 81092
+			}
+			create_pop = {
+				culture = albanian
+				size = 34754
+			}
+		}
+	}
+
+	s:STATE_CRETE = {
+		region_state:CRT = {
+			create_pop = {
+				culture = greek
+				size = 183423
+			}
+		}
+	}
+
+	s:STATE_WEST_AEGEAN_ISLANDS = {
+		region_state:ACH = {
+			create_pop = {
+				culture = greek
+				size = 33789
+			}
+		}
+		region_state:VEN = {
+			create_pop = {
+				culture = greek
+				size = 33788
+			}
+		}
+	}
+
+	s:STATE_DALMATIA = {
+		region_state:CRO = {
+			create_pop = {
+				culture = croat
+				size = 20595
+			}
+			create_pop = {
+				culture = north_italian
+				size = 5149
+			}
+		}
+		region_state:VEN = {
+			create_pop = {
+				culture = croat
+				size = 36041
+			}
+			create_pop = {
+				culture = north_italian
+				size = 15446
+			}
+		}
+	}
+
+	s:STATE_CROATIA = {
+		region_state:HUN = {
+			create_pop = {
+				culture = croat
+				size = 90263
+			}
+			create_pop = {
+				culture = serb
+				size = 8495
+			}
+			create_pop = {
+				culture = hungarian
+				size = 7434
+			}
+		}
+		region_state:CRO = {
+			create_pop = {
+				culture = croat
+				size = 90263
+			}
+			create_pop = {
+				culture = serb
+				size = 8495
+			}
+			create_pop = {
+				culture = hungarian
+				size = 7434
+			}
+		}
+	}
+
+	s:STATE_SLAVONIA = {
+		region_state:HUN = {
+			create_pop = {
+				culture = croat
+				size = 150600
+			}
+			create_pop = {
+				culture = serb
+				size = 23169
+			}
+			create_pop = {
+				culture = hungarian
+				size = 19308
+			}
+		}
+	}
+
+	s:STATE_SLOVENIA = {
+		region_state:HAB = {
+			create_pop = {
+				culture = slovene
+				size = 154462
+			}
+			create_pop = {
+				culture = south_german
+				size = 38615
+			}
+		}
+	}
+
+}

@@ -1,0 +1,27 @@
+
+# Logging Camps
+
+pmg_cac_base_building_logging_camp = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_simple_forestry
+	}
+}
+
+pmg_cac_alt_building_logging_camp = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_cac_alt_no_sawmills
+		pm_cac_alt_sawmills
+	}
+}
+
+# Fishing Wharfs
+
+pmg_cac_base_building_fishing_wharf = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cac_base_building_fishing_wharf
+	}
+}

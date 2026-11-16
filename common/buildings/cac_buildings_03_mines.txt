@@ -1,0 +1,123 @@
+﻿
+### Bronze Working
+
+building_copper_mine = {
+	building_group = bg_mining
+	icon = "gfx/interface/icons/building_icons/copper_mine.dds"
+	city_type = mine
+	levels_per_mesh = 50
+	required_construction = construction_cost_medium
+	terrain_manipulator = mining
+	unlocking_technologies = {
+		bronze_working
+	}
+
+	production_method_groups = {
+		pmg_cac_mining_equipment_building_copper_mine
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+
+	ai_value = {
+		value = 1000
+	}
+}
+
+building_lead_mine = {
+	building_group = bg_mining
+	icon = "gfx/interface/icons/building_icons/lead_mine.dds"
+	city_type = mine
+	levels_per_mesh = 50
+	required_construction = construction_cost_medium
+	terrain_manipulator = mining
+	unlocking_technologies = {
+		bronze_working
+	}
+
+	production_method_groups = {
+		pmg_cac_mining_equipment_building_alloy_mine
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+
+	ai_value = {
+		value = 1000
+	}
+}
+
+### Fine Metals Working
+
+### Iron Working
+
+building_coal_mine = {
+	building_group = bg_mining
+	icon = "gfx/interface/icons/building_icons/coal_mine.dds"
+	city_type = mine
+	levels_per_mesh = 50
+	required_construction = construction_cost_medium
+	terrain_manipulator = mining
+	unlocking_technologies = {
+		iron_working
+	}
+
+	production_method_groups = {
+		pmg_cac_mining_equipment_building_coal_mine
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+
+	ai_value = {
+		value = 1000
+	}
+}
+
+building_iron_mine = {
+	building_group = bg_mining
+	icon = "gfx/interface/icons/building_icons/iron_mine.dds"
+	city_type = mine
+	levels_per_mesh = 50
+	required_construction = construction_cost_medium
+	terrain_manipulator = mining
+	unlocking_technologies = {
+		iron_working
+	}
+
+	production_method_groups = {
+		pmg_cac_mining_equipment_building_iron_mine
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+
+	ai_value = {
+		value = 1000
+	}
+}
+
+### Advanced Mining
+
+building_sulfur_mine = {
+	building_group = bg_mining
+	icon = "gfx/interface/icons/building_icons/sulfur_mine.dds"
+	city_type = mine
+	levels_per_mesh = 50
+	required_construction = construction_cost_medium
+	terrain_manipulator = mining
+	unlocking_technologies = {
+		advanced_mining
+	}
+
+	production_method_groups = {
+		pmg_cac_mining_equipment_building_alum_mine
+	}
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_mining.dds"
+
+	ai_value = {
+		value = 1000
+	}
+}

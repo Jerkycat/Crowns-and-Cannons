@@ -2,5 +2,45 @@
  ABS:0 "Absaroka"
  ABS_ADJ:0 "Absaroka"
 
+ AMZ:0 "Amazonia"
+ AMZ_ADJ:0 "Amazonian"
+
+ MGR:0 "Mataco-Guaycurú"
+ MGR_ADJ:0 "Mataco-Guaycurú"
+
+ KHG:0 "Kanhgag"
+ KHG_ADJ:0 "Kanhgag"
+
+ MBK:0 "Mebengokre"
+ MBK_ADJ:0 "Mebengokre"
+
+ AKW:0 "Akwê"
+ AKW_ADJ:0 "Akwê"
+
+ TBI:0 "Timbira"
+ TBI_ADJ:0 "Timbira"
+
+ KAP:0 "Kaapor"
+ KAP_ADJ:0 "Kaapor"
+
+ TRM:0 "Tremembé"
+ TRM_ADJ:0 "Tremembé"
+
  WLM:0 "Welsh Marches"
  WLM_ADJ:0 "Welsh"
+
+ THL:0 "Tehuelche"
+ THL_ADJ:0 "Tehuelche"
+ 
+ SLK:0 "Selk’nam"
+ SLK_ADJ:0 "Selk’nam"
+
+ AWK:0 "Arawak"
+ AWK_ADJ:0 "Arawak"
+
+ WAO:0 "Warao"
+ WAO_ADJ:0 "Warao"
+
+ WAY:0 "Wayuu"
+ WAY_ADJ:0 "Wayuu"
+ 

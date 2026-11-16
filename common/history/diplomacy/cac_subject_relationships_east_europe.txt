@@ -1,0 +1,167 @@
+﻿DIPLOMACY = {
+	c:SWE ?= {
+		create_diplomatic_pact = {
+			country = c:NOR
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:SKE
+			type = vassal
+		}
+	}
+
+	c:POL ?= {
+		create_diplomatic_pact = {
+			country = c:SDZ
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:LCZ
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:PLK
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:RAW
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:CZK
+			type = vassal
+		}
+	}
+
+	c:TEU ?= {
+		create_diplomatic_pact = {
+			country = c:LIV
+			type = vassal
+		}
+	}
+
+	c:LIV ?= {
+		create_diplomatic_pact = {
+			country = c:RIG
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:ARR
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:BID
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:BIO
+			type = vassal
+		}
+	}
+
+	c:GLH ?= {
+		create_diplomatic_pact = {
+			country = c:BLD
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:BIA
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:IAS
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:HSC
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:SRC
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:SSI
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:HTN
+			type = tributary
+		}
+
+		create_diplomatic_pact = {
+			country = c:HAL
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:VOL
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:KIE
+			type = tributary
+		}
+		create_diplomatic_pact = {
+			country = c:BRY
+			type = tributary
+		}
+	}
+
+	c:BRY ?= {
+		create_diplomatic_pact = {
+			country = c:CHR
+			type = vassal
+		}
+	}
+
+	c:CHR ?= {
+		create_diplomatic_pact = {
+			country = c:STS
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:NVS
+			type = vassal
+		}
+	}
+
+	c:LIT ?= {
+		create_diplomatic_pact = {
+			country = c:NRK
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:SSK
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:PNK
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:TUV
+			type = vassal
+		}
+
+		create_diplomatic_pact = {
+			country = c:POK
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:DRU
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:VBK
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:TPS
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:RZH
+			type = vassal
+		}
+	}
+}

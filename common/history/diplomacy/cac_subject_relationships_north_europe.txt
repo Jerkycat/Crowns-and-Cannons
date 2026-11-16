@@ -1,0 +1,23 @@
+﻿DIPLOMACY = {
+	c:SWE ?= {
+		create_diplomatic_pact = {
+			country = c:NOR
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:SKE
+			type = vassal
+		}
+	}
+
+	c:NOR ?= {
+		create_diplomatic_pact = {
+			country = c:ICE
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:GRL
+			type = vassal
+		}
+	}
+}

@@ -1,1 +1,255 @@
 
+HUN = { # Hungary
+    color = rgb { 152 85 92 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { hungarian }
+    capital = STATE_CENTRAL_HUNGARY
+}
+
+CRO = { # Croatian
+    color = rgb { 174 227 95 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { croat }
+    capital = STATE_CROATIA
+}
+
+BOS = { # Bosnia
+    color = rgb { 227 197 87 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { bosniak }
+    capital = STATE_BOSNIA
+}
+
+SER = { # Serbia
+    color = rgb { 181 24 24 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { serb }
+    capital = STATE_SKOPIA
+}
+
+WAL = { # Wallachia
+    color = rgb { 82 160 242 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { romanian }
+    capital = STATE_WALLACHIA
+}
+
+BUL = { # Bulgaria
+    color = rgb { 240 240 210 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { bulgarian }
+    capital = STATE_BULGARIA
+}
+
+BYZ = { # Bizantine Empire
+    color = hsv360 { 287 62 55 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { greek }
+    capital = STATE_EASTERN_THRACE
+}
+
+EPI = { # Epirus
+    color = rgb { 110 147 236 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { greek }
+    capital = STATE_ALBANIA
+}
+
+ALB = { # Albania
+    color = rgb { 186 98 45 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { albanian }
+    capital = STATE_ALBANIA
+}
+
+CRT = { # Candia
+    color = rgb { 138  110  130 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_italian }
+    capital = STATE_CRETE
+}
+
+ACH = { # Achaea
+    color = rgb { 85 177 213 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_PELOPONNESE
+}
+
+NEG = { # Negroponte
+    color = rgb { 95 105 100 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_italian }
+    capital = STATE_ATTICA
+}
+
+ATH = { # Athens
+    color = rgb { 45 84 173 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { catalan }
+    capital = STATE_ATTICA
+}
+
+SAO = { # Salona
+    color = rgb { 240 67 139 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { catalan }
+    capital = STATE_ATTICA
+}
+
+NEO = { # Neopatria
+    color = rgb { 63 72 204 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { catalan }
+    capital = STATE_ATTICA
+}
+
+ARG = { # Argos
+    color = hsv360 { 239 70 61 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
+    capital = STATE_IONIAN_ISLANDS
+}
+
+# Moldavia
+
+BLD = { # Bârlad
+    color = rgb { 236  57  123 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { romanian }
+    capital = STATE_MOLDAVIA
+}
+
+BIA = { # Baia
+    color = rgb { 36  157  123 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { romanian }
+    capital = STATE_MOLDAVIA
+}
+
+IAS = { # Iaşi
+    color = rgb { 36  57  123 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { romanian }
+    capital = STATE_MOLDAVIA
+}
+
+SSI = { # Străşineţ
+    color = rgb { 36  57  223 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { romanian }
+    capital = STATE_BUKOVINA
+}
+
+HTN = { # Hotin
+    color = rgb { 236  57  223 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { romanian }
+    capital = STATE_BUKOVINA
+}
+
+HSC = { # Hansca
+    color = rgb { 136  57  223 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { romanian }
+    capital = STATE_BESSARABIA
+}
+
+SRC = { # Soroca
+    color = rgb { 136  157  223 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { romanian }
+    capital = STATE_BESSARABIA
+}

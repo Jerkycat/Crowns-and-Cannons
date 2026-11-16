@@ -1,0 +1,48 @@
+﻿DIPLOMACY = {
+	c:BOH ?= {
+		create_diplomatic_pact = {
+			country = c:LUX
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:SIL
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:MVA
+			type = vassal
+		}
+	}
+
+	c:HAB ?= {
+		create_diplomatic_pact = {
+			country = c:FRT
+			type = personal_union
+		}
+	}
+
+	c:BRA ?= {
+		create_diplomatic_pact = {
+			country = c:FRT
+			type = personal_union
+		}
+		create_diplomatic_pact = {
+			country = c:SOR
+			type = vassal
+		}
+	}
+
+	c:BRE ?= {
+		create_diplomatic_pact = {
+			country = c:DIT
+			type = vassal
+		}
+	}
+
+	c:DAN ?= {
+		create_diplomatic_pact = {
+			country = c:SLV
+			type = vassal
+		}
+	}
+}

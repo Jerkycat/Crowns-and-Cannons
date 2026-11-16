@@ -1,0 +1,272 @@
+COUNTRIES = {
+
+	##################################################
+	# GRÃ-BRETANHA
+	##################################################
+
+	c:ENG ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MNN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:DHM ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LAN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:WLS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:WLM ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SCO ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SBL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MOY ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ROS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LOI ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ORK ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes } # Orcadas, condado nórdico-escocês feudal
+
+	##################################################
+	# IRLANDA
+	##################################################
+	# Tags de cultura "british" = senhorios anglo-normandos/ingleses, organização feudal -> tier 3
+	# Tags de cultura "irish" = clãs gaélicos, organização clânica, não-feudal -> tier 2
+
+	c:PLE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MCM ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:DMS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ORD ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:THO ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:CWM ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LEI ?= { effect_tier_2_tech = yes  effect_religion_catholicism = yes } # clã gaélico
+	c:CVN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:KID ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:FLY ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BFN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:TYR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:TRY ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:CLA ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ULS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:KEE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:IVG ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:CLR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:CNN ?= { effect_tier_2_tech = yes  effect_religion_catholicism = yes } # clã gaélico (Ó Conchobair)
+	c:MYO ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SLN ?= { effect_tier_2_tech = yes  effect_religion_catholicism = yes } # clã gaélico
+	c:CMA ?= { effect_tier_2_tech = yes  effect_religion_catholicism = yes } # clã gaélico
+
+	##################################################
+	# NORTE DA FRANÇA
+	##################################################
+
+	c:FRA ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BRI ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:NRM ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MIE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ANJ ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:PRC ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BLS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ANG ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BUR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:FCB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MON ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:NEV ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LOR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BAR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:VDU ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:RET ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+
+	##################################################
+	# PAÍSES BAIXOS E ALEMANHA (OESTE)
+	##################################################
+
+	c:ARS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BGN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:FLA ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:HAI ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ZEE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:HOL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:UTR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:FRI ?= { effect_tier_2_tech = yes  effect_religion_catholicism = yes } # "liberdade frísia", confederação de camponeses sem senhor feudal
+	c:BRB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LOO ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:GEL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ZUT ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LIE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LUX ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:FRT ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:KOL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:JUL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MDS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes } # Manderscheid
+	c:AAC ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:DUN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:TRI ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SPO ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:VEL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ALS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:PAL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ZWE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+
+	##################################################
+	# EUROPA CENTRAL (BAVIERA, ÁUSTRIA, BOÊMIA, SUÍÇA, NORTE DA ALEMANHA)
+	##################################################
+
+	c:SLZ ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:UBV ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LBV ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:KIR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:AUG ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MBZ ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:HAB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BOH ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MVA ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SIL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:WUR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:TUB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BDE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:UFF ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:HNB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:WBG ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ANS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:NUR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:EIC ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BAM ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:VUD ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:NEU ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BAS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:KYB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LSA ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BRN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SIT ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ZUR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:WER ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MUN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:KLE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BRG ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SYN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MKL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:GSW ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:OLD ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:TCK ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:OSN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MDN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:RVA ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LPP ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:PDB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:GMK ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LUN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BRE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:VRD ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SLV ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:DIT ?= { effect_tier_2_tech = yes  effect_religion_catholicism = yes } # Ditmársia, república camponesa sem senhor feudal
+	c:HPL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:HTR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LUB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LAU ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MAG ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SWB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ANH ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MEI ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LDB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BRU ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:HBS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:GBH ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:WGO ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:NSS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:DIE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:WTG ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:HES ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MAI ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:FRN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:FLD ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:THU ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:WMA ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SWZ ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:WOL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:KMM ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:STE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BRA ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SOR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+
+	##################################################
+	# SUL DA FRANÇA
+	##################################################
+
+	c:AQN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BRR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MDM ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:PER ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:AMG ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:AST ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:COM ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MRC ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BOU ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:VNT ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:VDM ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:FRZ ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:VLN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:DAU ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ORA ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SAV ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:GNV ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:PAP ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:PRO ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+
+	##################################################
+	# IBÉRIA
+	##################################################
+
+	c:MLL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:NAV ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ARA ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:CAS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:POR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ADU ?= { effect_tier_3_tech = yes } # remanescente muçulmano urbanizado (Granada) — NÃO católico, sem effect_religion_catholicism
+	c:MOR ?= { effect_tier_3_tech = yes } # sultanato marínida — NÃO católico, sem effect_religion_catholicism
+
+	##################################################
+	# NORTE DA ITÁLIA
+	##################################################
+
+	c:GEN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:PIE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MSP ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ATI ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SAL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MLO ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:MAN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:TNT ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:TIR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:VER ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:VEN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:AQU ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:PAD ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:PAR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:LUC ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:GOR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:FLO ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:PIS ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SIE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:FER ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:BLG ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:CES ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+
+	##################################################
+	# SUL DA ITÁLIA
+	##################################################
+
+	c:RIM ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:PEA ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:URB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SIC ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:NAP ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:ARB ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes } # giudicato de Arborea, tinha administração própria (Carta de Logu)
+
+	##################################################
+	# EUROPA DO NORTE
+	##################################################
+	# SMI, SVO, TAV, KRL têm country_type = decentralized (diferente de todo o resto do arquivo,
+	# que é "unrecognized") — são as únicas entidades realmente tribais do conjunto até agora.
+
+	c:ICE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:GRL ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:DAN ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SWE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SKE ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:NOR ?= { effect_tier_3_tech = yes  effect_religion_catholicism = yes }
+	c:SMI ?= { effect_tier_1_tech = yes } # sami, caçadores-pastores nômades de renas, sem catolicismo (crença própria)
+	c:SVO ?= { effect_tier_2_tech = yes } # savônia, confederação tribal finlandesa do interior, ainda majoritariamente pagã em 1337
+	c:TAV ?= { effect_tier_2_tech = yes  effect_religion_catholicism = yes } # tavástia, sob influência sueca/diocese de Åbo, já em cristianização católica
+	c:KRL ?= { effect_tier_2_tech = yes } # carélia, sob influência de Novgorod (ortodoxa), não católica
+}

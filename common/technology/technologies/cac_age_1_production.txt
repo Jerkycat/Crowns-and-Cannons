@@ -10,7 +10,7 @@ agriculture = {
 	}
 
 	ai_weight = {
-		value = 3
+		value = 2
 	}
 }
 
@@ -37,6 +37,13 @@ city_building = {
 		agriculture
 	}
 
+	modifier = {
+		state_infrastructure_from_population_add = 2
+		state_infrastructure_from_population_max_add = 40
+
+		state_building_construction_sector_max_level_add = 1
+	}
+
 	ai_weight = {
 		value = 1
 	}
@@ -52,7 +59,7 @@ alchemy = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -65,8 +72,40 @@ road_building = {
 		city_building
 	}
 
+	modifier = {
+		state_infrastructure_from_population_add = 2
+	}
+
 	ai_weight = {
-		value = 1
+		value = 3
+	}
+}
+
+paper_guild = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		city_building
+	}
+
+	ai_weight = {
+		value = 3
+	}
+}
+
+fiber_pulp_paper = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	unlocking_technologies = {
+		paper_guild
+	}
+
+	ai_weight = {
+		value = 3
 	}
 }
 
@@ -80,7 +119,7 @@ apothecary = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -95,7 +134,7 @@ quarrying = {
 	}
 
 	ai_weight = {
-		value = 3
+		value = 2
 	}
 }
 
@@ -109,7 +148,7 @@ metallurgy = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -123,7 +162,7 @@ mining_law = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -137,7 +176,7 @@ bronze_working = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -151,7 +190,7 @@ fine_metals_mining = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -167,7 +206,7 @@ iron_working = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -181,7 +220,7 @@ rural_smelter = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -195,6 +234,6 @@ advanced_mining = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }

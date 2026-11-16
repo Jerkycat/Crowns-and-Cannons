@@ -3,7 +3,7 @@
 
 effect_tier_3_tech = {
 
-	# Economic
+	# Tech - Economic
 	add_technology_researched = agriculture
 	add_technology_researched = windmill
 	add_technology_researched = city_building
@@ -19,7 +19,7 @@ effect_tier_3_tech = {
 	add_technology_researched = rural_smelter
 	add_technology_researched = advanced_mining
 
-	# Military
+	# Tech - Military
 	add_technology_researched = ship_building
 	add_technology_researched = trade_fairs
 	add_technology_researched = merchant_guilds
@@ -28,7 +28,7 @@ effect_tier_3_tech = {
 	add_technology_researched = ranching
 	add_technology_researched = horse_riding
 	add_technology_researched = horsemen
-	add_technology_researched = armored_horsemen
+	add_technology_researched = mail_armor
 	add_technology_researched = feudalism
 	add_technology_researched = castle
 	add_technology_researched = assemblies
@@ -39,7 +39,7 @@ effect_tier_3_tech = {
 	add_technology_researched = footmen
 	add_technology_researched = archers
 
-	# Cultural
+	# Tech - Cultural
 	add_technology_researched = written_alphabet
 	add_technology_researched = cultural_traditions
 	add_technology_researched = map_making
@@ -81,7 +81,7 @@ effect_tier_2_tech = {
 	add_technology_researched = ranching
 	add_technology_researched = horse_riding
 	add_technology_researched = horsemen
-	add_technology_researched = armored_horsemen
+	add_technology_researched = mail_armor
 	add_technology_researched = feudalism
 	add_technology_researched = feudal_levies
 	add_technology_researched = mandatory_training

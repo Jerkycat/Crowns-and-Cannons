@@ -9,8 +9,12 @@ ship_building = {
 	unlocking_technologies = {
 	}
 
+	modifier = {
+		state_building_port_max_level_add = 1
+	}
+
 	ai_weight = {
-		value = 3
+		value = 2
 	}
 }
 
@@ -38,7 +42,7 @@ merchant_guilds = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -68,7 +72,7 @@ cog = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -83,7 +87,7 @@ ranching = {
 	}
 
 	ai_weight = {
-		value = 3
+		value = 2
 	}
 }
 
@@ -111,22 +115,21 @@ horsemen = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
-armored_horsemen = {
+mail_armor = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
 	category = military
 
 	unlocking_technologies = {
 		horsemen
-		feudalism
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -145,10 +148,11 @@ feudalism = {
 		country_weekly_innovation_mult = 0.05
 
 		state_aristocrats_education_access_add = 0.2
+		state_building_sergeantry_max_level_add = 1
 	}
 
 	ai_weight = {
-		value = 3
+		value = 2
 	}
 }
 
@@ -176,7 +180,7 @@ assemblies = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -190,7 +194,7 @@ castellany_system = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -224,7 +228,7 @@ mandatory_training = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -238,7 +242,7 @@ weaponsmith = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -252,7 +256,7 @@ footmen = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -266,7 +270,7 @@ archers = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 

@@ -1,0 +1,27 @@
+﻿pm_cac_market_stalls = {
+	texture = "gfx/interface/icons/production_method_icons/market_stalls.dds"
+
+	state_modifiers = {
+		level_scaled = {
+			state_peasants_consumption_multiplier_add = 0.005
+
+			building_group_bg_agriculture_allowed_collectivization_add = 0.005
+			building_group_bg_ranching_allowed_collectivization_add = 0.005
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_textiles_add = 2
+			goods_output_pottery_add = 2
+			goods_output_liquor_add = 2
+			goods_output_services_add = 9
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2500
+			building_employment_clerks_add = 900
+			building_employment_shopkeepers_add = 400
+		}
+	}
+}

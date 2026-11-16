@@ -232,7 +232,11 @@ STATES = {
 	s:STATE_EXTREMADURA = {
 		create_state = {
 			country = c:CAS
-			owned_provinces = { xB4471A x679A01 x009020 x97FBA4 x342BE6 x506000 xC694C3 xF19B02 x7500D4 x30A000 x4A8E78 xE47DCF }
+			owned_provinces = { xB4471A x009020 x97FBA4 x342BE6 x506000 xC694C3 xF19B02 x7500D4 x30A000 x4A8E78 xE47DCF }
+		}
+		create_state = {
+			country = c:POR
+			owned_provinces = { x679A01 }
 		}
 		add_homeland = cu:spanish
 		add_homeland = cu:asturleonese	}
@@ -542,8 +546,7 @@ STATES = {
 
 	s:STATE_MALTA = {
 		create_state = {
-			country = c:SPR
-			state_type = unincorporated
+			country = c:SIC
 			owned_provinces = { x015121 x3a8b51 }
 		}
 		add_homeland = cu:maltese	}

@@ -16,7 +16,7 @@ written_alphabet = {
 	}
 
 	ai_weight = {
-		value = 3
+		value = 2
 	}
 }
 
@@ -86,7 +86,7 @@ cultural_acceptance = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -100,7 +100,7 @@ colonies = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -114,7 +114,7 @@ distribution_of_power = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -128,7 +128,7 @@ subject_nations = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -142,7 +142,7 @@ taxation = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -156,21 +156,7 @@ chancery = {
 	}
 
 	ai_weight = {
-		value = 1
-	}
-}
-
-paper_guild = {
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
-	category = society
-
-	unlocking_technologies = {
-		scriptorium
-	}
-
-	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -184,7 +170,7 @@ library = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -204,7 +190,7 @@ legalism = {
 	}
 
 	ai_weight = {
-		value = 3
+		value = 2
 	}
 }
 
@@ -232,7 +218,7 @@ pest_house = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -246,7 +232,7 @@ hospitals = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -261,7 +247,7 @@ organized_religion = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -289,7 +275,7 @@ guilds = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -303,7 +289,7 @@ peasant_connections = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -317,7 +303,7 @@ expanded_archives = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -330,8 +316,12 @@ master_masons = {
 		peasant_connections
 	}
 
+	modifier = {
+		state_construction_mult = 0.05
+	}
+
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 
@@ -345,7 +335,7 @@ clearing_terrain = {
 	}
 
 	ai_weight = {
-		value = 1
+		value = 3
 	}
 }
 

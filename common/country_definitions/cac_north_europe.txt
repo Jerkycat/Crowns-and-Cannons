@@ -1,0 +1,110 @@
+
+ICE = { # Iceland
+    color = rgb { 43 60 117 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { icelandic }
+    capital = STATE_ICELAND
+}
+
+GRL = { # Greenland
+    color = rgb { 254 60 117 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { icelandic }
+    capital = STATE_GREENLAND
+}
+
+DAN = { # Denmark
+    color = rgb { 190 70 70 }
+
+    country_type = unrecognized
+
+    tier = kingdom
+
+    cultures = { danish }
+    capital = STATE_JUTLAND
+}
+
+SWE = { # Sweden
+    color = hsv360 { 202 100 65 }
+
+    country_type = unrecognized
+
+    tier = kingdom
+
+    cultures = { swedish }
+    capital = STATE_SVEALAND
+}
+
+SKE = { # Scania
+    color = rgb { 190 190 70 }
+
+    country_type = unrecognized
+
+    tier = kingdom
+
+    cultures = { danish }
+    capital = STATE_SCANIA
+}
+
+NOR = { # Norway
+    color = rgb { 117 165 188 }
+
+    country_type = unrecognized
+
+    tier = kingdom
+
+    cultures = { norwegian }
+    capital = STATE_EASTERN_NORWAY
+}
+
+SMI = { # Sami
+    color = rgb { 252 209 22 }
+
+    country_type = decentralized
+
+    tier = principality
+
+    cultures = { sami }
+    capital = STATE_OULU
+}
+
+SVO = { # Savonia
+    color = rgb { 174 252 80 }
+
+    country_type = decentralized
+
+    tier = grand_principality
+
+    cultures = { finnish }
+    capital = STATE_KUOPIO
+}
+
+TAV = { # Tavastia
+    color = rgb { 174 200 80 }
+
+    country_type = decentralized
+
+    tier = kingdom
+
+    cultures = { finnish }
+    capital = STATE_KUOPIO
+}
+
+KRL = { # Karelia
+    color = rgb { 252 209 22 }
+
+    country_type = decentralized
+
+    tier = principality
+
+    cultures = { karelian }
+    capital = STATE_EAST_KARELIA
+}

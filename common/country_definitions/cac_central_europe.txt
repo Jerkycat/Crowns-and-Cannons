@@ -1,1 +1,838 @@
 
+SLZ = { # Salzburg
+    color = rgb { 129 109 9 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_TYROL
+}
+
+UBV = { # Upper Bavaria
+    color = rgb { 19 102 152 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_BAVARIA
+}
+
+LBV = { # Lower Bavaria
+    color = rgb { 35 220 240 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_BAVARIA
+}
+
+KIR = { # Kirchberg
+    color = rgb { 200 160 210 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_BAVARIA
+}
+
+AUG = { # Augusta Vindelicorum
+    color = rgb { 20 188 118 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_BAVARIA
+}
+
+MBZ = { # Bregenz
+    color = rgb { 101 189 23 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { alemannic }
+    capital = STATE_TYROL
+}
+
+HAB = { # Austria
+    color = rgb { 220 220 220 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_AUSTRIA
+}
+
+BOH = { # Bohemia
+    color = rgb { 161 139 40 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { czech }
+    capital = STATE_BOHEMIA
+}
+
+MVA = { # Moravia
+    color = rgb { 232 149 18 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { czech }
+    capital = STATE_MORAVIA
+}
+
+SIL = { # Silesia
+    color = rgb { 84 166 93 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { polish }
+    capital = STATE_LOWER_SILESIA
+}
+
+WUR = { # Württemberg
+    color = rgb { 111 162 128 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_WURTTEMBERG
+}
+
+TUB = { # Tübingen
+    color = rgb { 210 170 120 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_WURTTEMBERG
+}
+
+BDE = { # Baden
+    color = rgb { 117 161 67 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_BADEN
+}
+
+UFF = { # Hohenlohe
+    color = rgb { 154 152 126 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_BADEN
+}
+
+HNB = { # Henneberg
+    color = rgb { 234 193 53 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_FRANCONIA
+}
+
+WBG = { # Würzburg
+    color = rgb { 147 146 106 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_FRANCONIA
+}
+
+ANS = { # Ansbach
+    color = rgb { 130 77 119 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_FRANCONIA
+}
+
+NUR = { # Nuremberg
+    color = rgb { 243 112 15 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_FRANCONIA
+}
+
+EIC = { # Eichstätt
+    color = rgb { 60 97 64 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_BAVARIA
+}
+
+BAM = { # Bamberg
+    color = rgb { 200 219 195 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { south_german }
+    capital = STATE_FRANCONIA
+}
+
+VUD = { # Vaud
+    color = hsv360 { 338 94 96 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { francoprovencal }
+    capital = STATE_WEST_SWITZERLAND
+}
+
+NEU = { # Neuchâtel
+    color = rgb { 51 191 102 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { francoprovencal }
+    capital = STATE_WEST_SWITZERLAND
+}
+
+BAS = { # Basel
+    color = rgb { 145 139 102 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { alemannic }
+    capital = STATE_WEST_SWITZERLAND
+}
+
+KYB = { # Kyburg
+    color = rgb { 219 212 255 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { alemannic }
+    capital = STATE_WEST_SWITZERLAND
+}
+
+LSA = { # Lausanne
+    color = rgb { 94 32 108 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { francoprovencal }
+    capital = STATE_WEST_SWITZERLAND
+}
+
+BRN = { # Bern
+    color = rgb { 218 161 113 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { alemannic }
+    capital = STATE_WEST_SWITZERLAND
+}
+
+SIT = { # Sion
+    color = rgb { 144 238 134 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { francoprovencal }
+    capital = STATE_WEST_SWITZERLAND
+}
+
+ZUR = { # Zürich
+    color = rgb { 31 140 205 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { alemannic }
+    capital = STATE_EAST_SWITZERLAND
+}
+
+WER = { # Werdenberg
+    color = rgb { 175 183 202 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { alemannic }
+    capital = STATE_EAST_SWITZERLAND
+}
+
+# North Germany
+
+MUN = { # Münster
+    color = rgb { 205 103 80 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_WESTPHALIA
+}
+
+KLE = { # Cleves
+    color = rgb { 173 176 113 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_RUHR
+}
+
+BRG = { # Berg
+    color = rgb { 240 205 140 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_RUHR
+}
+
+SYN = { # Sayn
+    color = rgb { 7 137 48 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_RUHR
+}
+
+MKL = { # Mecklenburg
+    color = rgb { 55 140 143 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_MECKLENBURG
+}
+
+GSW = { # Güstrow
+    color = rgb { 245 196 145 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_MECKLENBURG
+}
+
+OLD = { # Oldenburg
+    color = rgb { 147 130 118 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_HANNOVER
+}
+
+TCK = { # Tecklenburg
+    color = rgb { 144 44 144 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_HANNOVER
+}
+
+OSN = { # Osnabrück
+    color = rgb { 135 138 192 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_HANNOVER
+}
+
+MDN = { # Minden
+    color = rgb { 133 201 150 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_HANNOVER
+}
+
+RVA = { # Ravensburg
+    color = rgb { 108 139 228 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_WESTPHALIA
+}
+
+LPP = { # Lippe
+    color = rgb { 21 83 149 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_WESTPHALIA
+}
+
+PDB = { # Paderborn
+    color = rgb { 214 90 79 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_WESTPHALIA
+}
+
+GMK = { # Mark
+    color = rgb { 93 202 202 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_WESTPHALIA
+}
+
+LUN = { # Lüneburg
+    color = rgb { 135 109 147 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_ELBE
+}
+
+BRE = { # Brema
+    color = rgb { 33 101 137 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_ELBE
+}
+
+VRD = { # Verden
+    color = rgb { 227 211 34 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_ELBE
+}
+
+SLV = { # Schleswig
+    color = rgb { 0 150 255 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_SCHLESWIG_HOLSTEIN
+}
+
+DIT = { # Dithmarschen
+    color = rgb { 72 194 212 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_SCHLESWIG_HOLSTEIN
+}
+
+HPL = { # Holstein-Plön
+    color = rgb { 240 200 200 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_SCHLESWIG_HOLSTEIN
+}
+
+HTR = { # Holstein-Rendsburg
+    color = rgb { 220 150 158 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_ELBE
+}
+
+LUB = { # Lübeck
+    color = rgb { 156 179 189 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_SCHLESWIG_HOLSTEIN
+}
+
+LAU = { # Saxe-Lauenburg
+    color = rgb { 79 139 99 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_SCHLESWIG_HOLSTEIN
+}
+
+MAG = { # Magdeburg
+    color = rgb { 189 115 99 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_ANHALT
+}
+
+SWB = { # Saxe-Wittenberg
+    color = hsv { 0 0.7 0.38 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_ANHALT
+}
+
+ANH = { # Anhalt
+    color = rgb { 203 93 124 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_ANHALT
+}
+
+MEI = { # Meissen
+    color = rgb { 58 174 61 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_SAXONY
+}
+
+LDB = { # Landsberg
+    color = rgb { 255 221 17 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_ANHALT
+}
+
+BRU = { # Brunswick
+    color = rgb { 116 92 39 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_BRUNSWICK
+}
+
+HBS = { # Halberstadt
+    color = rgb { 215 182 199 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_BRUNSWICK
+}
+
+GBH = { # Grubenhagen
+    color = rgb { 193 174 132 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_BRUNSWICK
+}
+
+WGO = { # Wernigerode
+    color = rgb { 200 100 90 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_BRUNSWICK
+}
+
+NSS = { # Nassau-Siegen
+    color = rgb { 191 83 203 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_HESSE
+}
+
+DIE = { # Diez
+    color = rgb { 236 90 91 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_HESSE
+}
+
+WTG = { # Wittgenstein
+    color = rgb { 221 37 77 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_HESSE
+}
+
+HES = { # Hesse
+    color = rgb { 114 171 184 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_HESSE
+}
+
+MAI = { # Mainz
+    color = rgb { 178 145 87 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_HESSE
+}
+
+FRN = { # Frankfurt
+    color = rgb { 178 145 87 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_HESSE
+}
+
+FLD = { # Fulda
+    color = rgb { 66 103 88 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_HESSE
+}
+
+THU = { # Thuringia
+    color = rgb { 66 126 157 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_SAXONY
+}
+
+WMA = { # Weimar
+    color = rgb { 220 94 40 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_SAXONY
+}
+
+SWZ = { # Schwarzburg
+    color = hsv { 0.14 0.38 0.38 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_SAXONY
+}
+
+WOL = { # Wolgast
+    color = rgb { 235 178 18 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_POMERANIA
+}
+
+KMM = { # Wolgast
+    color = rgb { 190 15 15 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_POMERANIA
+}
+
+STE = { # Stetin
+    color = rgb { 33 119 58 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_POMERANIA
+}
+
+BRA = { # Brandenburg
+    color = rgb { 123 90 90 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { north_german }
+    capital = STATE_BRANDENBURG
+}
+
+SOR = { # Lusatia
+    color = rgb { 67 80 128 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { sorb }
+    capital = STATE_BRANDENBURG
+}

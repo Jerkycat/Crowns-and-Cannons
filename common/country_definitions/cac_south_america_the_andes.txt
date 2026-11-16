@@ -1,0 +1,525 @@
+
+# Tucuman & Mendoza
+
+ALC = { # Allentiac
+	color = rgb {236 252 252}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+MYC = { # Millcayac
+	color = rgb {110 85 152}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+# Chile
+
+PHE = { # Picunche
+	color = rgb {246 187 241}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+CPU = { # Cuquimpu
+	color = rgb {110 185 152}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+CYC = { # Copayacu
+	color = rgb {110 85 52}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+# Pazioca
+
+CCH = { # Calchaqui
+	color = rgb {210 185 152}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+QIM = { # Quimes
+	color = rgb {210 85 252}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+OMG = { # Omaguaca
+	color = rgb {164 140 241}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+QTR = { # Quitor
+	color = rgb {214 217 176}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+KLL = { # Killaka
+	color = rgb {128 42 249}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+TUP = { # Tupiza
+	color = rgb {205 121 137}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+QQH = { # Qhara Qhara
+	color = rgb {93 75 220}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+CCT = { # Ccantumarcani
+	color = rgb {210 85 152}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_TUCUMAN
+}
+
+AVA = { # Ava
+	color = rgb { 42 174 101}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { amazonian }
+	capital = STATE_SANTA_CRUZ
+}
+
+CBY = { # Chiribaya
+	color = rgb {108 16 34}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_AREQUIPA
+}
+
+MOX = { # Moxo
+	color = rgb {219 242 102}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { amazonian }
+	capital = STATE_LA_PAZ
+}
+
+KWY = { # Kallawaya
+	color = rgb {233 190 100}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_LA_PAZ
+}
+
+AMN = { # Camana
+	color = rgb {82 217 155}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_ICA
+}
+
+WAN = { # Wanka
+	color = rgb {216 183 87}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_LIMA
+}
+
+HCR = { # Huacrachuco
+	color = rgb {154 148 2}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_LIMA
+}
+
+TLN = { # Tallan
+	color = rgb {15 189 226}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_AREQUIPA
+}
+
+PUK = { # Pukamuru
+	color = rgb {62 202 61}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_AREQUIPA
+}
+
+CNO = { # Chono
+	color = rgb {99 125 127}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_AREQUIPA
+}
+
+GCV = { # Guancavilca
+	color = rgb {170 146 75}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_AREQUIPA
+}
+
+CAX = { # Cara
+	color = rgb {46 187 45}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { muisca }
+	capital = STATE_AREQUIPA
+}
+
+QTO = { # Quito
+	color = rgb {229 74 114}
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { muisca }
+	capital = STATE_AREQUIPA
+}
+
+# Centralized Nations
+
+CRA = { # Charka
+	color = rgb {198 131 244}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_AREQUIPA
+}
+
+KRK = { # Karanka
+	color = rgb {25 255 44}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_AREQUIPA
+}
+
+SUR = { # Sura
+	color = rgb {143 125 71}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_AREQUIPA
+}
+
+PCJ = { # Paka Jaqis
+	color = rgb {126 147 196}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_AREQUIPA
+}
+
+UMA = { # Umasuyus
+	color = rgb {150 234 177}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_AREQUIPA
+}
+
+LUP = { # Lupijaki
+	color = rgb {240 71 247}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_AREQUIPA
+}
+
+QUL = { # Qulla
+	color = rgb {89 103 225}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { aimara }
+	capital = STATE_AREQUIPA
+}
+
+KNA = { # Kana
+	color = rgb {201 122 196}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_ICA
+}
+
+PIG = { # Pinagua
+	color = hsv { 0.19 0.48 0.38 }
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_ICA
+}
+
+CSU = { # Qusqu
+	color = rgb { 229 64 64}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_ICA
+}
+
+AYA = { # Ayarmaca
+	color = rgb {52 154 139}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_ICA
+}
+
+KKE = { # Killke
+	color = rgb {216 80 217}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_ICA
+}
+
+URC = { # Urin Chanka
+	color = rgb {188 129 18}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_ICA
+}
+
+MYM = { # Mayonmarka
+	color = rgb {185 80 42}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_ICA
+}
+
+PCR = { # Pocra
+	color = rgb {83 82 143}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_ICA
+}
+
+HNK = { # Chanka
+	color = rgb {229 79 103}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_ICA
+}
+
+CIC = { # Chincha
+	color = rgb {248 42 86}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_LIMA
+}
+
+HRC = { # Huarco
+	color = rgb {148 229 69}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_LIMA
+}
+
+ICM = { # Ichma
+	color = rgb {5 36 101}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_LIMA
+}
+
+CLQ = { # Collique
+	color = rgb {247 156 10}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_LIMA
+}
+
+NTA = { # Canta
+	color = rgb {116 63 154}
+
+	country_type = unrecognized
+
+	tier = principality
+
+	cultures = { quechua }
+	capital = STATE_LIMA
+}

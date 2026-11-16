@@ -12,4 +12,18 @@
 			type = rivalry
 		}
 	}
+
+	c:POL ?= { # Polish / Teuton Rivalry
+		create_diplomatic_pact = {
+			country = c:TEU
+			type = rivalry
+		}
+	}
+
+	c:TEU ?= { # Polish / Teuton Rivalry
+		create_diplomatic_pact = {
+			country = c:POL
+			type = rivalry
+		}
+	}
 }

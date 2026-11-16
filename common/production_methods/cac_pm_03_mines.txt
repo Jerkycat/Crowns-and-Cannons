@@ -1,0 +1,106 @@
+﻿
+# Alloy Mines
+
+pm_cac_picks_and_shovels_building_alloy_mine = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 1
+
+			# output goods
+			goods_output_lead_add = 5
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+# Allum Mines
+
+pm_cac_picks_and_shovels_building_alum_mine = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 1
+
+			# output goods
+			goods_output_sulfur_add = 5
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+# Coal Mines
+
+pm_cac_picks_and_shovels_building_coal_mine = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 1
+
+			# output goods
+			goods_output_coal_add = 5
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+# Copper Mines
+
+pm_cac_picks_and_shovels_building_copper_mine = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 1
+
+			# output goods
+			goods_output_copper_add = 5
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+
+# Iron Mines
+
+pm_cac_picks_and_shovels_building_iron_mine = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 1
+
+			# output goods
+			goods_output_iron_add = 5
+		}
+
+		level_scaled = {
+			building_employment_shopkeepers_add = 100
+			building_employment_laborers_add = 900
+		}
+	}
+}
+

@@ -29,6 +29,17 @@
 		}
 	}
 
+	c:PLE ?= {
+		create_diplomatic_pact = {
+			country = c:ULS
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:KID
+			type = vassal
+		}
+	}
+
 	c:SCO ?= {
 		create_diplomatic_pact = {
 			country = c:MOY
@@ -157,6 +168,13 @@
 		create_diplomatic_pact = {
 			country = c:HAI
 			type = vassal
+		}
+	}
+
+	c:HAI ?= {
+		create_diplomatic_pact = {
+			country = c:HOL
+			type = personal_union
 		}
 	}
 }

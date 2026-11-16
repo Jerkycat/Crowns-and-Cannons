@@ -63,7 +63,7 @@ WLM = {
 
     tier = principality
 
-    cultures = { welsh }
+    cultures = { british }
     capital = STATE_WALES
 }
 
@@ -74,7 +74,7 @@ SCO = { # Scottland
 
     tier = kingdom
 
-    cultures = { scottish_gaelic }
+    cultures = { scottish }
     capital = STATE_HIGHLANDS
 }
 
@@ -96,7 +96,7 @@ MOY = {
 
     tier = principality
 
-    cultures = { scottish_gaelic }
+    cultures = { scottish }
     capital = STATE_HIGHLANDS
 }
 
@@ -118,7 +118,7 @@ LOI = {
 
     tier = principality
 
-    cultures = { british }
+    cultures = { scottish_gaelic }
     capital = STATE_HIGHLANDS
 }
 
@@ -843,5 +843,16 @@ ZWE = { # Zweibrücken
     tier = principality
 
     cultures = { south_german }
+    capital = STATE_ALSACE_LORRAINE
+}
+
+FRT = { # Ferrette
+    color = rgb { 245 14 36 }
+
+    country_type = unrecognized
+
+    tier = principality
+
+    cultures = { french }
     capital = STATE_ALSACE_LORRAINE
 }

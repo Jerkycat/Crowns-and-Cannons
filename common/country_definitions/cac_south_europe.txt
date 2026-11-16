@@ -423,7 +423,7 @@ AQU = { # Aquileia
 
 	tier = principality
 
-	cultures = { north_italian }
+	cultures = { south_german }
 	capital = STATE_VENETIA
 }
 

@@ -1,0 +1,1135 @@
+POPS = {
+	# South America — populations distributed by state and then by indigenous nation
+	# region_state follows the country tag from each create_state block.
+	# Within each state, population is proportional to the number of owned_provinces.
+
+	# Brazil
+	s:STATE_PARA = {
+		region_state:AMZ = {
+			create_pop = {
+				culture = cariban
+				size = 120000
+			}
+		}
+		region_state:TBI = {
+			create_pop = {
+				culture = cariban
+				size = 8720
+			}
+		}
+		region_state:KAP = {
+			create_pop = {
+				culture = cariban
+				size = 3488
+			}
+		}
+	}
+
+	s:STATE_MARANHAO = {
+		region_state:TRM = {
+			create_pop = {
+				culture = tupinamba
+				size = 31576
+			}
+		}
+		region_state:TBI = {
+			create_pop = {
+				culture = tupinamba
+				size = 99989
+			}
+		}
+		region_state:KAP = {
+			create_pop = {
+				culture = tupinamba
+				size = 18419
+			}
+		}
+	}
+
+	s:STATE_PIAUI = {
+		region_state:TRM = {
+			create_pop = {
+				culture = tupinamba
+				size = 20998
+			}
+		}
+		region_state:TBI = {
+			create_pop = {
+				culture = tupinamba
+				size = 128986
+			}
+		}
+	}
+
+	s:STATE_CEARA = {
+		region_state:TBI = {
+			create_pop = {
+				culture = tupinamba
+				size = 21426
+			}
+		}
+		region_state:POT = {
+			create_pop = {
+				culture = tupinamba
+				size = 16070
+			}
+		}
+		region_state:KRR = {
+			create_pop = {
+				culture = tupinamba
+				size = 21426
+			}
+		}
+		region_state:SUC = {
+			create_pop = {
+				culture = tupinamba
+				size = 26783
+			}
+		}
+		region_state:TRM = {
+			create_pop = {
+				culture = tupinamba
+				size = 122229
+			}
+		}
+	}
+
+	s:STATE_RIO_GRANDE_DO_NORTE = {
+		region_state:POT = {
+			create_pop = {
+				culture = tupinamba
+				size = 174604
+			}
+		}
+		region_state:KRR = {
+			create_pop = {
+				culture = tupinamba
+				size = 33330
+			}
+		}
+	}
+
+	s:STATE_PARAIBA = {
+		region_state:POT = {
+			create_pop = {
+				culture = tupinamba
+				size = 33330
+			}
+		}
+		region_state:CAE = {
+			create_pop = {
+				culture = tupinamba
+				size = 16665
+			}
+		}
+		region_state:KRR = {
+			create_pop = {
+				culture = tupinamba
+				size = 215889
+			}
+		}
+	}
+
+	s:STATE_PERNAMBUCO = {
+		region_state:CAE = {
+			create_pop = {
+				culture = tupinamba
+				size = 94153
+			}
+		}
+		region_state:TBI = {
+			create_pop = {
+				culture = tupinamba
+				size = 25859
+			}
+		}
+		region_state:TPA = {
+			create_pop = {
+				culture = tupinamba
+				size = 88981
+			}
+		}
+		region_state:KRR = {
+			create_pop = {
+				culture = tupinamba
+				size = 172791
+			}
+		}
+	}
+
+	s:STATE_BAHIA = {
+		region_state:TPA = {
+			create_pop = {
+				culture = tupinamba
+				size = 258386
+			}
+		}
+		region_state:AIM = {
+			create_pop = {
+				culture = tupinamba
+				size = 59994
+			}
+		}
+		region_state:KRR = {
+			create_pop = {
+				culture = tupinamba
+				size = 5454
+			}
+		}
+	}
+
+	s:STATE_MINAS_GERAIS = {
+		region_state:AIM = {
+			create_pop = {
+				culture = tupinamba
+				size = 76262
+			}
+		}
+		region_state:MBK = {
+			create_pop = {
+				culture = tupinamba
+				size = 53384
+			}
+		}
+		region_state:TPQ = {
+			create_pop = {
+				culture = tupinamba
+				size = 20337
+			}
+		}
+	}
+
+	s:STATE_RIO_DE_JANEIRO = {
+		region_state:TPQ = {
+			create_pop = {
+				culture = tupinamba
+				size = 381783
+			}
+		}
+	}
+
+	s:STATE_SAO_PAULO = {
+		region_state:KHG = {
+			create_pop = {
+				culture = tupinamba
+				size = 209639
+			}
+		}
+		region_state:TPQ = {
+			create_pop = {
+				culture = tupinamba
+				size = 114194
+			}
+		}
+	}
+
+	s:STATE_PARANA = {
+		region_state:CRJ = {
+			create_pop = {
+				culture = guarani
+				size = 7682
+			}
+			create_pop = {
+				culture = tupinamba
+				size = 3292
+			}
+		}
+		region_state:KHG = {
+			create_pop = {
+				culture = tupinamba
+				size = 109744
+			}
+		}
+		region_state:NDV = {
+			create_pop = {
+				culture = tupinamba
+				size = 29265
+			}
+		}
+	}
+
+	s:STATE_SANTA_CATARINA = {
+		region_state:NDV = {
+			create_pop = {
+				culture = tupinamba
+				size = 63743
+			}
+			create_pop = {
+				culture = guarani
+				size = 11249
+			}
+		}
+		region_state:CRJ = {
+			create_pop = {
+				culture = guarani
+				size = 41995
+			}
+			create_pop = {
+				culture = tupinamba
+				size = 17998
+			}
+		}
+		region_state:KHG = {
+			create_pop = {
+				culture = tupinamba
+				size = 12748
+			}
+			create_pop = {
+				culture = guarani
+				size = 2250
+			}
+		}
+	}
+
+	s:STATE_RIO_GRANDE_DO_SUL = {
+		region_state:NDV = {
+			create_pop = {
+				culture = guarani
+				size = 109987
+			}
+			create_pop = {
+				culture = tupinamba
+				size = 27497
+			}
+		}
+		region_state:CRJ = {
+			create_pop = {
+				culture = guarani
+				size = 10624
+			}
+			create_pop = {
+				culture = tupinamba
+				size = 1875
+			}
+		}
+	}
+
+	s:STATE_URUGUAY = {
+		region_state:CUA = {
+			create_pop = {
+				culture = guarani
+				size = 127486
+			}
+			create_pop = {
+				culture = patagonian
+				size = 22497
+			}
+		}
+	}
+
+	s:STATE_MATO_GROSSO = {
+		region_state:AMZ = {
+			create_pop = {
+				culture = amazonian
+				size = 55000
+			}
+		}
+		region_state:KIO = {
+			create_pop = {
+				culture = amazonian
+				size = 42924
+			}
+		}
+	}
+
+	s:STATE_AMAZONAS = {
+		region_state:AMZ = {
+			create_pop = {
+				culture = amazonian
+				size = 110000
+			}
+		}
+	}
+
+	s:STATE_GOIAS = {
+		region_state:AKW = {
+			create_pop = {
+				culture = tupinamba
+				size = 134985
+			}
+			create_pop = {
+				culture = amazonian
+				size = 14998
+			}
+		}
+	}
+
+	# Gran Colombia
+	s:STATE_GUAYANA = {
+		region_state:AWK = {
+			create_pop = {
+				culture = amazonian
+				size = 90000
+			}
+		}
+	}
+
+	s:STATE_BOLIVAR = {
+		region_state:WAO = {
+			create_pop = {
+				culture = amazonian
+				size = 142958
+			}
+		}
+		region_state:AMZ = {
+			create_pop = {
+				culture = amazonian
+				size = 20000
+			}
+		}
+		region_state:KGN = {
+			create_pop = {
+				culture = amazonian
+				size = 33858
+			}
+		}
+	}
+
+	s:STATE_MIRANDA = {
+		region_state:CMG = {
+			create_pop = {
+				culture = cariban
+				size = 407650
+			}
+		}
+		region_state:KGN = {
+			create_pop = {
+				culture = cariban
+				size = 29175
+			}
+		}
+		region_state:CUC = {
+			create_pop = {
+				culture = cariban
+				size = 36469
+			}
+		}
+	}
+
+	s:STATE_ZULIA = {
+		region_state:CMG = {
+			create_pop = {
+				culture = guajiro
+				size = 166722
+			}
+		}
+		region_state:CUC = {
+			create_pop = {
+				culture = guajiro
+				size = 46617
+			}
+		}
+		region_state:TTY = {
+			create_pop = {
+				culture = guajiro
+				size = 62155
+			}
+		}
+		region_state:WAY = {
+			create_pop = {
+				culture = guajiro
+				size = 255750
+			}
+		}
+	}
+
+	s:STATE_ANTIOQUIA = {
+		region_state:CML = {
+			create_pop = {
+				culture = guajiro
+				size = 62701
+			}
+		}
+		region_state:KGN = {
+			create_pop = {
+				culture = guajiro
+				size = 31350
+			}
+		}
+		region_state:CMG = {
+			create_pop = {
+				culture = guajiro
+				size = 18810
+			}
+		}
+		region_state:CIM = {
+			create_pop = {
+				culture = guajiro
+				size = 40129
+			}
+			create_pop = {
+				culture = muisca
+				size = 10032
+			}
+		}
+		region_state:WAY = {
+			create_pop = {
+				culture = guajiro
+				size = 25080
+			}
+		}
+		region_state:ZEN = {
+			create_pop = {
+				culture = guajiro
+				size = 75241
+			}
+		}
+		region_state:NUT = {
+			create_pop = {
+				culture = guajiro
+				size = 43891
+			}
+		}
+		region_state:THM = {
+			create_pop = {
+				culture = guajiro
+				size = 18810
+			}
+		}
+		region_state:QBY = {
+			create_pop = {
+				culture = guajiro
+				size = 31350
+			}
+		}
+	}
+
+	s:STATE_CUNDINAMARCA = {
+		region_state:THM = {
+			create_pop = {
+				culture = muisca
+				size = 84093
+			}
+		}
+		region_state:ZIP = {
+			create_pop = {
+				culture = muisca
+				size = 105116
+			}
+		}
+		region_state:ZAQ = {
+			create_pop = {
+				culture = muisca
+				size = 168185
+			}
+		}
+	}
+
+	s:STATE_GUAVIARE = {
+		region_state:AMZ = {
+			create_pop = {
+				culture = amazonian
+				size = 40000
+			}
+		}
+	}
+
+	s:STATE_CAUCA = {
+		region_state:PIJ = {
+			create_pop = {
+				culture = quechua
+				size = 94051
+			}
+		}
+		region_state:AMZ = {
+			create_pop = {
+				culture = quechua
+				size = 37620
+			}
+		}
+		region_state:QBY = {
+			create_pop = {
+				culture = quechua
+				size = 112861
+			}
+		}
+		region_state:PUB = {
+			create_pop = {
+				culture = quechua
+				size = 56431
+			}
+		}
+		region_state:TAM = {
+			create_pop = {
+				culture = quechua
+				size = 56430
+			}
+		}
+	}
+
+	# The Andes
+	s:STATE_PASTAZA = {
+		region_state:AMZ = {
+			create_pop = {
+				culture = amazonian
+				size = 70000
+			}
+		}
+	}
+
+	s:STATE_ACRE = {
+		region_state:AMZ = {
+			create_pop = {
+				culture = amazonian
+				size = 45000
+			}
+		}
+	}
+
+	s:STATE_TUCUMAN = {
+		region_state:CCH = {
+			create_pop = {
+				culture = aimara
+				size = 257474
+			}
+		}
+		region_state:MYC = {
+			create_pop = {
+				culture = aimara
+				size = 22718
+			}
+		}
+		region_state:ALC = {
+			create_pop = {
+				culture = aimara
+				size = 106019
+			}
+		}
+		region_state:QIM = {
+			create_pop = {
+				culture = aimara
+				size = 136310
+			}
+		}
+	}
+
+	s:STATE_SANTIAGO = {
+		region_state:PHE = {
+			create_pop = {
+				culture = aimara
+				size = 147378
+			}
+		}
+		region_state:CYC = {
+			create_pop = {
+				culture = aimara
+				size = 271969
+			}
+		}
+		region_state:CPU = {
+			create_pop = {
+				culture = aimara
+				size = 174174
+			}
+		}
+	}
+
+	s:STATE_ANTOFAGASTA = {
+		region_state:QTR = {
+			create_pop = {
+				culture = aimara
+				size = 132816
+			}
+		}
+		region_state:CYC = {
+			create_pop = {
+				culture = aimara
+				size = 33504
+			}
+		}
+	}
+
+	s:STATE_JUJUY = {
+		region_state:QIM = {
+			create_pop = {
+				culture = aimara
+				size = 124950
+			}
+		}
+		region_state:MGR = {
+			create_pop = {
+				culture = aimara
+				size = 147669
+			}
+		}
+		region_state:OMG = {
+			create_pop = {
+				culture = aimara
+				size = 424542
+			}
+		}
+		region_state:TUP = {
+			create_pop = {
+				culture = aimara
+				size = 20000
+			}
+		}
+	}
+
+	s:STATE_TARAPACA = {
+		region_state:QTR = {
+			create_pop = {
+				culture = aimara
+				size = 522520
+			}
+		}
+	}
+
+	s:STATE_POTOSI = {
+		region_state:KLL = {
+			create_pop = {
+				culture = aimara
+				size = 554298
+			}
+		}
+		region_state:KRK = {
+			create_pop = {
+				culture = aimara
+				size = 33711
+			}
+		}
+		region_state:SUR = {
+			create_pop = {
+				culture = aimara
+				size = 33711
+			}
+		}
+	}
+
+	s:STATE_SANTA_CRUZ = {
+		region_state:KLL = {
+			create_pop = {
+				culture = guarani
+				size = 21772
+			}
+		}
+		region_state:TUP = {
+			create_pop = {
+				culture = guarani
+				size = 103415
+			}
+		}
+		region_state:QQH = {
+			create_pop = {
+				culture = guarani
+				size = 59872
+			}
+		}
+		region_state:CCT = {
+			create_pop = {
+				culture = guarani
+				size = 54429
+			}
+		}
+		region_state:AVA = {
+			create_pop = {
+				culture = guarani
+				size = 277589
+			}
+		}
+		region_state:CRA = {
+			create_pop = {
+				culture = guarani
+				size = 20000
+			}
+		}
+	}
+
+	s:STATE_AREQUIPA = {
+		region_state:CBY = {
+			create_pop = {
+				culture = quechua
+				size = 536603
+			}
+		}
+		region_state:KWY = {
+			create_pop = {
+				culture = quechua
+				size = 87087
+			}
+		}
+		region_state:LUP = {
+			create_pop = {
+				culture = quechua
+				size = 43543
+			}
+		}
+		region_state:QUL = {
+			create_pop = {
+				culture = quechua
+				size = 87087
+			}
+		}
+	}
+
+	s:STATE_LA_PAZ = {
+		region_state:KWY = {
+			create_pop = {
+				culture = aimara
+				size = 369874
+			}
+		}
+		region_state:CBY = {
+			create_pop = {
+				culture = aimara
+				size = 20000
+			}
+		}
+		region_state:MOX = {
+			create_pop = {
+				culture = aimara
+				size = 93936
+			}
+		}
+		region_state:CRA = {
+			create_pop = {
+				culture = aimara
+				size = 20000
+			}
+		}
+		region_state:SUR = {
+			create_pop = {
+				culture = aimara
+				size = 20000
+			}
+		}
+		region_state:PCJ = {
+			create_pop = {
+				culture = aimara
+				size = 20000
+			}
+		}
+		region_state:UMA = {
+			create_pop = {
+				culture = aimara
+				size = 20000
+			}
+		}
+	}
+
+	s:STATE_ICA = {
+		region_state:AMN = {
+			create_pop = {
+				culture = quechua
+				size = 337575
+			}
+		}
+		region_state:KWY = {
+			create_pop = {
+				culture = quechua
+				size = 185006
+			}
+		}
+		region_state:CBY = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+		region_state:KNA = {
+			create_pop = {
+				culture = quechua
+				size = 40000
+			}
+		}
+		region_state:CSU = {
+			create_pop = {
+				culture = quechua
+				size = 40000
+			}
+		}
+		region_state:AYA = {
+			create_pop = {
+				culture = quechua
+				size = 40000
+			}
+		}
+		region_state:KKE = {
+			create_pop = {
+				culture = quechua
+				size = 40000
+			}
+		}
+		region_state:URC = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+		region_state:MYM = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+		region_state:PCR = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+		region_state:HNK = {
+			create_pop = {
+				culture = quechua
+				size = 40000
+			}
+		}
+		region_state:HCR = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+	}
+
+	s:STATE_LIMA = {
+		region_state:HCR = {
+			create_pop = {
+				culture = quechua
+				size = 653732
+			}
+		}
+		region_state:AMN = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+		region_state:HNK = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+		region_state:CIC = {
+			create_pop = {
+				culture = quechua
+				size = 40000
+			}
+		}
+		region_state:HRC = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+		region_state:ICM = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+		region_state:CLQ = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+		region_state:NTA = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+	}
+
+	s:STATE_CAJAMARCA = {
+		region_state:PUK = {
+			create_pop = {
+				culture = quechua
+				size = 507152
+			}
+		}
+		region_state:QTO = {
+			create_pop = {
+				culture = quechua
+				size = 20000
+			}
+		}
+	}
+
+	s:STATE_ECUADOR = {
+		region_state:CNO = {
+			create_pop = {
+				culture = quechua
+				size = 80589
+			}
+		}
+		region_state:AMZ = {
+			create_pop = {
+				culture = quechua
+				size = 90000
+			}
+		}
+		region_state:TLN = {
+			create_pop = {
+				culture = quechua
+				size = 129646
+			}
+		}
+		region_state:PUB = {
+			create_pop = {
+				culture = quechua
+				size = 130973
+			}
+		}
+		region_state:GCV = {
+			create_pop = {
+				culture = quechua
+				size = 120546
+			}
+		}
+		region_state:QTO = {
+			create_pop = {
+				culture = quechua
+				size = 95973
+			}
+		}
+	}
+
+	# La Plata
+	s:STATE_CORRIENTES = {
+		region_state:NDV = {
+			create_pop = {
+				culture = guarani
+				size = 39218
+			}
+		}
+	}
+
+	s:STATE_BAJO_PARAGUAY = {
+		region_state:NDV = {
+			create_pop = {
+				culture = guarani
+				size = 39218
+			}
+		}
+	}
+
+	s:STATE_ALTO_PARAGUAY = {
+		region_state:MGR = {
+			create_pop = {
+				culture = guarani
+				size = 39218
+			}
+		}
+	}
+
+	s:STATE_CHACO = {
+		region_state:MGR = {
+			create_pop = {
+				culture = guarani
+				size = 55000
+			}
+		}
+	}
+
+	s:STATE_SANTA_FE = {
+		region_state:MGR = {
+			create_pop = {
+				culture = guarani
+				size = 25669
+			}
+		}
+		region_state:CUA = {
+			create_pop = {
+				culture = guarani
+				size = 13548
+			}
+		}
+	}
+
+	s:STATE_BUENOS_AIRES = {
+		region_state:MPC = {
+			create_pop = {
+				culture = patagonian
+				size = 39217
+			}
+		}
+	}
+
+	s:STATE_LA_PAMPA = {
+		region_state:MPC = {
+			create_pop = {
+				culture = patagonian
+				size = 39217
+			}
+		}
+	}
+
+	s:STATE_RIO_NEGRO = {
+		region_state:MPC = {
+			create_pop = {
+				culture = patagonian
+				size = 28012
+			}
+		}
+		region_state:MYC = {
+			create_pop = {
+				culture = patagonian
+				size = 11205
+			}
+		}
+	}
+
+	s:STATE_LOS_RIOS = {
+		region_state:MPC = {
+			create_pop = {
+				culture = patagonian
+				size = 34157
+			}
+		}
+		region_state:PHE = {
+			create_pop = {
+				culture = patagonian
+				size = 5060
+			}
+		}
+	}
+
+	s:STATE_PATAGONIA = {
+		region_state:THL = {
+			create_pop = {
+				culture = patagonian
+				size = 34841
+			}
+		}
+		region_state:MPC = {
+			create_pop = {
+				culture = patagonian
+				size = 4376
+			}
+		}
+	}
+
+	s:STATE_ARAUCANIA = {
+		region_state:THL = {
+			create_pop = {
+				culture = patagonian
+				size = 27390
+			}
+		}
+		region_state:MPC = {
+			create_pop = {
+				culture = patagonian
+				size = 3424
+			}
+		}
+		region_state:SLK = {
+			create_pop = {
+				culture = patagonian
+				size = 8403
+			}
+		}
+	}
+
+	s:STATE_SOUTH_ATLANTIC_ISLANDS = {
+		region_state:SLK = {
+			create_pop = {
+				culture = patagonian
+				size = 39217
+			}
+		}
+	}
+
+}

@@ -1,0 +1,134 @@
+#####################################
+# CROWNS AND CANNONS - STAPLE GOODS #
+#####################################
+
+local_food = {
+	texture = "gfx/interface/icons/goods_icons/local_food.dds"
+	cost = 20
+	category = staple
+	local = yes
+
+	consumption_tax_cost = 500
+}
+
+livestock = {
+	texture = "gfx/interface/icons/goods_icons/livestock.dds"
+	cost = 30
+	category = luxury
+
+	obsession_chance = 1.0
+	prestige_factor = 4
+
+	traded_quantity = 4 # 120
+	convoy_cost_multiplier = 0.5
+
+	consumption_tax_cost = 200
+}
+
+wool = {
+	texture = "gfx/interface/icons/goods_icons/wool.dds"
+	cost = 30
+	category = luxury
+
+	obsession_chance = 1.0
+	prestige_factor = 4
+
+	traded_quantity = 4 # 120
+	convoy_cost_multiplier = 0.5
+
+	consumption_tax_cost = 200
+}
+
+plant_fiber = {
+	texture = "gfx/interface/icons/goods_icons/plant_fiber.dds"
+	cost = 20
+	category = staple
+
+	prestige_factor = 3
+
+	traded_quantity = 5 # 100
+	convoy_cost_multiplier = 0.15
+
+	consumption_tax_cost = 300
+}
+
+textiles = {
+	texture = "gfx/interface/icons/goods_icons/textiles.dds"
+	cost = 30
+	category = staple
+
+	prestige_factor = 4
+
+	traded_quantity = 4 # 120
+	convoy_cost_multiplier = 0.25
+
+	consumption_tax_cost = 300
+}
+
+pottery = {
+	texture = "gfx/interface/icons/goods_icons/pottery.dds"
+	cost = 30
+	category = staple
+
+	prestige_factor = 4
+
+	traded_quantity = 4 # 120
+	convoy_cost_multiplier = 0.25
+
+	consumption_tax_cost = 300
+}
+
+furniture = {
+	texture = "gfx/interface/icons/goods_icons/furniture.dds"
+	cost = 40
+	category = staple
+
+	prestige_factor = 4
+
+	traded_quantity = 4 # 120
+	convoy_cost_multiplier = 0.25
+
+	consumption_tax_cost = 300
+}
+
+#########################################
+# CROWNS AND CANNONS - INDUSTRIAL GOODS #
+#########################################
+
+leather = {
+	texture = "gfx/interface/icons/goods_icons/leather.dds"
+	cost = 30
+	category = industrial
+
+	prestige_factor = 4
+
+	traded_quantity = 4 # 120
+	convoy_cost_multiplier = 0.25
+
+	consumption_tax_cost = 300
+}
+
+fine_textiles = {
+	texture = "gfx/interface/icons/goods_icons/fine_textiles.dds"
+	cost = 40
+	category = industrial
+
+	prestige_factor = 6
+	traded_quantity = 2.5 # 100
+
+	consumption_tax_cost = 300
+}
+
+#################################
+# CROWNS AND CANNONS - MILITARY #
+#################################
+
+weaponry = {
+	texture = "gfx/interface/icons/goods_icons/weaponry.dds"
+	cost = 60
+	category = military
+
+	obsession_chance = 0.5
+	prestige_factor = 5
+	traded_quantity = 2 # 120
+}

@@ -1,0 +1,23 @@
+﻿
+pm_cac_trade_center = {
+	texture = "gfx/interface/icons/production_method_icons/trade_center.dds"
+	replacement_if_valid = pm_trade_center_principle_external_trade_2
+	is_hidden_when_unavailable = yes
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_merchant_marine_add = 1 # x50 = 50
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 800
+			building_employment_shopkeepers_add = 200
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_weekly_trades_add = 1
+			state_trade_capacity_add = 5
+		}
+	}
+}
